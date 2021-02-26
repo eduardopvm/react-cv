@@ -1,0 +1,30 @@
+.App {
+    text-align: center;
+  }
+  
+  .cv-photo {
+    float: left;
+  }
+  
+  .cv-sidebar {
+    border: 1px solid red;
+    height: 100%;
+    width: 25%;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+  }
+  
+  .cv-content {
+    border: 1px solid blue;
+    height: 100%;
+    width: 75%;
+    left: 25%;
+    position: fixed;
+    overflow: auto;
+  }
+  
+  .cv-basic-info {
+    padding-bottom: 2em;
+  }
+  

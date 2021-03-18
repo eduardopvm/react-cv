@@ -3,10 +3,14 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import Paper from "@material-ui/core/Paper";
 import Link from "@material-ui/core/Link";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Header from "./Header";
-import { Typography } from "@material-ui/core";
 
 export default function Layout() {
   return (
@@ -15,20 +19,28 @@ export default function Layout() {
       <Grid container>
         <Grid item lg={3}>
           <Paper>
-            <Typography variant="h4">Social</Typography>
-            <div>
-              <Link href="https://github.com/eduardopvm">Github</Link>
-            </div>
-            <div>
-              <Link href="https://www.linkedin.com/in/eduardo-pvm/">
-                LinkedIn
-              </Link>
-            </div>
-            <div>
-              <Link href="#">
-                Facebook
-              </Link>
-            </div>
+            <List>
+              <Typography variant="h4">Social</Typography>
+              <ListItem>
+                <ListItemText>
+                  <Link href="https://github.com/eduardopvm">Github</Link>
+                </ListItemText>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText>
+                  <Link href="https://www.linkedin.com/in/eduardo-pvm/">
+                    LinkedIn
+                  </Link>
+                </ListItemText>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText>
+                  <Link href="#">Facebook</Link>
+                </ListItemText>
+              </ListItem>
+            </List>
           </Paper>
         </Grid>
         <Grid item lg={9}>

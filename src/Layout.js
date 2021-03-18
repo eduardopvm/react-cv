@@ -8,6 +8,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
+import { GoMarkGithub } from "react-icons/go";
+import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Header from "./Header";
@@ -22,12 +24,14 @@ export default function Layout() {
             <Typography variant="h4">Social</Typography>
             <Divider />
             <ListItem>
+              <GoMarkGithub />
               <ListItemText>
                 <Link href="https://github.com/eduardopvm">Github</Link>
               </ListItemText>
             </ListItem>
             <Divider />
             <ListItem>
+              <FaLinkedin />
               <ListItemText>
                 <Link href="https://www.linkedin.com/in/eduardo-pvm/">
                   LinkedIn
@@ -36,6 +40,7 @@ export default function Layout() {
             </ListItem>
             <Divider />
             <ListItem>
+              <FaFacebookSquare />
               <ListItemText>
                 <Link href="#">Facebook</Link>
               </ListItemText>

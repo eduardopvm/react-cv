@@ -2,6 +2,7 @@ import Box from "@material-ui/core/Box";
 import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import Divider from "@material-ui/core/Divider";
 
 /* Icons */
 import PhoneAndroidOutlinedIcon from "@material-ui/icons/PhoneAndroidOutlined";
@@ -11,7 +12,8 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 export default function HeaderPanel() {
   return (
-    <Box borderTop={1} borderBottom={1}>
+    <Box>
+      <Divider variant="middle" component="div" />
       <Grid container>
         <CardContent>
           <PhoneAndroidOutlinedIcon display="inline" />
@@ -43,6 +45,7 @@ export default function HeaderPanel() {
           </Typography>
         </CardContent>
       </Grid>
+      <Divider variant="middle" />
     </Box>
   );
 }

@@ -14,7 +14,7 @@ export default function Sidebar() {
   return (
     <Grid item xs={3}>
       <List>
-        <Typography variant="h4">Social</Typography>
+        <Typography variant="h5">Social</Typography>
         <Divider component="li" variant="middle" />
         <ListItem>
           <GoMarkGithub style={{ fontSize: 30 }} />
@@ -42,7 +42,7 @@ export default function Sidebar() {
       </List>
 
       <Box>
-        <Typography variant="h4">Education</Typography>
+        <Typography variant="h5">Education</Typography>
         <Divider variant="middle" />
         <Box>
           <Typography>Bacharelado em Ciência da Computação</Typography>
@@ -53,8 +53,13 @@ export default function Sidebar() {
       </Box>
 
       <Box>
-        <Typography variant="h4">Skills</Typography>
+        <Typography variant="h5">Skills</Typography>
         <Divider variant="middle" />
+        <List>
+            <ListItem>Node.js</ListItem>
+            <ListItem>Express</ListItem>
+            <ListItem>React</ListItem>
+        </List>
       </Box>
     </Grid>
   );

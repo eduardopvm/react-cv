@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 export default function MainContent() {
   return (
     <Grid item xs={9}>
-      <Typography variant="h4">Profile</Typography>
+      <Typography variant="h5">Profile</Typography>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu
         ligula sed tellus euismod sollicitudin vitae quis elit. Mauris at ligula
@@ -17,7 +17,7 @@ export default function MainContent() {
         efficitur id metus facilisis, faucibus egestas magna. Sed ornare gravida
         aliquet.
       </p>
-      <Typography variant="h4">Work History</Typography>
+      <Typography variant="h5">Work History</Typography>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu
         ligula sed tellus euismod sollicitudin vitae quis elit.

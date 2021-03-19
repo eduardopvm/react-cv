@@ -13,7 +13,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 export default function HeaderPanel() {
   return (
     <Box>
-      <Divider variant="middle" component="div" />
+      <Divider variant="middle" />
       <Grid container>
         <CardContent>
           <PhoneAndroidOutlinedIcon display="inline" />

@@ -53,13 +53,18 @@ export default function Sidebar() {
       </Box>
 
       <Box>
-        <Typography variant="h5">Skills</Typography>
+        <Typography variant="h5">Technical Skills</Typography>
         <Divider variant="middle" />
         <List>
-            <ListItem>Node.js</ListItem>
-            <ListItem>Express</ListItem>
-            <ListItem>React</ListItem>
+          <ListItem>Node.js</ListItem>
+          <ListItem>Express</ListItem>
+          <ListItem>React</ListItem>
         </List>
+      </Box>
+
+      <Box>
+        <Typography variant="h5">General Skills</Typography>
+        <Divider variant="middle" />
       </Box>
     </Grid>
   );

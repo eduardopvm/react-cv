@@ -1,4 +1,5 @@
-Load YAML data to fill components
+<!-- Load local YAML and parse it -->
+Use YAML data to fill components
 Create photo component and add to header
 Split Sidebar into multiple components
 Split MainContent into multiple components

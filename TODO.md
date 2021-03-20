@@ -9,6 +9,6 @@ Split Sidebar into multiple components
 
 Split MainContent into multiple components
 
-Make <hr /> printable
+Make `<hr />` printable
 
 Create CSS styling and adjust layout

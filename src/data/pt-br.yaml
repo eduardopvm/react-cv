@@ -1,0 +1,19 @@
+---
+history:
+  - role: Analista de Sistemas Sênior
+    company: GFT Brasil
+    location: Sorocaba, Brasil
+    job-start: Junho 2019
+    job-end: Junho 2020
+    description:
+      - "Responsável pela criação e desenvolvimento de um sistema de provisionamento da infrastrutura de nuvem no Google Cloud através da tecnologia Terraform para um projeto de pesquisa do Google. Também participei do desenvolvimento do backend Java e do sistema de CI/CD usando GitLab. Este projeto visava criar um sistema de simulação de equipamentos de uma cervejaria que depois seria convertido em um sistema genérico para simulações para clientes do Google."
+      - "Manutenção do sistema de CI/CD (usando Teamcity e UrbanCode) de diversas aplicações do Deutsch Bank de Nova Iorque."
+      - "Manutenção de aplicações Java legadas do Deutsch Bank de Nova Iorque."
+  - role: Desenvolvedor Freelance
+    company: Freelancer
+    location: Sorocaba, Brasil
+    job-start: Janeiro 2019
+    job-end: Junho 2019
+    description:
+      - "Design e desolvimento de uma aplicação de gerenciamento para uma corretora de seguros. Desenvolvida com Java Swing, MigLayout, Spring, MySQL e integração com APIs SOAP e REST de várias seguradoras para conseguir os preços e condições dos seguros."
+      - "Desenvolvimento de um dashboard SPA para um cliente internacional via upwork.com. Criado em Angular 7 com backend em Java e banco de dados SQL Server. O app era integrado com Google Maps para rastreamento de entregas junto com sistema de pagamento Stripe."

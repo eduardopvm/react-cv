@@ -1,4 +1,5 @@
-<!-- Load local YAML and parse it -->
+# TODO List
+~~Load local YAML and parse it~~
 Use YAML data to fill components
 Create photo component and add to header
 Split Sidebar into multiple components

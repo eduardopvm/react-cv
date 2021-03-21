@@ -8,24 +8,13 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Divider from "@material-ui/core/Divider";
 
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import Personal from "./Personal";
 
-export default function MainContent() {
+export default function WorkHistory(props) {
   return (
     <Grid item xs={9}>
-      <Typography variant="h5">Profile</Typography>
-      <Divider />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu
-        ligula sed tellus euismod sollicitudin vitae quis elit. Mauris at ligula
-        varius nibh maximus tincidunt. Ut lacinia erat eget felis sollicitudin,
-        eu venenatis ex ultrices. Donec nec molestie leo, vel viverra eros.
-        Pellentesque sagittis mollis tortor, nec pharetra leo pulvinar quis.
-        Aliquam ut tellus varius, pretium ante eget, aliquam arcu. Nullam in
-        dolor sit amet ligula fermentum viverra vel sed augue. Etiam consequat
-        efficitur faucibus. Fusce egestas tincidunt euismod. Cras erat risus,
-        efficitur id metus facilisis, faucibus egestas magna. Sed ornare gravida
-        aliquet.
-      </p>
+      {/* <Box>{props.payload[0]}</Box> */}
+      <Personal />
       <Typography variant="h5">Work History</Typography>
       <Divider />
       <Box>

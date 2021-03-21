@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import MainContent from "./MainContent";
+import WorkHistory from "./WorkHistory";
 
 export default function Layout() {
   return (
@@ -11,7 +11,7 @@ export default function Layout() {
       <Header />
       <Grid container>
         <Sidebar />
-        <MainContent />
+        <WorkHistory />
       </Grid>
     </React.Fragment>
   );

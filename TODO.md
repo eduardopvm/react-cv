@@ -1,14 +1,24 @@
 # TODO List
-~~Load local YAML and parse it~~
+- [] Create PT-BR and EN-US json files with CV data
 
-Use YAML data to fill components
+- [] Use JSON data to fill components
 
-Create photo component and add to header
+- [] Split Sidebar into multiple components
 
-Split Sidebar into multiple components
+- [] Split WorkHistory into multiple components
 
-Split MainContent into multiple components
+- [] Create photo component and add to header
 
-Make `<hr />` printable
+- [] Add QRCode to printable version in place of photo
 
-Create CSS styling and adjust layout
+- [] Make `<hr />` printable
+
+- [] Create CSS styling and adjust layout
+
+- [] Add internationalization
+
+- [] Perfect the printable version
+
+- [] Create desktop version with more swag
+
+- [] Create mobile version

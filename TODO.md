@@ -1,9 +1,11 @@
 # TODO List
-- [] Use JSON data to fill components
+- [] Create skills component with icons
 
 - [] Split Sidebar into multiple components
 
 - [x] Split MainContent into multiple components
+
+- [] Use JSON data to fill components
 
 - [] Create photo component and add to header
 

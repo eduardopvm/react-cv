@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 
 export default function Layout(props) {
-  console.log("Layout props: ", props);
+  console.log("Props: ", props);
   return (
     <React.Fragment>
       <Header data={props.data.contact} />

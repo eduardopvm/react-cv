@@ -3,7 +3,7 @@
 
 - [] Split Sidebar into multiple components
 
-- [] Split MainContent into multiple components
+- [x] Split MainContent into multiple components
 
 - [] Create photo component and add to header
 

@@ -1,0 +1,87 @@
+{
+  "contact": {
+    "location": "Itapetinga - SP, Brasil",
+    "address": "Coronel Fernando Prestes, 615",
+    "telephone": "(15) 99700-3443",
+    "email": "eduardo.palma403@gmail.com"
+  },
+  "social": {
+    "github": "https://github.com/eduardopvm",
+    "linkedin": "https://www.linkedin.com/in/eduardo-pvm",
+    "facebook": ""
+  },
+  "profile": "",
+  "technical_skills": [],
+  "general_skills": [],
+  "languague_skills": [],
+  "certificates": [],
+  "history": [
+    {
+      "role": "Analista de Sistemas",
+      "company": "Moraes & Baldini",
+      "location": "Itapetininga - SP, Brasil",
+      "job_start": "Setembro 2020",
+      "job_end": "Março 2020",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Analista de Sistemas Sênior",
+      "company": "GFT Brasil",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Junho 2019",
+      "job_end": "Junho 2020",
+      "description": "TODO",
+      "highlights": []
+    },
+    {
+      "role": "Desenvolvedor Freelance",
+      "company": "Freelancer",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Janeiro 2019",
+      "job_end": "Junho 2019",
+      "description": "TODO",
+      "highlights": []
+    },
+    {
+      "role": "Analista de Sistemas Pleno",
+      "company": "FIT - Instituto de Tecnologia",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Março 2016",
+      "job_end": "Dezembro 2018",
+      "description": "TODO",
+      "highlights": []
+    },
+    {
+      "role": "Software Engineer",
+      "company": "BP Analytics",
+      "location": "Los Angeles - CA, EUA (Remoto)",
+      "job_start": "Novembro 2013",
+      "job_end": "Outubro 2015",
+      "description": "TODO",
+      "highlights": []
+    },
+    {
+      "role": "Analista de Sistemas Jr. -> Pleno",
+      "company": "FIT - Instituto de Tecnologia",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Setembro 2011",
+      "job_end": "Novembro 2013",
+      "description": "TODO",
+      "highlights": []
+    },
+    {
+      "role": "Programador Jr. -> Programador Sr.",
+      "company": "GFT Brasil",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Janeiro 2010",
+      "job_end": "Setembro 2011",
+      "description": "TODO",
+      "highlights": []
+    }
+  ]
+}

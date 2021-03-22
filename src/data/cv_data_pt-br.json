@@ -10,7 +10,7 @@
     "linkedin": "https://www.linkedin.com/in/eduardo-pvm",
     "facebook": ""
   },
-  "profile": "",
+  "profile": "Lorem ipsum dolor sit amet",
   "technical_skills": [],
   "general_skills": [],
   "languague_skills": [],
@@ -36,7 +36,11 @@
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     },
     {
       "role": "Desenvolvedor Freelance",
@@ -45,7 +49,11 @@
       "job_start": "Janeiro 2019",
       "job_end": "Junho 2019",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     },
     {
       "role": "Analista de Sistemas Pleno",
@@ -54,7 +62,11 @@
       "job_start": "Março 2016",
       "job_end": "Dezembro 2018",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     },
     {
       "role": "Software Engineer",
@@ -63,7 +75,11 @@
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     },
     {
       "role": "Analista de Sistemas Jr. -> Pleno",
@@ -72,7 +88,11 @@
       "job_start": "Setembro 2011",
       "job_end": "Novembro 2013",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     },
     {
       "role": "Programador Jr. -> Programador Sr.",
@@ -81,7 +101,11 @@
       "job_start": "Janeiro 2010",
       "job_end": "Setembro 2011",
       "description": "TODO",
-      "highlights": []
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
     }
   ]
 }

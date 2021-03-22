@@ -5,12 +5,16 @@ import Link from "@material-ui/core/Link";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Divider from "@material-ui/core/Divider";
 
+import StarIcon from "@material-ui/icons/Star";
+import StarHalfIcon from "@material-ui/icons/StarHalf";
+import StarOutlineIcon from "@material-ui/icons/StarOutline";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   return (
     <Grid item xs={3}>
       <List>
@@ -56,14 +60,54 @@ export default function Sidebar() {
         <Typography variant="h5">Technical Skills</Typography>
         <Divider variant="middle" />
         <List>
-          <ListItem>Node.js</ListItem>
-          <ListItem>Express</ListItem>
-          <ListItem>React</ListItem>
+          <ListItem>
+            <Typography>Node.js</Typography>
+            <ListItemSecondaryAction>
+              <StarIcon fontSize="small" />
+              <StarIcon fontSize="small" />
+              <StarOutlineIcon fontSize="small" />
+            </ListItemSecondaryAction>
+          </ListItem>
+          <ListItem>
+            <Typography>Express</Typography>
+            <ListItemSecondaryAction>
+              <StarIcon fontSize="small" />
+              <StarHalfIcon fontSize="small" />
+              <StarOutlineIcon fontSize="small" />
+            </ListItemSecondaryAction>
+          </ListItem>
+          <ListItem>
+            <Typography>React</Typography>
+            <ListItemSecondaryAction>
+              <StarIcon fontSize="small" />
+              <StarIcon fontSize="small" />
+              <StarOutlineIcon fontSize="small" />
+            </ListItemSecondaryAction>
+          </ListItem>
         </List>
       </Box>
 
       <Box>
         <Typography variant="h5">General Skills</Typography>
+        <Divider variant="middle" />
+
+        <List>
+          <ListItem>Lollygagging</ListItem>
+          <ListItem>Loitering</ListItem>
+          <ListItem>Littering</ListItem>
+          <ListItem>Lolling</ListItem>
+        </List>
+      </Box>
+
+      <Box>
+        <Typography variant="h5">Languages</Typography>
+        <Divider variant="middle" />
+        <Typography>Português</Typography>
+        <Typography>Inglês</Typography>
+      </Box>
+
+      <Box>
+      <Typography variant="h5">Certificates</Typography>
         <Divider variant="middle" />
       </Box>
     </Grid>

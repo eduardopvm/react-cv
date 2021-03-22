@@ -6,9 +6,10 @@ import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 
 export default function Layout(props) {
+  console.log("Layout props: ", props);
   return (
     <React.Fragment>
-      <Header />
+      <Header data={props.data.contact} />
       <Grid container>
         <Sidebar />
         <MainContent data={props.data} />

@@ -12,7 +12,7 @@ export default function WorkHistoryItem(props) {
   const highlights = [];
   props.history.highlights.map((text, index) => {
     highlights.push(
-      <ListItem key={index.toString()}>
+      <ListItem key={index}>
         <ListItemIcon>
           <FiberManualRecordIcon style={{ fontSize: 10 }} />
         </ListItemIcon>

@@ -11,7 +11,7 @@ export default function Layout(props) {
     <React.Fragment>
       <Header data={props.data.contact} />
       <Grid container>
-        <Sidebar />
+        <Sidebar data={props.data}/>
         <MainContent data={props.data} />
       </Grid>
     </React.Fragment>

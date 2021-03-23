@@ -8,12 +8,10 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Divider from "@material-ui/core/Divider";
 
-/* Icons */
-import StarIcon from "@material-ui/icons/Star";
-import StarHalfIcon from "@material-ui/icons/StarHalf";
-import StarOutlineIcon from "@material-ui/icons/StarOutline";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+
+import SkillComponent from "./SkillComponent";
 
 export default function Sidebar(props) {
   return (
@@ -60,32 +58,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Technical Skills</Typography>
         <Divider variant="middle" />
-        <List>
-          <ListItem>
-            <Typography>Node.js</Typography>
-            <ListItemSecondaryAction>
-              <StarIcon fontSize="small" />
-              <StarIcon fontSize="small" />
-              <StarOutlineIcon fontSize="small" />
-            </ListItemSecondaryAction>
-          </ListItem>
-          <ListItem>
-            <Typography>Express</Typography>
-            <ListItemSecondaryAction>
-              <StarIcon fontSize="small" />
-              <StarHalfIcon fontSize="small" />
-              <StarOutlineIcon fontSize="small" />
-            </ListItemSecondaryAction>
-          </ListItem>
-          <ListItem>
-            <Typography>React</Typography>
-            <ListItemSecondaryAction>
-              <StarIcon fontSize="small" />
-              <StarIcon fontSize="small" />
-              <StarOutlineIcon fontSize="small" />
-            </ListItemSecondaryAction>
-          </ListItem>
-        </List>
+        <SkillComponent skills={props.data.technical_skills} />
       </Box>
 
       <Box>

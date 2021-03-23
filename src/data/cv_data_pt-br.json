@@ -12,7 +12,21 @@
     "facebook": ""
   },
   "profile": "Lorem ipsum dolor sit amet",
-  "technical_skills": [],
+  "technical_skills": [
+    { "name": "Javascript ES6", "level": 3},
+    { "name": "React", "level": 2.5},
+    { "name": "Node.js", "level": 1.5},
+    { "name": "Express", "level": 1},
+    { "name": "MongoDB", "level": 0},
+    { "name": "Java", "level": 3},
+    { "name": "Python", "level": 1.5},
+    { "name": "SQL", "level": 2},
+    { "name": "Angular", "level": 2},
+    { "name": "Google Cloud", "level": 1.5},
+    { "name": "Kubernetes", "level": 1},
+    { "name": "Windows", "level": 2},
+    { "name": "Linux (Debian)", "level": 2.5}
+  ],
   "general_skills": [],
   "languague_skills": [],
   "certificates": [],

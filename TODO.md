@@ -1,7 +1,7 @@
 # TODO List
 - [x] Create skills component with icons
 
-- [] Split Sidebar into multiple components
+- [x] Split Sidebar into multiple components
 
 - [x] Split MainContent into multiple components
 

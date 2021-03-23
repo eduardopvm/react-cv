@@ -11,6 +11,7 @@ import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 import SkillComponent from "./SkillComponent";
 import React from "react";
+import CertificateComponent from "./CertificateComponent";
 
 export default function Sidebar(props) {
   return (
@@ -81,6 +82,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Certificates</Typography>
         <Divider variant="middle" />
+        <CertificateComponent certificates={props.data.certificates} />
       </Box>
     </React.Fragment>
   );

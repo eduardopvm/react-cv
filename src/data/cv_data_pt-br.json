@@ -33,7 +33,9 @@
     { "name": "Inglês", "level": 3},
     { "name": "Espanhol", "level": 1}
   ],
-  "certificates": [],
+  "certificates": [
+    { "name": "Functional Programming with Streams in Java 9", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/", "issuer": "Udemy"}
+  ],
   "history": [
     {
       "role": "Analista de Sistemas",

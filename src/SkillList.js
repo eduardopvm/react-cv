@@ -9,7 +9,7 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import StarOutlineIcon from "@material-ui/icons/StarOutline";
 
-export default function SkillComponent(props) {
+export default function SkillList(props) {
   const generateStars = (level) => {
     const stars = [];
     let integer = Math.trunc(level);

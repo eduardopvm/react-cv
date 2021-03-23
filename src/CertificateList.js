@@ -8,7 +8,7 @@ import IconButton from "@material-ui/core/IconButton";
 
 import { GoLinkExternal } from "react-icons/go";
 
-export default function CertificateComponent(props) {
+export default function CertificateList(props) {
   const certList = props.certificates.map((cert) => {
     return (
       <ListItem key={cert.name}>

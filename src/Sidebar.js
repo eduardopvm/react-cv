@@ -1,3 +1,4 @@
+import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
@@ -9,9 +10,8 @@ import Divider from "@material-ui/core/Divider";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
-import SkillComponent from "./SkillComponent";
-import React from "react";
-import CertificateComponent from "./CertificateComponent";
+import SkillList from "./SkillList";
+import CertificateList from "./CertificateList";
 
 export default function Sidebar(props) {
   return (
@@ -22,14 +22,14 @@ export default function Sidebar(props) {
         <ListItem>
           <GoMarkGithub style={{ fontSize: 30 }} />
           <ListItemText>
-            <Link href="https://github.com/eduardopvm">Github</Link>
+            <Link href="https://github.com/eduardopvm" target="_blank">Github</Link>
           </ListItemText>
         </ListItem>
         <Divider component="li" variant="middle" />
         <ListItem>
           <FaLinkedin style={{ fontSize: 30 }} />
           <ListItemText>
-            <Link href="https://www.linkedin.com/in/eduardo-pvm/">
+            <Link href="https://www.linkedin.com/in/eduardo-pvm/" target="_blank">
               LinkedIn
             </Link>
           </ListItemText>
@@ -38,7 +38,7 @@ export default function Sidebar(props) {
         <ListItem>
           <FaFacebookSquare style={{ fontSize: 30 }} />
           <ListItemText>
-            <Link href="#">Facebook</Link>
+            <Link href="#" target="_blank">Facebook</Link>
           </ListItemText>
         </ListItem>
         <Divider component="li" variant="middle" />
@@ -58,7 +58,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Technical Skills</Typography>
         <Divider variant="middle" />
-        <SkillComponent skills={props.data.technical_skills} />
+        <SkillList skills={props.data.technical_skills} />
       </Box>
 
       <Box>
@@ -76,13 +76,13 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Languages</Typography>
         <Divider variant="middle" />
-        <SkillComponent skills={props.data.languague_skills} />
+        <SkillList skills={props.data.languague_skills} />
       </Box>
 
       <Box>
         <Typography variant="h5">Certificates</Typography>
         <Divider variant="middle" />
-        <CertificateComponent certificates={props.data.certificates} />
+        <CertificateList certificates={props.data.certificates} />
       </Box>
     </React.Fragment>
   );

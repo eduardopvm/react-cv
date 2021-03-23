@@ -1,11 +1,19 @@
 # TODO List
-- [] Create skills component with icons
+- [x] Create skills component with icons
 
 - [] Split Sidebar into multiple components
 
 - [x] Split MainContent into multiple components
 
-- [] Use JSON data to fill components
+- [] Use JSON data to fill all components
+
+- [] Add QRCode to printable version in place of photo
+
+- [] Create CSS styling and adjust layout
+
+- [] Add button to print page using [react-to-print](https://www.npmjs.com/package/react-to-print)
+
+- [] Make `<hr />` printable
 
 - [] Create photo component and add to header
 
@@ -14,12 +22,6 @@
 - [] Add i18n support and translante labels
 
 - [] Let user switch language
-
-- [] Add QRCode to printable version in place of photo
-
-- [] Make `<hr />` printable
-
-- [] Create CSS styling and adjust layout
 
 - [] Perfect the printable version
 

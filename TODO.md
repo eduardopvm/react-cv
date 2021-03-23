@@ -7,15 +7,17 @@
 
 - [] Use JSON data to fill all components
 
+- [] Create photo component and add to header
+
 - [] Add QRCode to printable version in place of photo
 
-- [] Create CSS styling and adjust layout
+- [] Create CSS styling and adjust layout for desktop
+
+- [] Create CSS styling and adjust layout for printing
 
 - [] Add button to print page using [react-to-print](https://www.npmjs.com/package/react-to-print)
 
 - [] Make `<hr />` printable
-
-- [] Create photo component and add to header
 
 - [] Create PT-BR and EN-US json files with CV data
 

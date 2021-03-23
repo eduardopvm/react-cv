@@ -25,16 +25,16 @@ export default function SkillComponent(props) {
       );
     } else {
       for (let i = 0; i < integer; i++) {
-        stars.push(<StarIcon fontSize="small" />);
+        stars.push(<StarIcon key={stars.length} fontSize="small" />);
       }
 
       if (remainder >= 0 && stars.length < 3) {
-        stars.push(<StarHalfIcon fontSize="small" />);
+        stars.push(<StarHalfIcon key={stars.length} fontSize="small" />);
       }
     }
 
     if (stars.length < 3) {
-      stars.push(<StarOutlineIcon fontSize="small" />);
+      stars.push(<StarOutlineIcon key={stars.length} fontSize="small" />);
     }
 
     return stars;

@@ -1,21 +1,20 @@
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Divider from "@material-ui/core/Divider";
 
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 import SkillComponent from "./SkillComponent";
+import React from "react";
 
 export default function Sidebar(props) {
   return (
-    <Grid item xs={3}>
+    <React.Fragment>
       <List>
         <Typography variant="h5">Social</Typography>
         <Divider component="li" variant="middle" />
@@ -81,9 +80,9 @@ export default function Sidebar(props) {
       </Box>
 
       <Box>
-      <Typography variant="h5">Certificates</Typography>
+        <Typography variant="h5">Certificates</Typography>
         <Divider variant="middle" />
       </Box>
-    </Grid>
+    </React.Fragment>
   );
 }

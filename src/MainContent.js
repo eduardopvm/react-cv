@@ -1,13 +1,13 @@
-import Grid from "@material-ui/core/Grid";
+import React from "react";
 
 import ProfissionalProfile from "./ProfissionalProfile";
 import WorkHistory from "./WorkHistory";
 
 export default function MainContent(props) {
   return (
-    <Grid item xs={9}>
+    <React.Fragment>
       <ProfissionalProfile profileText={props.data.profile} />
       <WorkHistory history={props.data.history} />
-    </Grid>
+    </React.Fragment>
   );
 }

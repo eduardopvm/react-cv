@@ -1,7 +1,8 @@
+import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 import Divider from "@material-ui/core/Divider";
 
 /* Icons */
@@ -32,7 +33,7 @@ export default function HeaderPanel(props) {
         <CardContent>
           <WebAssetOutlinedIcon display="inline" />
           <Typography display="inline">Website</Typography>
-          <Typography color="textSecondary">{props.contact.website}</Typography>
+          <Link href={props.contact.website} target="_blank" display="block">{props.contact.website}</Link>
         </CardContent>
 
         <CardContent>

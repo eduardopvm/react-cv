@@ -6,12 +6,8 @@
     "email": "eduardo.palma403@gmail.com",
     "website": "https://www.eduardopvm.com"
   },
-  "social": {
-    "github": "https://github.com/eduardopvm",
-    "linkedin": "https://www.linkedin.com/in/eduardo-pvm",
-    "facebook": ""
-  },
   "profile": "Lorem ipsum dolor sit amet",
+  "quote": "FUBAR",
   "technical_skills": [
     { "name": "Javascript ES6", "level": 3},
     { "name": "React", "level": 2.5},

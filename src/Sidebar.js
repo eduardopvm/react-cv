@@ -75,8 +75,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Languages</Typography>
         <Divider variant="middle" />
-        <Typography>Português</Typography>
-        <Typography>Inglês</Typography>
+        <SkillComponent skills={props.data.languague_skills} />
       </Box>
 
       <Box>

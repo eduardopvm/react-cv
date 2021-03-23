@@ -28,13 +28,15 @@ export default function SkillComponent(props) {
         stars.push(<StarIcon key={stars.length} fontSize="small" />);
       }
 
-      if (remainder >= 0 && stars.length < 3) {
+      if (remainder > 0 && stars.length < 3) {
         stars.push(<StarHalfIcon key={stars.length} fontSize="small" />);
       }
     }
 
     if (stars.length < 3) {
-      stars.push(<StarOutlineIcon key={stars.length} fontSize="small" />);
+      while (stars.length < 3) {
+        stars.push(<StarOutlineIcon key={stars.length} fontSize="small" />);
+      }
     }
 
     return stars;

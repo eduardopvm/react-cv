@@ -9,11 +9,11 @@ export default function Layout(props) {
   console.log("Props: ", props);
   return (
     <Grid container>
-      <Grid item xs="4">
+      <Grid item xs={4}>
         <Avatar></Avatar>
         <Sidebar data={props.data} />
       </Grid>
-      <Grid item xs="8">
+      <Grid item xs={8}>
         <Header data={props.data.contact} />
         <MainContent data={props.data} />
       </Grid>

@@ -28,7 +28,11 @@
     { "name": "Linux (Debian)", "level": 2.5}
   ],
   "general_skills": [],
-  "languague_skills": [],
+  "languague_skills": [
+    { "name": "Português", "level": 3},
+    { "name": "Inglês", "level": 3},
+    { "name": "Espanhol", "level": 1}
+  ],
   "certificates": [],
   "history": [
     {

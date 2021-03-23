@@ -12,6 +12,7 @@ import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 import SkillList from "./SkillList";
 import CertificateList from "./CertificateList";
+import GeneralSkillsList from "./GeneralSkillsList";
 
 export default function Sidebar(props) {
   return (
@@ -64,13 +65,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">General Skills</Typography>
         <Divider variant="middle" />
-
-        <List>
-          <ListItem>Lollygagging</ListItem>
-          <ListItem>Loitering</ListItem>
-          <ListItem>Littering</ListItem>
-          <ListItem>Lolling</ListItem>
-        </List>
+        <GeneralSkillsList skills={props.data.general_skills}/>
       </Box>
 
       <Box>

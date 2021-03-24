@@ -16,14 +16,6 @@ export default function HeaderPanel(props) {
     <Grid container item xs={12}>
       <Grid item xs={6}>
         <CardContent>
-          <PhoneAndroidOutlinedIcon display="inline" />
-          <Typography display="inline">Phone</Typography>
-          <Typography color="textSecondary">{props.contact.phone}</Typography>
-        </CardContent>
-      </Grid>
-
-      <Grid item xs={6}>
-        <CardContent>
           <EmailOutlinedIcon display="inline" />
           <Typography display="inline">Email</Typography>
           <Box displayPrint="none">
@@ -49,6 +41,14 @@ export default function HeaderPanel(props) {
           <Box display="none" displayPrint="block">
             <Typography color={"textSecondary"}>{props.contact.website}</Typography>
           </Box>
+        </CardContent>
+      </Grid>
+
+      <Grid item xs={6}>
+        <CardContent>
+          <PhoneAndroidOutlinedIcon display="inline" />
+          <Typography display="inline">Phone</Typography>
+          <Typography color="textSecondary">{props.contact.phone}</Typography>
         </CardContent>
       </Grid>
 

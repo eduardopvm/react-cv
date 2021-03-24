@@ -17,6 +17,8 @@
 
 - [] Add QRCode to printable version in place of photo with link to website
 
+- [] Refactor components to make them smaller
+
 - [] Create CSS styling and adjust layout for desktop with more swag
 
 - [] Make `<hr />` printable

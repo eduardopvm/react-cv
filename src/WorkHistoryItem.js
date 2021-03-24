@@ -26,7 +26,7 @@ export default function WorkHistoryItem(props) {
   });
 
   return (
-    <Box>
+    <Box m={2}>
       <Typography variant="h6">{props.history.role}</Typography>
       <Typography variant="body1" style={{ fontStyle: "oblique" }}>
         {props.history.company}

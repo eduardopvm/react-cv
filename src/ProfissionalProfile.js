@@ -1,13 +1,16 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
 
-export default function Personal(props) {
+export default function ProfissionalProfile(props) {
   return (
-    <React.Fragment>
+    <Box>
       <Typography variant="h5">Profile</Typography>
       <Divider />
-      <Typography variant="body1">{props.profileText}</Typography>
-    </React.Fragment>
+      <Typography variant="body1" component="div">
+        <Box m={2}>{props.profileText}</Box>
+      </Typography>
+    </Box>
   );
 }

@@ -20,7 +20,7 @@ export default function Sidebar(props) {
       <Box>
         <Typography variant="h5">Education</Typography>
         <Divider variant="middle" />
-        <Box>
+        <Box m={2}>
           <Typography>Bacharelado em Ciência da Computação</Typography>
           <Typography color="textSecondary">
             Universidade de Sorocaba - 2005-2009

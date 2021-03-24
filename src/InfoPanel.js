@@ -26,9 +26,14 @@ export default function HeaderPanel(props) {
         <CardContent>
           <EmailOutlinedIcon display="inline" />
           <Typography display="inline">Email</Typography>
-          <Link href={`mailto:${props.contact.email}`} display="block">
-            {props.contact.email}
-          </Link>
+          <Box displayPrint="none">
+            <Link href={`mailto:${props.contact.email}`} display="block">
+              {props.contact.email}
+            </Link>
+          </Box>
+          <Box display="none" displayPrint="block">
+            <Typography color={"textSecondary"}>{props.contact.email}</Typography>
+          </Box>
         </CardContent>
       </Grid>
 
@@ -36,9 +41,14 @@ export default function HeaderPanel(props) {
         <CardContent>
           <WebAssetOutlinedIcon display="inline" />
           <Typography display="inline">Website</Typography>
-          <Link href={props.contact.website} target="_blank" display="block">
-            {props.contact.website}
-          </Link>
+          <Box displayPrint="none">
+            <Link href={props.contact.website} target="_blank" display="block">
+              {props.contact.website}
+            </Link>
+          </Box>
+          <Box display="none" displayPrint="block">
+            <Typography color={"textSecondary"}>{props.contact.website}</Typography>
+          </Box>
         </CardContent>
       </Grid>
 

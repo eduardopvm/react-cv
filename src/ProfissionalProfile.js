@@ -7,7 +7,7 @@ export default function Personal(props) {
     <React.Fragment>
       <Typography variant="h5">Profile</Typography>
       <Divider />
-      <Typography>{props.profileText}</Typography>
+      <Typography variant="body1">{props.profileText}</Typography>
     </React.Fragment>
   );
 }

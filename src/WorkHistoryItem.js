@@ -18,28 +18,30 @@ export default function WorkHistoryItem(props) {
         <ListItemIcon>
           <FiberManualRecordIcon style={{ fontSize: 10 }} />
         </ListItemIcon>
-        <ListItemText>{text}</ListItemText>
+        <ListItemText>
+          <Typography variant="body2">{text}</Typography>
+        </ListItemText>
       </ListItem>
     );
   });
 
   return (
-    <Typography color="textPrimary" component="div">
-      <Box fontWeight="fontWeightMedium" fontSize="h6.fontSize">
-        {props.history.role}
-      </Box>
-      <Box fontStyle="oblique">{props.history.company}</Box>
-      <Box>
+    <Box>
+      <Typography variant="h6">{props.history.role}</Typography>
+      <Typography variant="body1" style={{ fontStyle: "oblique" }}>
+        {props.history.company}
+      </Typography>
+      <Typography variant="subtitle1">
         <CalendarTodayOutlinedIcon fontSize="small" />
         {props.history.job_start} - {props.history.job_end}
-      </Box>
-      <Box>
+      </Typography>
+      <Typography variant="subtitle1">
         <LocationOnOutlinedIcon fontSize="small" />
         {props.history.location}
-      </Box>
-      <Box fontWeight="fontWeightLight">{props.history.description}</Box>
+      </Typography>
+      <Typography variant="body2">{props.history.description}</Typography>
 
       <List>{highlights}</List>
-    </Typography>
+    </Box>
   );
 }

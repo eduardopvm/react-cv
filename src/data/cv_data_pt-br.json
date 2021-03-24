@@ -6,7 +6,7 @@
     "email": "eduardo.palma403@gmail.com",
     "website": "https://www.eduardopvm.com"
   },
-  "profile": "Lorem ipsum dolor sit amet",
+  "profile": "Fusce pulvinar at velit id vulputate. Integer libero est, rutrum eget eros sit amet, blandit porttitor eros. Ut nibh ex, ultricies at pretium a, venenatis scelerisque libero. Nullam consectetur metus in diam faucibus tempor. Integer venenatis faucibus odio ac scelerisque. Phasellus mauris lacus, eleifend id posuere vitae, ultrices ut diam. Mauris condimentum lorem ipsum, a volutpat orci bibendum non. Pellentesque consequat scelerisque nisi non lacinia. Sed finibus pharetra lobortis.",
   "quote": "FUBAR",
   "technical_skills": [
     { "name": "Javascript ES6", "level": 3},
@@ -45,11 +45,11 @@
       "location": "Itapetininga - SP, Brasil",
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
-      "description": "TODO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
       "highlights": [
-        "Blabla",
-        "Blublu",
-        "Bleble"
+        "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
+        "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
+        "Vestibulum lacinia facilisis ultricies. "
       ]
     },
     {

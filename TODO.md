@@ -9,24 +9,24 @@
 
 - [] Create photo component and add to header
 
-- [] Add QRCode to printable version in place of photo
-
-- [] Create CSS styling and adjust layout for desktop
-
-- [] Create CSS styling and adjust layout for printing
+- [] Make general spacing and typography adjustments for pleasant look
 
 - [] Add button to print page using [react-to-print](https://www.npmjs.com/package/react-to-print)
 
+- [] Create CSS styling and adjust layout for printing
+
+- [] Add QRCode to printable version in place of photo with link to website
+
+- [] Create CSS styling and adjust layout for desktop with more swag
+
 - [] Make `<hr />` printable
 
-- [] Create PT-BR and EN-US json files with CV data
+- [] Write full PT-BR resume json files
+
+- [] Write full EN-US resume json files
 
 - [] Add i18n support and translante labels
 
-- [] Let user switch language
+- [] Let user switch language with a button
 
-- [] Perfect the printable version
-
-- [] Create desktop version with more swag
-
-- [] Create mobile version
+- [] Create mobile version with drawer menu

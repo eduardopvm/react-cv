@@ -24,7 +24,7 @@ export default function HeaderPanel(props) {
             </Link>
           </Box>
           <Box display="none" displayPrint="block">
-            <Typography color={"textSecondary"}>{props.contact.email}</Typography>
+            <Typography color="textSecondary">{props.contact.email}</Typography>
           </Box>
         </CardContent>
       </Grid>
@@ -39,7 +39,7 @@ export default function HeaderPanel(props) {
             </Link>
           </Box>
           <Box display="none" displayPrint="block">
-            <Typography color={"textSecondary"}>{props.contact.website}</Typography>
+            <Typography color="textSecondary">{props.contact.website}</Typography>
           </Box>
         </CardContent>
       </Grid>
@@ -56,9 +56,7 @@ export default function HeaderPanel(props) {
         <CardContent>
           <LocationOnOutlinedIcon display="inline" />
           <Typography display="inline">Location</Typography>
-          <Typography color="textSecondary">
-            {props.contact.location}
-          </Typography>
+          <Typography color="textSecondary">{props.contact.location}</Typography>
         </CardContent>
       </Grid>
     </Grid>

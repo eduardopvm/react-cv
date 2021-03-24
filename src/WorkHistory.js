@@ -14,10 +14,10 @@ export default function WorkHistory(props) {
   });
 
   return (
-    <Grid item xs={9}>
+    <Box>
       <Typography variant="h5">Work History</Typography>
       <Divider />
       <Box>{workHistory}</Box>
-    </Grid>
+    </Box>
   );
 }

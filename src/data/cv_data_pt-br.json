@@ -41,8 +41,7 @@
     { "name": "Espanhol", "level": 1}
   ],
   "certificates": [
-    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"},
-    { "name": "School of Hard Knocks", "issuer": "Life"}
+    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
   ],
   "history": [
     {

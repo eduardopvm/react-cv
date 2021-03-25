@@ -13,28 +13,28 @@
 
 - [ ] Add Concepts and Methodology section (and maybe remove General Skills)
 
-- [] REWRITE THE MOTHERFUCKING CV ALREADY
+- [ ] REWRITE THE MOTHERFUCKING CV ALREADY
 
-- [] Add my photo to header
+- [ ] Add my photo to header
 
-- [] Make general spacing and typography adjustments for pleasant look
+- [ ] Make general spacing and typography adjustments for pleasant look
 
-- [] Add company url and make it clickable inside WorkHistory
+- [ ] Add company url and make it clickable inside WorkHistory
 
-- [] Create page breaks for printing layout
+- [ ] Create page breaks for printing layout
 
-- [] Add more swag to desktop version (more color, better icons, more interactivity)
+- [ ] Add more swag to desktop version (more color, better icons, more interactivity)
 
-- [] Make `<hr />` printable
+- [ ] Make `<hr />` printable
 
-- [] Add QRCode to printable version in place of photo with link to website
+- [ ] Add QRCode to printable version in place of photo with link to website
 
-- [] Write full PT-BR resume json files
+- [ ] Write full PT-BR resume json files
 
-- [] Write full EN-US resume json files
+- [ ] Write full EN-US resume json files
 
-- [] Add i18n support and translante labels
+- [ ] Add i18n support and translante labels
 
-- [] Let user switch language with a button
+- [ ] Let user switch language with a button
 
-- [] Create mobile version with drawer menu
+- [ ] Create mobile version with drawer menu

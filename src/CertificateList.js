@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -18,17 +19,24 @@ export default function CertificateList(props) {
             <ListItemText
               primary={cert.name}
               secondary={
-                <Typography display="inline" color="textSecondary">
-                  Emissor: {cert.issuer}
-                </Typography>
+                <Box>
+                  <Typography display="inline" color="textSecondary">
+                    Emissor: {cert.issuer}
+                  </Typography>
+                  <Box display="none" displayPrint="block">
+                    <Typography color="textSecondary">URL: {cert.url}</Typography>
+                  </Box>
+                </Box>
               }
             ></ListItemText>
           </Grid>
           <Grid item xs={3}>
             <ListItemSecondaryAction>
-              <IconButton href={cert.url} target="_blank">
-                <GoLinkExternal />
-              </IconButton>
+              <Box displayPrint="none">
+                <IconButton href={cert.url} target="_blank">
+                  <GoLinkExternal />
+                </IconButton>
+              </Box>
             </ListItemSecondaryAction>
           </Grid>
         </ListItem>

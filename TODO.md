@@ -21,9 +21,7 @@
 
 - [] Create page breaks for printing layout
 
-- [] Refactor components to make them smaller
-
-- [] Create CSS styling and adjust layout for desktop with more swag
+- [] Add more swag to desktop version (more color, better icons, more interactivity)
 
 - [] Make `<hr />` printable
 

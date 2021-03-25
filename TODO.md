@@ -11,28 +11,30 @@
 
 - [x] Create photo component and add to header
 
-- [] REWRITE THE MOTHERFUCKING CV ALREADY
+- [ ] Add Concepts and Methodology section (and maybe remove General Skills)
 
-- [] Add my photo to header
+- [ ] REWRITE THE MOTHERFUCKING CV ALREADY
 
-- [] Make general spacing and typography adjustments for pleasant look
+- [ ] Add my photo to header
 
-- [] Add company url and make it clickable inside WorkHistory
+- [ ] Make general spacing and typography adjustments for pleasant look
 
-- [] Create page breaks for printing layout
+- [ ] Add company url and make it clickable inside WorkHistory
 
-- [] Add more swag to desktop version (more color, better icons, more interactivity)
+- [ ] Create page breaks for printing layout
 
-- [] Make `<hr />` printable
+- [ ] Add more swag to desktop version (more color, better icons, more interactivity)
 
-- [] Add QRCode to printable version in place of photo with link to website
+- [ ] Make `<hr />` printable
 
-- [] Write full PT-BR resume json files
+- [ ] Add QRCode to printable version in place of photo with link to website
 
-- [] Write full EN-US resume json files
+- [ ] Write full PT-BR resume json files
 
-- [] Add i18n support and translante labels
+- [ ] Write full EN-US resume json files
 
-- [] Let user switch language with a button
+- [ ] Add i18n support and translante labels
 
-- [] Create mobile version with drawer menu
+- [ ] Let user switch language with a button
+
+- [ ] Create mobile version with drawer menu

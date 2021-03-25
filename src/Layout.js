@@ -36,7 +36,7 @@ export default function Layout(props) {
 
   return (
     <Container fixed>
-      <Paper>
+      <Paper elevation={3}>
         {/* Full page grid container */}
         <Grid container ref={componentRef}>
           <Grid container item xs={4}>

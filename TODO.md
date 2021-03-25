@@ -11,7 +11,7 @@
 
 - [x] Create photo component and add to header
 
-- [ ] Add Concepts and Methodology section (and maybe remove General Skills)
+- [x] Add Concepts and Methodology section (and maybe remove General Skills)
 
 - [ ] REWRITE THE MOTHERFUCKING CV ALREADY
 

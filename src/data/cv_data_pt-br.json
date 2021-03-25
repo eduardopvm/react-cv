@@ -21,16 +21,19 @@
     { "name": "Google Cloud", "level": 1.5},
     { "name": "Kubernetes", "level": 1},
     { "name": "Terraform", "level": 1},
+    { "name": "OAuth2", "level": 1.5},
     { "name": "Windows Server", "level": 1},
     { "name": "Linux (Debian based)", "level": 2.5}
   ],
   "general_skills": [
-    "RESTful API",
     "Continous Integration",
     "Continuous Delivery",
+    "JSON Web Token",
     "Responsive Design",
     "Cloud Computing",
-    "Containers"
+    "Containers",
+    "RESTful API",
+    "SOAP"
   ],
   "languague_skills": [
     { "name": "Português", "level": 3},

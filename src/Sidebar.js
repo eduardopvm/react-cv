@@ -42,7 +42,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">General Skills</Typography>
+          <Typography variant="h5">Concepts &amp; Methodology</Typography>
         </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.data.general_skills} />

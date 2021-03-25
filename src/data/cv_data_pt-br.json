@@ -20,15 +20,17 @@
     { "name": "Angular", "level": 2},
     { "name": "Google Cloud", "level": 1.5},
     { "name": "Kubernetes", "level": 1},
-    { "name": "Terraform", "level": 1}
+    { "name": "Terraform", "level": 1},
+    { "name": "Windows Server", "level": 1},
+    { "name": "Linux (Debian based)", "level": 2.5}
   ],
   "general_skills": [
     "RESTful API",
-    "CI/CD",
+    "Continous Integration",
+    "Continuous Delivery",
     "Responsive Design",
-    "Windows",
-    "macOS",
-    "Linux (Debian)"
+    "Cloud Computing",
+    "Containers"
   ],
   "languague_skills": [
     { "name": "Português", "level": 3},

@@ -34,28 +34,28 @@ export default function Layout(props) {
 
   return (
     <Container fixed>
-    <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir</Button>
-      <Paper elevation={3}>
-        {/* Full page grid container */}
-        <Grid container ref={componentRef}>
-          <Grid container item xs={4}>
-            <Grid container item justify="center" alignItems="center">
-              <Avatar alt="Foto do Perfil" className={classes.large}>
-                EPVM
-              </Avatar>
+      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir</Button>
+        <Paper elevation={3} component="main">
+          {/* Full page grid container */}
+          <Grid container ref={componentRef}>
+            <Grid container item xs={4}>
+              <Grid container item justify="center" alignItems="center">
+                <Avatar alt="Foto do Perfil" className={classes.large}>
+                  EPVM
+                </Avatar>
+              </Grid>
+            </Grid>
+            <Grid container item xs={8}>
+              <Header data={props.data.contact} />
+            </Grid>
+            <Grid item xs={4}>
+              <Sidebar data={props.data} />
+            </Grid>
+            <Grid item xs={8}>
+              <MainContent data={props.data} />
             </Grid>
           </Grid>
-          <Grid container item xs={8}>
-            <Header data={props.data.contact} />
-          </Grid>
-          <Grid item xs={4}>
-            <Sidebar data={props.data} />
-          </Grid>
-          <Grid item xs={8}>
-            <MainContent data={props.data} />
-          </Grid>
-        </Grid>
-      </Paper>
+        </Paper>
     </Container>
   );
 }

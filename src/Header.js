@@ -7,7 +7,12 @@ import InfoPanel from "./InfoPanel";
 export default function Header(props) {
   return (
     <Grid item xs={12}>
-      <Typography variant="h3">Eduardo Palma Vieira de Moraes</Typography>
+      <Box displayPrint="none">
+        <Typography variant="h3">Eduardo Palma Vieira de Moraes</Typography>
+      </Box>
+      <Box display="none" displayPrint="block">
+        <Typography variant="h4">Eduardo Palma Vieira de Moraes</Typography>
+      </Box>
       <Typography variant="h5" color="textSecondary">
         Full Stack Developer
       </Typography>

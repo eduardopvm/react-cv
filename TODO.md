@@ -25,7 +25,7 @@
 
 - [ ] Add more swag to desktop version (more color, better icons, more interactivity)
 
-- [ ] Make `<hr />` printable
+- [x] Make `<hr />` printable
 
 - [ ] Add QRCode to printable version in place of photo with link to website
 

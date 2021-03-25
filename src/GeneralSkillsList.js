@@ -6,7 +6,7 @@ export default function GeneralSkillsList(props) {
   return (
     <List>
       {props.skills.map((skill, index) => (
-        <Typography>
+        <Typography key={index}>
           <ListItem key={index}>{skill}</ListItem>
         </Typography>
       ))}

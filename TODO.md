@@ -11,9 +11,13 @@
 
 - [x] Create photo component and add to header
 
+- [] REWRITE THE MOTHERFUCKING CV ALREADY
+
 - [] Add my photo to header
 
 - [] Make general spacing and typography adjustments for pleasant look
+
+- [] Add company url and make it clickable inside WorkHistory
 
 - [] Create page breaks for printing layout
 

@@ -16,26 +16,31 @@ export default function CertificateList(props) {
       <Grid container key={cert.name}>
         <ListItem key={cert.name}>
           <Grid item xs={9}>
-            <ListItemText
-              primary={cert.name}
-              secondary={
-                <Box>
-                  <Typography display="inline" color="textSecondary">
-                    Emissor: {cert.issuer}
-                  </Typography>
-                  <Box display="none" displayPrint="block">
+            <ListItemText>
+              <Box>
+                <Typography>{cert.name}</Typography>
+                <Typography display="inline" color="textSecondary">
+                  Emissor: {cert.issuer}
+                </Typography>
+                <Box display="none" displayPrint="block">
+                  {cert.url != null &&
                     <Typography color="textSecondary">URL: {cert.url}</Typography>
-                  </Box>
+                  }
                 </Box>
-              }
-            ></ListItemText>
+              </Box>
+            </ListItemText>
           </Grid>
           <Grid item xs={3}>
             <ListItemSecondaryAction>
               <Box displayPrint="none">
-                <IconButton href={cert.url} target="_blank">
-                  <GoLinkExternal />
-                </IconButton>
+                {cert.url
+                  ? <IconButton href={cert.url} target="_blank">
+                      <GoLinkExternal />
+                    </IconButton>
+                  : <IconButton disabled>
+                      <GoLinkExternal />
+                    </IconButton>
+                }
               </Box>
             </ListItemSecondaryAction>
           </Grid>

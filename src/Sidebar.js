@@ -12,13 +12,17 @@ export default function Sidebar(props) {
   return (
     <React.Fragment>
       <Box>
-        <Typography variant="h5">Social</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">Social</Typography>
+        </Box>
         <Divider variant="middle" />
         <SocialList />
       </Box>
 
       <Box>
-        <Typography variant="h5">Education</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">Education</Typography>
+        </Box>
         <Divider variant="middle" />
         <Box m={2}>
           <Typography>Bacharelado em Ciência da Computação</Typography>
@@ -29,25 +33,33 @@ export default function Sidebar(props) {
       </Box>
 
       <Box>
-        <Typography variant="h5">Technical Skills</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">Technical Skills</Typography>
+        </Box>
         <Divider variant="middle" />
         <SkillList skills={props.data.technical_skills} />
       </Box>
 
       <Box>
-        <Typography variant="h5">General Skills</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">General Skills</Typography>
+        </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.data.general_skills} />
       </Box>
 
       <Box>
-        <Typography variant="h5">Languages</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">Languages</Typography>
+        </Box>
         <Divider variant="middle" />
         <SkillList skills={props.data.languague_skills} />
       </Box>
 
       <Box>
-        <Typography variant="h5">Certificates</Typography>
+        <Box ml={2}>
+          <Typography variant="h5">Certificates</Typography>
+        </Box>
         <Divider variant="middle" />
         <CertificateList certificates={props.data.certificates} />
       </Box>

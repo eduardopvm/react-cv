@@ -2,6 +2,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Avatar from "@material-ui/core/Avatar";
+import Button from "@material-ui/core/Button";
 import { useRef } from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import { useReactToPrint } from 'react-to-print';
@@ -11,12 +12,6 @@ import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    "& > *": {
-      margin: theme.spacing(1),
-    },
-  },
   small: {
     width: theme.spacing(7),
     height: theme.spacing(7),
@@ -25,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(20),
     height: theme.spacing(20),
   },
+  button: {
+    margin: "0.25rem"
+  }
 }));
 
 export default function Layout(props) {
@@ -36,6 +34,7 @@ export default function Layout(props) {
 
   return (
     <Container fixed>
+    <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir</Button>
       <Paper elevation={3}>
         {/* Full page grid container */}
         <Grid container ref={componentRef}>
@@ -57,7 +56,6 @@ export default function Layout(props) {
           </Grid>
         </Grid>
       </Paper>
-      <button onClick={handlePrint}>Print CV</button>
     </Container>
   );
 }

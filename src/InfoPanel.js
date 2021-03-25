@@ -15,7 +15,8 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 const useStyles = makeStyles({
   root: {
     top: 5,
-    position: "relative"
+    position: "relative",
+    marginRight: "0.25rem"
   },
 });
 

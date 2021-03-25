@@ -27,7 +27,7 @@ export default function SocialList(props) {
           </Link>
         </ListItemText>
       </ListItem>
-      <Divider variant="middle" />
+      <Divider variant="middle" component="li" />
       <ListItem>
         <FaLinkedin style={{ fontSize: 30 }} className={classes.root} />
         <ListItemText>
@@ -36,7 +36,7 @@ export default function SocialList(props) {
           </Link>
         </ListItemText>
       </ListItem>
-      <Divider variant="middle" />
+      <Divider variant="middle" component="li" />
       <ListItem>
         <FaFacebookSquare style={{ fontSize: 30 }} className={classes.root} />
         <ListItemText>
@@ -45,7 +45,7 @@ export default function SocialList(props) {
           </Link>
         </ListItemText>
       </ListItem>
-      <Divider variant="middle" />
+      <Divider variant="middle" component="li" />
     </List>
   );
 }

@@ -5,15 +5,24 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
+import { makeStyles } from "@material-ui/core/styles";
 
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import CalendarTodayOutlinedIcon from "@material-ui/icons/CalendarTodayOutlined";
 
+const useStyles = makeStyles({
+  root: {
+    top: 2,
+    position: "relative",
+    marginRight: "0.5rem"
+  },
+});
+
 export default function WorkHistoryItem(props) {
-  const highlights = [];
-  props.history.highlights.map((text, index) => {
-    highlights.push(
+  const classes = useStyles();
+  const highlights = props.history.highlights.map((text, index) => {
+    return (
       <ListItem key={index}>
         <ListItemIcon>
           <FiberManualRecordIcon style={{ fontSize: 10 }} />
@@ -32,11 +41,11 @@ export default function WorkHistoryItem(props) {
         {props.history.company}
       </Typography>
       <Typography variant="subtitle1">
-        <CalendarTodayOutlinedIcon fontSize="small" />
+        <CalendarTodayOutlinedIcon fontSize="small" className={classes.root} />
         {props.history.job_start} - {props.history.job_end}
       </Typography>
       <Typography variant="subtitle1">
-        <LocationOnOutlinedIcon fontSize="small" />
+        <LocationOnOutlinedIcon fontSize="small" className={classes.root} />
         {props.history.location}
       </Typography>
       <Typography variant="body2">{props.history.description}</Typography>

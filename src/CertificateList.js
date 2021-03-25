@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -11,21 +12,27 @@ import { GoLinkExternal } from "react-icons/go";
 export default function CertificateList(props) {
   const certList = props.certificates.map((cert) => {
     return (
-      <ListItem key={cert.name}>
-        <ListItemText
-          primary={cert.name}
-          secondary={
-            <Typography display="inline" color="textSecondary">
-              Emissor: {cert.issuer}
-            </Typography>
-          }
-        ></ListItemText>
-        <ListItemSecondaryAction>
-          <IconButton href={cert.url} target="_blank">
-            <GoLinkExternal />
-          </IconButton>
-        </ListItemSecondaryAction>
-      </ListItem>
+      <Grid container key={cert.name}>
+        <ListItem key={cert.name}>
+          <Grid item xs={9}>
+            <ListItemText
+              primary={cert.name}
+              secondary={
+                <Typography display="inline" color="textSecondary">
+                  Emissor: {cert.issuer}
+                </Typography>
+              }
+            ></ListItemText>
+          </Grid>
+          <Grid item xs={3}>
+            <ListItemSecondaryAction>
+              <IconButton href={cert.url} target="_blank">
+                <GoLinkExternal />
+              </IconButton>
+            </ListItemSecondaryAction>
+          </Grid>
+        </ListItem>
+      </Grid>
     );
   });
 

@@ -21,6 +21,8 @@
 
 - [ ] Add more color to layout (icons specially)
 
+- [ ] Make SkillList icons bigger on screen and smaller on print
+
 - [x] Add company url and make it clickable inside WorkHistory
 
 - [ ] Create page breaks for printing layout

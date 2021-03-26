@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(20),
   },
   button: {
-    margin: "0.25rem"
+    margin: "0.5rem"
   }
 }));
 
@@ -34,8 +34,9 @@ export default function Layout(props) {
 
   return (
     <Container fixed>
-      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir</Button>
-        <Paper elevation={3} component="main">
+      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir CV</Button>
+      <Button variant="contained" color="primary" className={classes.button}>Salvar como PDF</Button>
+        <Paper elevation={5} component="main">
           {/* Full page grid container */}
           <Grid container ref={componentRef}>
             <Grid container item xs={4}>

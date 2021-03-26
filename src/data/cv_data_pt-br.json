@@ -47,6 +47,7 @@
     {
       "role": "Analista de Sistemas",
       "company": "Moraes & Baldini",
+      "website": "https://www.moraesebaldini.com.br",
       "location": "Itapetininga - SP, Brasil",
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
@@ -60,6 +61,7 @@
     {
       "role": "Analista de Sistemas Sênior",
       "company": "GFT Brasil",
+      "website": "https://www.gft.com/br",
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
@@ -86,6 +88,7 @@
     {
       "role": "Analista de Sistemas Pleno",
       "company": "FIT - Instituto de Tecnologia",
+      "website": "https://www.fit-tecnologia.org.br",
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Março 2016",
       "job_end": "Dezembro 2018",
@@ -99,6 +102,7 @@
     {
       "role": "Software Engineer",
       "company": "BP Analytics",
+      "website": "https://www.crunchbase.com/organization/bp-analytics",
       "location": "Los Angeles - CA, EUA (Remoto)",
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",
@@ -112,6 +116,7 @@
     {
       "role": "Analista de Sistemas Jr. -> Pleno",
       "company": "FIT - Instituto de Tecnologia",
+      "website": "https://www.fit-tecnologia.org.br",
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Setembro 2011",
       "job_end": "Novembro 2013",
@@ -125,6 +130,7 @@
     {
       "role": "Programador Jr. -> Programador Sr.",
       "company": "GFT Brasil",
+      "website": "https://www.gft.com/br",
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Janeiro 2010",
       "job_end": "Setembro 2011",

@@ -29,11 +29,13 @@ export default function HeaderPanel(props) {
         <CardContent>
           <EmailOutlinedIcon display="inline" className={classes.root} />
           <Typography display="inline">Email</Typography>
+          {/* screen display */}
           <Box displayPrint="none">
             <Link href={`mailto:${props.contact.email}`} display="block">
               {props.contact.email}
             </Link>
           </Box>
+          {/* print display */}
           <Box display="none" displayPrint="block">
             <Typography color="textSecondary">{props.contact.email}</Typography>
           </Box>

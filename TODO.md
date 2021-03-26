@@ -19,11 +19,11 @@
 
 - [ ] Make general spacing and typography adjustments for pleasant look
 
-- [ ] Add company url and make it clickable inside WorkHistory
+- [ ] Add more color to layout (icons specially)
+
+- [x] Add company url and make it clickable inside WorkHistory
 
 - [ ] Create page breaks for printing layout
-
-- [ ] Add more swag to desktop version (more color, better icons, more interactivity)
 
 - [x] Make `<hr />` printable
 

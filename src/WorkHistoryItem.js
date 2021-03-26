@@ -57,15 +57,19 @@ export default function WorkHistoryItem(props) {
           <Typography component="div">{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
         </Box>
       </Typography>
-      <Typography variant="subtitle1">
+      <Typography component="div">
         <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
-        {props.history.job_start} - {props.history.job_end}
+        <Typography variant="body2" color="textSecondary" display="inline">
+          {props.history.job_start} - {props.history.job_end}
+        </Typography>
       </Typography>
-      <Typography variant="subtitle1">
+      <Typography component="div">
         <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
-        {props.history.location}
+        <Typography variant="body2" color="textSecondary" display="inline">
+          {props.history.location}
+        </Typography>
       </Typography>
-      <Typography variant="body2">{props.history.description}</Typography>
+      <Typography variant="body1">{props.history.description}</Typography>
 
       <List>{highlights}</List>
     </Box>

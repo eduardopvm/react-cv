@@ -7,6 +7,7 @@ import i18n from "i18next";
 import { useRef } from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import { useReactToPrint } from 'react-to-print';
+import { useTranslation } from 'react-i18next';
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
@@ -38,9 +39,11 @@ export default function Layout(props) {
     i18n.changeLanguage(lng);
   };
 
+  const [t, i18n] = useTranslation();
+
   return (
     <Container fixed>
-      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir CV</Button>
+      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>{t('printCV')}</Button>
       <Button onClick={() => changeLanguage('en')} variant="contained" color="primary" className={classes.button}>Mudar Lingua</Button>
       <Paper elevation={5} component="main">
         {/* Full page grid container */}

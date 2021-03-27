@@ -12,7 +12,8 @@ const translations = {
       "generalSkills": "Concepts & Methodologies",
       "languageSkills": "Languages",
       "certificates": "Certificates",
-      "workHistory": "Work History"
+      "workHistory": "Work History",
+      "printCV": "Print CV"
     }
   },
   pt: {
@@ -25,7 +26,8 @@ const translations = {
       "generalSkills": "Conceitos & Metodologias",
       "languageSkills": "Línguas",
       "certificates": "Certificados",
-      "workHistory": "Experiência Profissional"
+      "workHistory": "Experiência Profissional",
+      "printCV": "Imprimir CV"
     }
   }
 }

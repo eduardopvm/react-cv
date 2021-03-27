@@ -1,3 +1,7 @@
 hr {
   filter: invert(100%)
 }
+
+.skillStars > .MuiRating-decimal {
+  font-size: 1rem;
+}

@@ -9,21 +9,21 @@
   "profile": "Fusce pulvinar at velit id vulputate. Integer libero est, rutrum eget eros sit amet, blandit porttitor eros. Ut nibh ex, ultricies at pretium a, venenatis scelerisque libero. Nullam consectetur metus in diam faucibus tempor. Integer venenatis faucibus odio ac scelerisque. Phasellus mauris lacus, eleifend id posuere vitae, ultrices ut diam. Mauris condimentum lorem ipsum, a volutpat orci bibendum non. Pellentesque consequat scelerisque nisi non lacinia. Sed finibus pharetra lobortis.",
   "quote": "FUBAR",
   "technical_skills": [
-    { "name": "Javascript ES6", "level": 3},
-    { "name": "Java", "level": 3},
-    { "name": "Python", "level": 1.5},
-    { "name": "SQL", "level": 2},
-    { "name": "React", "level": 2.5},
-    { "name": "Node.js", "level": 1.5},
+    { "name": "Javascript ES6", "level": 4},
+    { "name": "Java", "level": 4.5},
+    { "name": "Python", "level": 2.5},
+    { "name": "SQL", "level": 3},
+    { "name": "React", "level": 3.5},
+    { "name": "Node.js", "level": 2},
     { "name": "Express", "level": 1},
     { "name": "MongoDB", "level": 0},
-    { "name": "Angular", "level": 2},
-    { "name": "Google Cloud", "level": 1.5},
-    { "name": "Kubernetes", "level": 1},
-    { "name": "Terraform", "level": 1},
-    { "name": "OAuth2", "level": 1.5},
-    { "name": "Windows Server", "level": 1},
-    { "name": "Linux (Debian based)", "level": 2.5}
+    { "name": "Angular", "level": 2.5},
+    { "name": "Google Cloud", "level": 2.5},
+    { "name": "Kubernetes", "level": 2},
+    { "name": "Terraform", "level": 1.5},
+    { "name": "OAuth2", "level": 2.5},
+    { "name": "Windows Server", "level": 1.5},
+    { "name": "Linux (Debian)", "level": 3.5}
   ],
   "general_skills": [
     "Continous Integration",
@@ -37,9 +37,9 @@
     "Scrum"
   ],
   "languague_skills": [
-    { "name": "Português", "level": 3},
-    { "name": "Inglês", "level": 3},
-    { "name": "Espanhol", "level": 1}
+    { "name": "Português", "level": 5},
+    { "name": "Inglês", "level": 5},
+    { "name": "Espanhol", "level": 2}
   ],
   "certificates": [
     { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}

@@ -1,53 +1,16 @@
-import React from "react";
+import Rating from '@material-ui/lab/Rating';
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 
-/* Icons */
-import StarIcon from "@material-ui/icons/Star";
-import StarHalfIcon from "@material-ui/icons/StarHalf";
-import StarOutlineIcon from "@material-ui/icons/StarOutline";
-
 export default function SkillList(props) {
-  const generateStars = (level) => {
-    const stars = [];
-    let integer = Math.trunc(level);
-    let remainder = level % 1;
-
-    if (level == 0) {
-      return (
-        <React.Fragment>
-          <StarOutlineIcon fontSize="small" />
-          <StarOutlineIcon fontSize="small" />
-          <StarOutlineIcon fontSize="small" />
-        </React.Fragment>
-      );
-    } else {
-      for (let i = 0; i < integer; i++) {
-        stars.push(<StarIcon key={stars.length} fontSize="small" />);
-      }
-
-      if (remainder > 0 && stars.length < 3) {
-        stars.push(<StarHalfIcon key={stars.length} fontSize="small" />);
-      }
-    }
-
-    if (stars.length < 3) {
-      while (stars.length < 3) {
-        stars.push(<StarOutlineIcon key={stars.length} fontSize="small" />);
-      }
-    }
-
-    return stars;
-  };
-
   const skillsList = props.skills.map((skill) => {
     return (
       <ListItem key={skill.name}>
         <ListItemText>{skill.name}</ListItemText>
         <ListItemSecondaryAction>
-          {generateStars(skill.level)}
+          <Rating name="read-only" value={skill.level} precision={0.5} readOnly className="skillStars" />
         </ListItemSecondaryAction>
       </ListItem>
     );

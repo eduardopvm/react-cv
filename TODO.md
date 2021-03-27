@@ -23,9 +23,11 @@
 
 - [x] Add i18n support and translante labels
 
-- [ ] Split data that is the same between languages into another JSON
+- [x] Split data that is the same between languages into another JSON
 
-- [ ] Create language component that has translatable labels
+- [x] Create language component that has translatable labels
+
+- [ ] Refactor components into smaller pieces and organize them in directories
 
 - [ ] Add my photo to header
 

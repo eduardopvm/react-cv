@@ -39,6 +39,8 @@
 
 - [ ] Create page breaks for printing layout
 
+- [ ] Add auto language detection to set the default on first load
+
 - [ ] Add QRCode to printable version in place of photo with link to website
 
 - [ ] Create theme to add more color to layout (icons specially)

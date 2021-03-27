@@ -4,7 +4,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 
-export default function SkillList(props) {
+export default function RatedSkillList(props) {
   const skillsList = props.skills.map((skill) => {
     return (
       <ListItem key={skill.name}>

@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
 
-import SkillList from "./SkillList";
+import RatedSkillList from "./RatedSkillList";
 import CertificateList from "./CertificateList";
 import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
@@ -37,7 +37,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">Tecnologias</Typography>
         </Box>
         <Divider variant="middle" />
-        <SkillList skills={props.data.technical_skills} />
+        <RatedSkillList skills={props.data.technical_skills} />
       </Box>
 
       <Box>
@@ -53,7 +53,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">Línguas</Typography>
         </Box>
         <Divider variant="middle" />
-        <SkillList skills={props.data.languague_skills} />
+        <RatedSkillList skills={props.data.languague_skills} />
       </Box>
 
       <Box>

@@ -13,23 +13,23 @@
 
 - [x] Add Concepts and Methodology section (and maybe remove General Skills)
 
-- [ ] REWRITE THE MOTHERFUCKING CV ALREADY
-
-- [ ] Add my photo to header
-
-- [ ] Make general spacing and typography adjustments for pleasant look
-
-- [ ] Add more color to layout (icons specially)
-
-- [ ] Make SkillList icons bigger on screen and smaller on print
-
 - [x] Add company url and make it clickable inside WorkHistory
-
-- [ ] Create page breaks for printing layout
 
 - [x] Make `<hr />` printable
 
+- [ ] Add my photo to header
+
+- [ ] REWRITE THE MOTHERFUCKING CV ALREADY
+
+- [ ] Make general spacing and typography adjustments for pleasant look
+
 - [ ] Add QRCode to printable version in place of photo with link to website
+
+- [ ] Add more color to layout (icons specially)
+
+- [ ] Make SkillList icons bigger (or different) on screen and smaller on print
+
+- [ ] Create page breaks for printing layout
 
 - [ ] Write full PT-BR resume json files
 
@@ -38,5 +38,9 @@
 - [ ] Add i18n support and translante labels
 
 - [ ] Let user switch language with a button
+
+- [ ] Prepare for production and deployment
+
+- [ ] Make it SEO friendly
 
 - [ ] Create mobile version with drawer menu

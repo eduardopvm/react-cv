@@ -1,1 +1,145 @@
-{}
+{
+  "contact": {
+    "location": "Itapetinga - SP, Brasil",
+    "address": "Coronel Fernando Prestes, 615",
+    "phone": "(15) 99700-3443",
+    "email": "eduardo.palma403@gmail.com",
+    "website": "https://www.eduardopvm.com"
+  },
+  "profile": "FUBAR",
+  "technical_skills": [
+    { "name": "Javascript ES6", "level": 4},
+    { "name": "Java", "level": 4.5},
+    { "name": "Python", "level": 2.5},
+    { "name": "SQL", "level": 3},
+    { "name": "React", "level": 3.5},
+    { "name": "Node.js", "level": 2},
+    { "name": "Express", "level": 1},
+    { "name": "MongoDB", "level": 0},
+    { "name": "Angular", "level": 2.5},
+    { "name": "Google Cloud", "level": 2.5},
+    { "name": "Kubernetes", "level": 2},
+    { "name": "Terraform", "level": 1.5},
+    { "name": "OAuth2", "level": 2.5},
+    { "name": "Windows Server", "level": 1.5},
+    { "name": "Linux (Debian)", "level": 3.5}
+  ],
+  "general_skills": [
+    "Continous Integration",
+    "Continuous Delivery",
+    "JSON Web Token",
+    "Responsive Design",
+    "Cloud Computing",
+    "Containers",
+    "RESTful API",
+    "SOAP",
+    "Scrum"
+  ],
+  "languague_skills": [
+    { "name": "Português", "level": 5},
+    { "name": "Inglês", "level": 5},
+    { "name": "Espanhol", "level": 2}
+  ],
+  "certificates": [
+    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
+  ],
+  "history": [
+    {
+      "role": "Analista de Sistemas",
+      "company": "Moraes & Baldini",
+      "website": "https://www.moraesebaldini.com.br",
+      "location": "Itapetininga - SP, Brasil",
+      "job_start": "Setembro 2020",
+      "job_end": "Março 2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
+      "highlights": [
+        "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
+        "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
+        "Vestibulum lacinia facilisis ultricies. "
+      ]
+    },
+    {
+      "role": "Analista de Sistemas Sênior",
+      "company": "GFT Brasil",
+      "website": "https://www.gft.com/br",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Junho 2019",
+      "job_end": "Junho 2020",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Desenvolvedor Freelance",
+      "company": "Freelancer",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Janeiro 2019",
+      "job_end": "Junho 2019",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Analista de Sistemas Pleno",
+      "company": "FIT - Instituto de Tecnologia",
+      "website": "https://www.fit-tecnologia.org.br",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Março 2016",
+      "job_end": "Dezembro 2018",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "BP Analytics",
+      "website": "https://www.crunchbase.com/organization/bp-analytics",
+      "location": "Los Angeles - CA, EUA (Remoto)",
+      "job_start": "Novembro 2013",
+      "job_end": "Outubro 2015",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Analista de Sistemas Jr. -> Pleno",
+      "company": "FIT - Instituto de Tecnologia",
+      "website": "https://www.fit-tecnologia.org.br",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Setembro 2011",
+      "job_end": "Novembro 2013",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    },
+    {
+      "role": "Programador Jr. -> Programador Sr.",
+      "company": "GFT Brasil",
+      "website": "https://www.gft.com/br",
+      "location": "Sorocaba - SP, Brasil",
+      "job_start": "Janeiro 2010",
+      "job_end": "Setembro 2011",
+      "description": "TODO",
+      "highlights": [
+        "Blabla",
+        "Blublu",
+        "Bleble"
+      ]
+    }
+  ]
+}

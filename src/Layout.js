@@ -40,6 +40,7 @@ export default function Layout(props) {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    props.handleLanguageChange(lng);
   };
 
   return (

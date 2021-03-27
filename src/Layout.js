@@ -11,6 +11,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 
+// TODO: refactor this
 const useStyles = makeStyles((theme) => ({
   small: {
     width: theme.spacing(7),
@@ -37,7 +38,7 @@ export default function Layout(props) {
       <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir CV</Button>
       <Paper elevation={5} component="main">
         {/* Full page grid container */}
-        <Grid container ref={componentRef}>
+        <Grid container ref={componentRef} style={{ paddingTop: "1rem"}}>
           <Grid container item xs={4}>
             <Grid container item justify="center" alignItems="center">
               <Avatar alt="Foto do Perfil" className={classes.large}>

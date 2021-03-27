@@ -19,25 +19,23 @@
 
 - [ ] Add my photo to header
 
-- [ ] REWRITE THE MOTHERFUCKING CV ALREADY
+- [ ] Write full PT-BR resume json files
+
+- [ ] Write full EN-US resume json files
+
+- [ ] Let user switch language with a button
+
+- [ ] Add i18n support and translante labels
 
 - [ ] Make general spacing and typography adjustments for pleasant look
 
 - [ ] Add QRCode to printable version in place of photo with link to website
 
-- [ ] Add more color to layout (icons specially)
+- [ ] Create theme to add more color to layout (icons specially)
 
-- [ ] Make SkillList icons bigger (or different) on screen and smaller on print
+- [ ] Make SkillList icons bigger (or different) on screen
 
 - [ ] Create page breaks for printing layout
-
-- [ ] Write full PT-BR resume json files
-
-- [ ] Write full EN-US resume json files
-
-- [ ] Add i18n support and translante labels
-
-- [ ] Let user switch language with a button
 
 - [ ] Prepare for production and deployment
 

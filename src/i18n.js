@@ -38,8 +38,6 @@ i18n
     resources: translations,
     lng: 'pt',
     fallbackLng: 'en',
-    debug: true,
-    initImmediate: false,
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

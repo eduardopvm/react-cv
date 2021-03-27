@@ -78,13 +78,13 @@ export default function Layout(props) {
             </Grid>
           </Grid>
           <Grid container item xs={8}>
-            <Header data={props.data.contact} />
+            <Header data={props.staticData.contact} />
           </Grid>
           <Grid item xs={4}>
-            <Sidebar data={props.data} />
+            <Sidebar staticData={props.staticData} translatedData={props.translatedData} />
           </Grid>
           <Grid item xs={8}>
-            <MainContent data={props.data} />
+            <MainContent data={props.translatedData} />
           </Grid>
         </Grid>
       </Paper>

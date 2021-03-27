@@ -40,7 +40,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">{t('technicalSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <RatedSkillList skills={props.data.technical_skills} />
+        <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
       <Box>
@@ -48,7 +48,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">{t('generalSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <GeneralSkillsList skills={props.data.general_skills} />
+        <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
       <Box>
@@ -56,7 +56,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">{t('languageSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <RatedSkillList skills={props.data.languague_skills} />
+        <RatedSkillList skills={props.translatedData.languague_skills} />
       </Box>
 
       <Box>
@@ -64,7 +64,7 @@ export default function Sidebar(props) {
           <Typography variant="h5">{t('certificates')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <CertificateList certificates={props.data.certificates} />
+        <CertificateList certificates={props.staticData.certificates} />
       </Box>
     </React.Fragment>
   );

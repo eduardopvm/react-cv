@@ -1,0 +1,40 @@
+{
+  "contact": {
+    "location": "Itapetinga - SP, Brasil",
+    "address": "Coronel Fernando Prestes, 615",
+    "phone": "(15) 99700-3443",
+    "email": "eduardo.palma403@gmail.com",
+    "website": "https://www.eduardopvm.com"
+  },
+  "technical_skills": [
+    { "name": "Javascript ES6", "level": 4},
+    { "name": "Java", "level": 4.5},
+    { "name": "Python", "level": 2.5},
+    { "name": "SQL", "level": 3},
+    { "name": "React", "level": 3.5},
+    { "name": "Node.js", "level": 2},
+    { "name": "Express", "level": 1},
+    { "name": "MongoDB", "level": 0},
+    { "name": "Angular", "level": 2.5},
+    { "name": "Google Cloud", "level": 2.5},
+    { "name": "Kubernetes", "level": 2},
+    { "name": "Terraform", "level": 1.5},
+    { "name": "OAuth2", "level": 2.5},
+    { "name": "Windows Server", "level": 1.5},
+    { "name": "Linux (Debian)", "level": 3.5}
+  ],
+  "general_skills": [
+    "Continous Integration",
+    "Continuous Delivery",
+    "JSON Web Token",
+    "Responsive Design",
+    "Cloud Computing",
+    "Containers",
+    "RESTful API",
+    "SOAP",
+    "Scrum"
+  ],
+  "certificates": [
+    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
+  ]
+}

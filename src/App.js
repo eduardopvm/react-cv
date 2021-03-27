@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Layout from "./Layout";
 import cvDataPT from "./data/cv_data_pt.json";
 import cvDataEN from "./data/cv_data_en.json";
+import cvDataStatic from "./data/cv_data_static.json";
 
 export default function App() {
   const [cvData, setData] = useState(cvDataPT);
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <Layout data={cvData} handleLanguageChange={handleDataChange}/>
+      <Layout translatedData={cvData} staticData={cvDataStatic} handleLanguageChange={handleDataChange}/>
     </React.Fragment>
   );
 }

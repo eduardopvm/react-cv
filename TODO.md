@@ -23,6 +23,10 @@
 
 - [x] Add i18n support and translante labels
 
+- [ ] Split data that is the same between languages into another JSON
+
+- [ ] Create language component that has translatable labels
+
 - [ ] Add my photo to header
 
 - [ ] Write full PT-BR resume json files

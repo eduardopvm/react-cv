@@ -1,48 +1,9 @@
 {
-  "contact": {
-    "location": "Itapetinga - SP, Brasil",
-    "address": "Coronel Fernando Prestes, 615",
-    "phone": "(15) 99700-3443",
-    "email": "eduardo.palma403@gmail.com",
-    "website": "https://www.eduardopvm.com"
-  },
   "profile": "Fusce pulvinar at velit id vulputate. Integer libero est, rutrum eget eros sit amet, blandit porttitor eros. Ut nibh ex, ultricies at pretium a, venenatis scelerisque libero. Nullam consectetur metus in diam faucibus tempor. Integer venenatis faucibus odio ac scelerisque. Phasellus mauris lacus, eleifend id posuere vitae, ultrices ut diam. Mauris condimentum lorem ipsum, a volutpat orci bibendum non. Pellentesque consequat scelerisque nisi non lacinia. Sed finibus pharetra lobortis.",
-  "quote": "FUBAR",
-  "technical_skills": [
-    { "name": "Javascript ES6", "level": 4},
-    { "name": "Java", "level": 4.5},
-    { "name": "Python", "level": 2.5},
-    { "name": "SQL", "level": 3},
-    { "name": "React", "level": 3.5},
-    { "name": "Node.js", "level": 2},
-    { "name": "Express", "level": 1},
-    { "name": "MongoDB", "level": 0},
-    { "name": "Angular", "level": 2.5},
-    { "name": "Google Cloud", "level": 2.5},
-    { "name": "Kubernetes", "level": 2},
-    { "name": "Terraform", "level": 1.5},
-    { "name": "OAuth2", "level": 2.5},
-    { "name": "Windows Server", "level": 1.5},
-    { "name": "Linux (Debian)", "level": 3.5}
-  ],
-  "general_skills": [
-    "Continous Integration",
-    "Continuous Delivery",
-    "JSON Web Token",
-    "Responsive Design",
-    "Cloud Computing",
-    "Containers",
-    "RESTful API",
-    "SOAP",
-    "Scrum"
-  ],
   "languague_skills": [
     { "name": "Português", "level": 5},
     { "name": "Inglês", "level": 5},
     { "name": "Espanhol", "level": 2}
-  ],
-  "certificates": [
-    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
   ],
   "history": [
     {

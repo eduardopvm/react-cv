@@ -14,7 +14,7 @@ export default function WorkHistory(props) {
 
   return (
     <Box>
-      <Typography variant="h5">Work History</Typography>
+      <Typography variant="h5">Experiência</Typography>
       <Divider />
       <Box>{workHistory}</Box>
     </Box>

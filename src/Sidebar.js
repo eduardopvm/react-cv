@@ -21,7 +21,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Education</Typography>
+          <Typography variant="h5">Educação</Typography>
         </Box>
         <Divider variant="middle" />
         <Box m={2}>
@@ -34,7 +34,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Technical Skills</Typography>
+          <Typography variant="h5">Tecnologias</Typography>
         </Box>
         <Divider variant="middle" />
         <SkillList skills={props.data.technical_skills} />
@@ -42,7 +42,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Concepts &amp; Methodology</Typography>
+          <Typography variant="h5">Conceitos &amp; Metodologias</Typography>
         </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.data.general_skills} />
@@ -50,7 +50,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Languages</Typography>
+          <Typography variant="h5">Línguas</Typography>
         </Box>
         <Divider variant="middle" />
         <SkillList skills={props.data.languague_skills} />
@@ -58,7 +58,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Certificates</Typography>
+          <Typography variant="h5">Certificados</Typography>
         </Box>
         <Divider variant="middle" />
         <CertificateList certificates={props.data.certificates} />

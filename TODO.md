@@ -17,25 +17,25 @@
 
 - [x] Make `<hr />` printable
 
+- [x] Make SkillList icons bigger (or different) on screen
+
+- [x] Let user switch language with a button
+
+- [x] Add i18n support and translante labels
+
 - [ ] Add my photo to header
 
 - [ ] Write full PT-BR resume json files
 
 - [ ] Write full EN-US resume json files
 
-- [ ] Let user switch language with a button
-
-- [ ] Add i18n support and translante labels
-
 - [ ] Make general spacing and typography adjustments for pleasant look
+
+- [ ] Create page breaks for printing layout
 
 - [ ] Add QRCode to printable version in place of photo with link to website
 
 - [ ] Create theme to add more color to layout (icons specially)
-
-- [ ] Make SkillList icons bigger (or different) on screen
-
-- [ ] Create page breaks for printing layout
 
 - [ ] Prepare for production and deployment
 

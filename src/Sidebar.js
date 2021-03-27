@@ -5,6 +5,7 @@ import Divider from "@material-ui/core/Divider";
 import { useTranslation } from 'react-i18next';
 
 import RatedSkillList from "./RatedSkillList";
+import LanguageSkillList from "./LanguageSkillList";
 import CertificateList from "./CertificateList";
 import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
@@ -45,18 +46,18 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('generalSkills')}</Typography>
+          <Typography variant="h5">{t('languageSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <GeneralSkillsList skills={props.staticData.general_skills} />
+        <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('languageSkills')}</Typography>
+          <Typography variant="h5">{t('generalSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
-        <RatedSkillList skills={props.translatedData.languague_skills} />
+        <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
       <Box>

@@ -1,10 +1,5 @@
 {
   "profile": "Fusce pulvinar at velit id vulputate. Integer libero est, rutrum eget eros sit amet, blandit porttitor eros. Ut nibh ex, ultricies at pretium a, venenatis scelerisque libero. Nullam consectetur metus in diam faucibus tempor. Integer venenatis faucibus odio ac scelerisque. Phasellus mauris lacus, eleifend id posuere vitae, ultrices ut diam. Mauris condimentum lorem ipsum, a volutpat orci bibendum non. Pellentesque consequat scelerisque nisi non lacinia. Sed finibus pharetra lobortis.",
-  "languague_skills": [
-    { "name": "Português", "level": 5},
-    { "name": "Inglês", "level": 5},
-    { "name": "Espanhol", "level": 2}
-  ],
   "history": [
     {
       "role": "Analista de Sistemas",

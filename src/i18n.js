@@ -13,7 +13,10 @@ const translations = {
       "languageSkills": "Languages",
       "certificates": "Certificates",
       "workHistory": "Work History",
-      "printCV": "Print CV"
+      "printCV": "Print CV",
+      "en": "English",
+      "pt": "Portuguese",
+      "es": "Spanish"
     }
   },
   pt: {
@@ -27,7 +30,10 @@ const translations = {
       "languageSkills": "Línguas",
       "certificates": "Certificados",
       "workHistory": "Experiência Profissional",
-      "printCV": "Imprimir CV"
+      "printCV": "Imprimir CV",
+      "en": "Inglês",
+      "pt": "Português",
+      "es": "Espanhol"
     }
   }
 }

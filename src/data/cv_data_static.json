@@ -23,6 +23,11 @@
     { "name": "Windows Server", "level": 1.5},
     { "name": "Linux (Debian)", "level": 3.5}
   ],
+  "languague_skills": [
+    { "name": "pt", "level": 5},
+    { "name": "en", "level": 5},
+    { "name": "es", "level": 2}
+  ],
   "general_skills": [
     "Continous Integration",
     "Continuous Delivery",

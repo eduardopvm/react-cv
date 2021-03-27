@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import MainContent from "./MainContent";
+import React from "react";
 
 // TODO: refactor this
 const useStyles = makeStyles((theme) => ({
@@ -35,16 +36,36 @@ export default function Layout(props) {
     content: () => componentRef.current,
   });
 
+  const [t, i18n] = useTranslation();
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
-  const [t, i18n] = useTranslation();
-
   return (
     <Container fixed>
-      <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>{t('printCV')}</Button>
-      <Button onClick={() => changeLanguage('en')} variant="contained" color="primary" className={classes.button}>Mudar Lingua</Button>
+      <Grid container>
+        <Grid item xs={6}>
+          <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>{t('printCV')}</Button>
+        </Grid>
+        <Grid container item xs={6} justify="flex-end">
+          {i18n.language == 'pt'
+            ? (
+              <React.Fragment>
+                <Button onClick={() => changeLanguage('pt')} disabled className={classes.button}>Português</Button>
+                <Button onClick={() => changeLanguage('en')} color="primary" className={classes.button}>English</Button>
+              </React.Fragment>
+            )
+            : (
+              <React.Fragment>
+                <Button onClick={() => changeLanguage('pt')} color="primary" className={classes.button}>Português</Button>
+                <Button onClick={() => changeLanguage('en')} disabled className={classes.button}>English</Button>
+              </React.Fragment>
+            )
+          }
+        </Grid>
+      </Grid>
+      
       <Paper elevation={5} component="main">
         {/* Full page grid container */}
         <Grid container ref={componentRef} style={{ paddingTop: "1rem"}}>

@@ -4,6 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from 'react-i18next';
 
 /* Icons */
 import PhoneAndroidOutlinedIcon from "@material-ui/icons/PhoneAndroidOutlined";
@@ -21,6 +22,7 @@ const useStyles = makeStyles({
 
 export default function HeaderPanel(props) {
   const classes = useStyles();
+  const [t, i18n] = useTranslation();
 
   return (
     <Grid container item xs={12}>
@@ -63,7 +65,7 @@ export default function HeaderPanel(props) {
       <Grid item xs={6}>
         <CardContent>
           <PhoneAndroidOutlinedIcon display="inline" className={classes.root} />
-          <Typography display="inline">Phone</Typography>
+          <Typography display="inline">{t('phone')}</Typography>
           <Typography color="textSecondary">{props.contact.phone}</Typography>
         </CardContent>
       </Grid>
@@ -71,7 +73,7 @@ export default function HeaderPanel(props) {
       <Grid item xs={6}>
         <CardContent>
           <LocationOnOutlinedIcon display="inline" className={classes.root} />
-          <Typography display="inline">Location</Typography>
+          <Typography display="inline">{t('location')}</Typography>
           <Typography color="textSecondary">
             {props.contact.location}
           </Typography>

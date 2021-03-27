@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
+import i18n from "i18next";
 import { useRef } from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import { useReactToPrint } from 'react-to-print';
@@ -33,9 +34,14 @@ export default function Layout(props) {
     content: () => componentRef.current,
   });
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Container fixed>
       <Button onClick={handlePrint} variant="contained" color="primary" className={classes.button}>Imprimir CV</Button>
+      <Button onClick={() => changeLanguage('en')} variant="contained" color="primary" className={classes.button}>Mudar Lingua</Button>
       <Paper elevation={5} component="main">
         {/* Full page grid container */}
         <Grid container ref={componentRef} style={{ paddingTop: "1rem"}}>

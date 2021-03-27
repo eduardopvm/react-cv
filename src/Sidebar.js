@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
+import { useTranslation } from 'react-i18next';
 
 import RatedSkillList from "./RatedSkillList";
 import CertificateList from "./CertificateList";
@@ -9,6 +10,8 @@ import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
 
 export default function Sidebar(props) {
+  const [t, i18n] = useTranslation();
+
   return (
     <React.Fragment>
       <Box>
@@ -21,7 +24,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Educação</Typography>
+          <Typography variant="h5">{t('education')}</Typography>
         </Box>
         <Divider variant="middle" />
         <Box m={2}>
@@ -34,7 +37,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Tecnologias</Typography>
+          <Typography variant="h5">{t('technicalSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
         <RatedSkillList skills={props.data.technical_skills} />
@@ -42,7 +45,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Conceitos &amp; Metodologias</Typography>
+          <Typography variant="h5">{t('generalSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.data.general_skills} />
@@ -50,7 +53,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Línguas</Typography>
+          <Typography variant="h5">{t('languageSkills')}</Typography>
         </Box>
         <Divider variant="middle" />
         <RatedSkillList skills={props.data.languague_skills} />
@@ -58,7 +61,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Certificados</Typography>
+          <Typography variant="h5">{t('certificates')}</Typography>
         </Box>
         <Divider variant="middle" />
         <CertificateList certificates={props.data.certificates} />

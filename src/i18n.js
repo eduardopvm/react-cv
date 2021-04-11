@@ -14,6 +14,7 @@ const translations = {
       "certificates": "Certificates",
       "workHistory": "Work History",
       "printCV": "Print CV",
+      "exportToPDF": "Export to PDF",
       "en": "English",
       "pt": "Portuguese",
       "es": "Spanish"
@@ -31,6 +32,7 @@ const translations = {
       "certificates": "Certificados",
       "workHistory": "Experiência Profissional",
       "printCV": "Imprimir CV",
+      "exportToPDF": "Salvar como PDF",
       "en": "Inglês",
       "pt": "Português",
       "es": "Espanhol"

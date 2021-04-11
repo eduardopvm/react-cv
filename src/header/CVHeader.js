@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 
 import InfoPanel from "./InfoPanel";
 
-export default function Header(props) {
+export default function CVHeader(props) {
   return (
     <Grid item xs={12}>
       <Box displayPrint="none">

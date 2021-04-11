@@ -27,7 +27,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": ["Java", "Node.js", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",

@@ -34,6 +34,7 @@ export default function Layout(props) {
   };
 
   return (
+    // TODO: separate this top section into it's own component
     <Container fixed>
       <Grid container>
         <Grid item xs={6}>

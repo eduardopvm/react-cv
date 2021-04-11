@@ -27,9 +27,9 @@
 
 - [x] Create language component that has translatable labels
 
-- [ ] Refactor components into smaller pieces and organize them in directories
+- [x] Add my photo to header
 
-- [ ] Add my photo to header
+- [ ] Refactor components into smaller pieces and organize them in directories
 
 - [ ] Write full PT-BR resume json files
 
@@ -45,7 +45,7 @@
 
 - [ ] Create theme to add more color to layout (icons specially)
 
-- [ ] Prepare for production and deployment
+- [ ] Prepare for production and deployment (and optimize static files and images)
 
 - [ ] Make it SEO friendly
 

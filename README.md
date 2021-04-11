@@ -1,2 +1,2 @@
 # react-cv
-A static web CV that is printable and reactive built with React + React Materials
+A single page reactive CV that is printable and exportable to PDF. Built with React + React Materials.

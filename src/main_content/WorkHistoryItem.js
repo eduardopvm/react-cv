@@ -20,6 +20,10 @@ const useStyles = makeStyles({
   listIcon: {
     minWidth: "1rem !important",
   },
+  summary: {
+    position: "relative",
+    marginTop: "0.5rem"
+  }
 });
 
 export default function WorkHistoryItem(props) {
@@ -69,7 +73,7 @@ export default function WorkHistoryItem(props) {
           {props.history.location}
         </Typography>
       </Typography>
-      <Typography variant="body1">{props.history.description}</Typography>
+      <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
 
       <List>{highlights}</List>
     </Box>

@@ -23,6 +23,11 @@ const useStyles = makeStyles({
   summary: {
     position: "relative",
     marginTop: "0.5rem"
+  },
+  label: {
+    position: "relative",
+    marginTop: "0.5rem",
+    fontWeight: 500
   }
 });
 
@@ -61,19 +66,24 @@ export default function WorkHistoryItem(props) {
           <Typography component="div">{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
         </Box>
       </Typography>
+      {/* Job date */}
       <Typography component="div">
         <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
         <Typography variant="body2" color="textSecondary" display="inline">
           {props.history.job_start} - {props.history.job_end}
         </Typography>
       </Typography>
+      {/* Job Location */}
       <Typography component="div">
         <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
         <Typography variant="body2" color="textSecondary" display="inline">
           {props.history.location}
         </Typography>
       </Typography>
+      {/* Job summary */}
+      <Typography variant="body1" className={classes.label} display="block">Job Summary:</Typography>
       <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+      <Typography variant="body1" className={classes.label} display="block">Job Highlights:</Typography>
 
       <List>{highlights}</List>
     </Box>

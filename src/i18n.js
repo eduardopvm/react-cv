@@ -19,6 +19,8 @@ const translations = {
       "brazil": "Brazil",
       "printCV": "Print CV",
       "exportToPDF": "Export to PDF",
+      "footerDescription": "Created by Eduardo Palma Vieira de Moraes with React + Material-UI.",
+      "footerSource": "The code is open source and can be found on ",
       "en": "English",
       "pt": "Portuguese",
       "es": "Spanish"
@@ -41,6 +43,8 @@ const translations = {
       "brazil": "Brasil",
       "printCV": "Imprimir CV",
       "exportToPDF": "Salvar como PDF",
+      "footerDescription": "Criado por Eduardo Palma Vieira de Moraes com React + Material-UI.",
+      "footerSource": "O código fonte é aberto e pode ser encontrado no ",
       "en": "Inglês",
       "pt": "Português",
       "es": "Espanhol"

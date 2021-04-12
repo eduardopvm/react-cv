@@ -1,7 +1,9 @@
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
 import { useRef } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useReactToPrint } from "react-to-print";
@@ -107,9 +109,15 @@ export default function Layout(props) {
       </Paper>
 
       <Grid container justify="center" className={classes.footer}>
-        <Typography variant="caption">
-          Criado por Eduardo Palma Vieira de Moraes.
-        </Typography>
+        <Box>
+          <Typography variant="caption" color="textSecondary" align="center" component="div">
+            {t("footerDescription")}
+          </Typography>
+          <Typography variant="caption" color="textSecondary" align="center" component="div">
+            {t("footerSource")}
+            <Link href={props.staticData.source_url} target="_blank">GitHub</Link>
+          </Typography>
+        </Box>
       </Grid>
     </Container>
   );

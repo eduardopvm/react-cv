@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 import RatedSkillList from "./RatedSkillList";
 import LanguageSkillList from "./LanguageSkillList";
@@ -25,20 +25,21 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('education')}</Typography>
+          <Typography variant="h5">{t("education")}</Typography>
         </Box>
         <Divider variant="middle" />
         <Box m={2}>
           <Typography>Bacharelado em Ciência da Computação</Typography>
           <Typography color="textSecondary">
-            Universidade de Sorocaba - 2005-2009
+            Universidade de Sorocaba - 2005 &ndash; 2009
           </Typography>
+          <Typography color="textSecondary">Sorocaba, SP - {t("brazil")}</Typography>
         </Box>
       </Box>
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('technicalSkills')}</Typography>
+          <Typography variant="h5">{t("technicalSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <RatedSkillList skills={props.staticData.technical_skills} />
@@ -46,7 +47,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('languageSkills')}</Typography>
+          <Typography variant="h5">{t("languageSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <LanguageSkillList skills={props.staticData.languague_skills} />
@@ -54,7 +55,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('generalSkills')}</Typography>
+          <Typography variant="h5">{t("generalSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.staticData.general_skills} />
@@ -62,7 +63,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t('certificates')}</Typography>
+          <Typography variant="h5">{t("certificates")}</Typography>
         </Box>
         <Divider variant="middle" />
         <CertificateList certificates={props.staticData.certificates} />

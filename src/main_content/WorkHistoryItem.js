@@ -73,7 +73,7 @@ export default function WorkHistoryItem(props) {
       <Typography component="div">
         <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
         <Typography variant="body2" color="textSecondary" display="inline">
-          {props.history.job_start} - {props.history.job_end}
+          {props.history.job_start} &ndash; {props.history.job_end}
         </Typography>
       </Typography>
       {/* Job Location */}

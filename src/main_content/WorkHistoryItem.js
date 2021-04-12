@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   label: {
     position: "relative",
     marginTop: "0.5rem",
-    fontWeight: 500
+    fontStyle: "oblique"
   }
 });
 
@@ -100,7 +100,7 @@ export default function WorkHistoryItem(props) {
       
       {/* Main Technologies */}
       <Typography variant="body1" className={classes.label} display="block">{t('workTechnologies')}:</Typography>
-      <Typography variant="body2">{technologies}</Typography>
+      <Typography variant="body2" paragraph>{technologies}</Typography>
     </Box>
   );
 }

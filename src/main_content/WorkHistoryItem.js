@@ -99,7 +99,7 @@ export default function WorkHistoryItem(props) {
       <Typography variant="body1" className={classes.label} display="block">{t('workSummary')}:</Typography>
 
       {/* Other Activities */}
-      <List>{highlights}</List>
+      <List dense>{highlights}</List>
       
       {/* Main Technologies */}
       <Typography variant="body1" className={classes.label} display="block">{t('workTechnologies')}:</Typography>

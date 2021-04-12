@@ -25,13 +25,13 @@
       "job_end": "Junho 2020",
       "description": "O principal projeto em que trabalhei como desenvolvedor foi um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura modelo para projetos futuros. Este aprovisionamento era feito usando Terraform e Shell scripts que rodavam no GitLab em um formato de CI/CD. Os scripts de Terraform criavam todas as máquinas virtuais, clusters, endereços de ip, firewalls, e instâncias de Kubernetes necessárias para o projeto. Dentro deste projeto também foi desenvolvida uma aplicação Node.js/Angular de simulação de uma Cervejaria como exemplo para utilizar esta arquitetura. Esta aplicação permitia que o usuário arrastasse máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras e fermentadores) dentro de um editor e então executar uma simulação e então verificar os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas auto-motivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
       "activities": [
-        "Ajudei na configuração do ambiente do Google Cloud",
-        "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts de CI/CD do GitLab",
+        "Ajudei na configuração inicial do ambiente do Google Cloud e desenvolvi e publiquei as imagens dos containers no Google Container Registry",
+        "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts do pipeline CI/CD do GitLab",
         "Implementei a autenticação das APIs Node.js dentro do Google Cloud usando OAuth2 com JWT",
         "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsch Bank dentro do TeamCity e UrbanCode",
-        "Fiz manutenção de uma enorme aplicação Java legada usada para guardar dados e documentos do banco italiano UBI Banca"
+        "Fiz manutenção de uma enorme aplicação Java legada que utilizava Documentum e OpenText para guardar e recuperar dados e documentos do banco italiano UBI Banca"
       ],
-      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
+      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Shell Script", "Terraform", "Docker", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",

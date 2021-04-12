@@ -12,11 +12,15 @@ import CVAvatar from "./header/CVAvatar";
 import Sidebar from "./sidebar/Sidebar";
 import MainContent from "./main_content/MainContent";
 import React from "react";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: "0.5rem",
   },
+  footer: {
+    margin: "1rem"
+  }
 }));
 
 export default function Layout(props) {
@@ -101,6 +105,12 @@ export default function Layout(props) {
           </Grid>
         </Grid>
       </Paper>
+
+      <Grid container justify="center" className={classes.footer}>
+        <Typography variant="caption">
+          Criado por Eduardo Palma Vieira de Moraes.
+        </Typography>
+      </Grid>
     </Container>
   );
 }

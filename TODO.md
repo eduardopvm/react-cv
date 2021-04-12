@@ -35,6 +35,8 @@
 
 - [ ] Write full EN-US resume json files
 
+- [ ] Refactor and remove Layout component
+
 - [ ] Make general spacing and typography adjustments for pleasant look
 
 - [ ] Add stacks section?

@@ -36,7 +36,7 @@ export default function WorkHistoryItem(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
 
-  const highlights = props.history.highlights.map((text, index) => {
+  const highlights = props.history.activities.map((text, index) => {
     return (
       <ListItem key={index}>
         <ListItemIcon className={classes.listIcon}>
@@ -49,6 +49,10 @@ export default function WorkHistoryItem(props) {
         </ListItemText>
       </ListItem>
     );
+  });
+
+  const technologies = props.history.technologies.map((text, index) => {
+    return index < props.history.technologies.length - 1 ? text + ", " : text;
   });
 
   return (
@@ -69,6 +73,7 @@ export default function WorkHistoryItem(props) {
           <Typography component="div">{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
         </Box>
       </Typography>
+
       {/* Job date */}
       <Typography component="div">
         <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
@@ -76,6 +81,7 @@ export default function WorkHistoryItem(props) {
           {props.history.job_start} &ndash; {props.history.job_end}
         </Typography>
       </Typography>
+
       {/* Job Location */}
       <Typography component="div">
         <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
@@ -83,12 +89,18 @@ export default function WorkHistoryItem(props) {
           {props.history.location}
         </Typography>
       </Typography>
-      {/* Job summary */}
+
+      {/* Job Highlights */}
       <Typography variant="body1" className={classes.label} display="block">{t('workHighlights')}:</Typography>
       <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
       <Typography variant="body1" className={classes.label} display="block">{t('workSummary')}:</Typography>
 
+      {/* Other Activities */}
       <List>{highlights}</List>
+      
+      {/* Main Technologies */}
+      <Typography variant="body1" className={classes.label} display="block">{t('workTechnologies')}:</Typography>
+      <Typography variant="body2">{technologies}</Typography>
     </Box>
   );
 }

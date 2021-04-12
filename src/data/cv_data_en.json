@@ -9,7 +9,7 @@
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
-      "highlights": [
+      "activities": [
         "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
         "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
         "Vestibulum lacinia facilisis ultricies. "
@@ -23,12 +23,12 @@
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"
       ],
-      "technologies": ["Java", "Node.js", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
+      "technologies": ["Java", "Node.js", "Angular 7+", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",
@@ -37,7 +37,7 @@
       "job_start": "Janeiro 2019",
       "job_end": "Junho 2019",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"
@@ -51,7 +51,7 @@
       "job_start": "Março 2016",
       "job_end": "Dezembro 2018",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"
@@ -65,7 +65,7 @@
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"
@@ -79,7 +79,7 @@
       "job_start": "Setembro 2011",
       "job_end": "Novembro 2013",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"
@@ -93,7 +93,7 @@
       "job_start": "Janeiro 2010",
       "job_end": "Setembro 2011",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "FUBAR",
         "FUBAR",
         "FUBAR"

@@ -9,11 +9,12 @@
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
-      "highlights": [
+      "activities": [
         "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
         "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
         "Vestibulum lacinia facilisis ultricies. "
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Sênior",
@@ -23,14 +24,14 @@
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
       "description": "O principal projeto em que trabalhei como desenvolvedor foi um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura modelo para projetos futuros. Este aprovisionamento era feito usando Terraform e Shell scripts que rodavam no GitLab em um formato de CI/CD. Os scripts de Terraform criavam todas as máquinas virtuais, clusters, endereços de ip, firewalls, e instâncias de Kubernetes necessárias para o projeto. Dentro deste projeto também foi desenvolvida uma aplicação Node.js/Angular de simulação de uma Cervejaria como exemplo para utilizar esta arquitetura. Esta aplicação permitia que o usuário arrastasse máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras e fermentadores) dentro de um editor e então executar uma simulação e então verificar os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas auto-motivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
-      "highlights": [
+      "activities": [
         "Ajudei na configuração do ambiente do Google Cloud",
         "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts de CI/CD do GitLab",
         "Implementei a autenticação das APIs Node.js dentro do Google Cloud usando OAuth2 com JWT",
         "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsch Bank dentro do TeamCity e UrbanCode",
         "Fiz manutenção de uma enorme aplicação Java legada usada para guardar dados e documentos do banco italiano UBI Banca"
       ],
-      "technologies": ["Java", "Node.js", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
+      "technologies": ["Java", "Node.js", "Angular 7+", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",
@@ -39,11 +40,12 @@
       "job_start": "Janeiro 2019",
       "job_end": "Junho 2019",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Pleno",
@@ -53,11 +55,12 @@
       "job_start": "Março 2016",
       "job_end": "Dezembro 2018",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Software Engineer",
@@ -67,11 +70,12 @@
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Jr. -> Pleno",
@@ -81,11 +85,12 @@
       "job_start": "Setembro 2011",
       "job_end": "Novembro 2013",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Programador Jr. -> Programador Sr.",
@@ -95,11 +100,12 @@
       "job_start": "Janeiro 2010",
       "job_end": "Setembro 2011",
       "description": "TODO",
-      "highlights": [
+      "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
-      ]
+      ],
+      "technologies": []
     }
   ]
 }

@@ -18,11 +18,13 @@ Mobile version: 20%
 
 ## Guide
 
-To run this application you need to have Node and npm installed. Then navigate to the root directory and run this command to download all dependencies:
+To run this application you need to have Node and npm installed. Then navigate to the root directory of the project on the terminal and run this command to download all dependencies:
 
-> npm install
-
+```console
+$ npm install
+```
 Then to execute it:
 
-> npm start
-
+```console
+$ npm start
+```

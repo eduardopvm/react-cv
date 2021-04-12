@@ -13,7 +13,8 @@
         "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
         "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
         "Vestibulum lacinia facilisis ultricies. "
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Sênior",
@@ -41,7 +42,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Pleno",
@@ -55,7 +57,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Software Engineer",
@@ -69,7 +72,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Analista de Sistemas Jr. -> Pleno",
@@ -83,7 +87,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": []
     },
     {
       "role": "Programador Jr. -> Programador Sr.",
@@ -97,7 +102,8 @@
         "FUBAR",
         "FUBAR",
         "FUBAR"
-      ]
+      ],
+      "technologies": []
     }
   ]
 }

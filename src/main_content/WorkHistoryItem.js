@@ -57,7 +57,10 @@ export default function WorkHistoryItem(props) {
 
   return (
     <Box m={2}>
+      {/* Job Role */}
       <Typography variant="h6">{props.history.role}</Typography>
+      
+      {/* Job Company */}
       <Typography variant="body1" component="div" style={{ fontStyle: "oblique" }}>
         {/* screen link */}
         <Box displayPrint="none">

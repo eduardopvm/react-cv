@@ -36,7 +36,7 @@ const translations = {
       "workHistory": "Experiência Profissional",
       "workHighlights": "Destaques",
       "workSummary": "Resumo",
-      "brazil": "Brazil",
+      "brazil": "Brasil",
       "printCV": "Imprimir CV",
       "exportToPDF": "Salvar como PDF",
       "en": "Inglês",

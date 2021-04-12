@@ -58,7 +58,7 @@ export default function WorkHistoryItem(props) {
   });
 
   return (
-    <Box mt={2} mb={3}>
+    <Box mt={2} mb={3} mx={2}>
       {/* Job Role */}
       <Typography variant="h5">{props.history.role}</Typography>
       

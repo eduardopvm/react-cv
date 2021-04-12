@@ -22,13 +22,15 @@ const useStyles = makeStyles({
     minWidth: "1rem !important",
   },
   summary: {
-    position: "relative",
     marginTop: "0.5rem"
   },
-  label: {
-    position: "relative",
+  details: {
+    fontWeight: 500
+  },
+  subsection: {
     marginTop: "0.5rem",
-    fontStyle: "oblique"
+    fontStyle: "oblique",
+    fontWeight: 500
   }
 });
 
@@ -80,7 +82,7 @@ export default function WorkHistoryItem(props) {
       {/* Job date */}
       <Typography component="div">
         <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
-        <Typography variant="body2" color="textSecondary" display="inline">
+        <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
           {props.history.job_start} &ndash; {props.history.job_end}
         </Typography>
       </Typography>
@@ -88,22 +90,22 @@ export default function WorkHistoryItem(props) {
       {/* Job Location */}
       <Typography component="div">
         <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
-        <Typography variant="body2" color="textSecondary" display="inline">
+        <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
           {props.history.location}
         </Typography>
       </Typography>
 
       {/* Job Highlights */}
-      <Typography variant="body1" className={classes.label} display="block">{t('workHighlights')}:</Typography>
+      <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
       <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
-      <Typography variant="body1" className={classes.label} display="block">{t('workSummary')}:</Typography>
+      <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
 
       {/* Other Activities */}
       <List dense>{highlights}</List>
       
       {/* Main Technologies */}
-      <Typography variant="body1" className={classes.label} display="block">{t('workTechnologies')}:</Typography>
-      <Typography variant="body2" color="textSecondary">{technologies}</Typography>
+      <Typography variant="body1" className={classes.subsection} display="block">{t('workTechnologies')}:</Typography>
+      <Typography variant="body2">{technologies}</Typography>
     </Box>
   );
 }

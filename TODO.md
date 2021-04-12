@@ -37,9 +37,11 @@
 
 - [ ] Make general spacing and typography adjustments for pleasant look
 
+- [ ] Add stacks section?
+
 - [ ] Create page breaks for printing layout
 
-- [ ] Add button to export page to PDF with full styling
+- [ ] Add button to export page to PDF with full styling (may require a backend sadly)
 
 - [ ] Add auto language detection to set the default on first load
 

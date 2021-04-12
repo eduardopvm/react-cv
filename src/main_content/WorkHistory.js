@@ -17,7 +17,7 @@ export default function WorkHistory(props) {
 
   return (
     <Box>
-      <Typography variant="h5">{t('workHistory')}</Typography>
+      <Typography variant="h4">{t('workHistory')}</Typography>
       <Divider />
       <Box>{workHistory}</Box>
     </Box>

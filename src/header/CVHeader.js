@@ -13,7 +13,7 @@ export default function CVHeader(props) {
       <Box display="none" displayPrint="block">
         <Typography variant="h4">Eduardo Palma Vieira de Moraes</Typography>
       </Box>
-      <Typography variant="h5" color="textSecondary">
+      <Typography variant="h4" color="textSecondary">
         Full Stack Developer
       </Typography>
       <InfoPanel contact={props.data} />

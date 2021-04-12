@@ -17,7 +17,7 @@ export default function Sidebar(props) {
     <React.Fragment>
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">Social</Typography>
+          <Typography variant="h4">Social</Typography>
         </Box>
         <Divider variant="middle" />
         <SocialList />
@@ -25,7 +25,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t("education")}</Typography>
+          <Typography variant="h4">{t("education")}</Typography>
         </Box>
         <Divider variant="middle" />
         <Box m={2}>
@@ -39,7 +39,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t("technicalSkills")}</Typography>
+          <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <RatedSkillList skills={props.staticData.technical_skills} />
@@ -47,7 +47,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t("languageSkills")}</Typography>
+          <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <LanguageSkillList skills={props.staticData.languague_skills} />
@@ -55,7 +55,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t("generalSkills")}</Typography>
+          <Typography variant="h4">{t("generalSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <GeneralSkillsList skills={props.staticData.general_skills} />
@@ -63,7 +63,7 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
-          <Typography variant="h5">{t("certificates")}</Typography>
+          <Typography variant="h4">{t("certificates")}</Typography>
         </Box>
         <Divider variant="middle" />
         <CertificateList certificates={props.staticData.certificates} />

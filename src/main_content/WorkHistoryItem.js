@@ -6,6 +6,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from 'react-i18next';
 
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
@@ -33,6 +34,8 @@ const useStyles = makeStyles({
 
 export default function WorkHistoryItem(props) {
   const classes = useStyles();
+  const [t, i18n] = useTranslation();
+
   const highlights = props.history.highlights.map((text, index) => {
     return (
       <ListItem key={index}>
@@ -81,9 +84,9 @@ export default function WorkHistoryItem(props) {
         </Typography>
       </Typography>
       {/* Job summary */}
-      <Typography variant="body1" className={classes.label} display="block">Job Summary:</Typography>
+      <Typography variant="body1" className={classes.label} display="block">{t('workHighlights')}:</Typography>
       <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
-      <Typography variant="body1" className={classes.label} display="block">Job Highlights:</Typography>
+      <Typography variant="body1" className={classes.label} display="block">{t('workSummary')}:</Typography>
 
       <List>{highlights}</List>
     </Box>

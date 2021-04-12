@@ -100,7 +100,7 @@ export default function WorkHistoryItem(props) {
       
       {/* Main Technologies */}
       <Typography variant="body1" className={classes.label} display="block">{t('workTechnologies')}:</Typography>
-      <Typography variant="body2" paragraph>{technologies}</Typography>
+      <Typography variant="body2" color="textSecondary">{technologies}</Typography>
     </Box>
   );
 }

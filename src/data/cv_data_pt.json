@@ -31,7 +31,7 @@
         "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsch Bank dentro do TeamCity e UrbanCode",
         "Fiz manutenção de uma enorme aplicação Java legada usada para guardar dados e documentos do banco italiano UBI Banca"
       ],
-      "technologies": ["Java", "Node.js", "Angular 7+", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
+      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",

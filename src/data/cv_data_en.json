@@ -29,7 +29,7 @@
         "FUBAR",
         "FUBAR"
       ],
-      "technologies": ["Java", "Node.js", "Angular 7+", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
+      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Shell Script", "Terraform", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",

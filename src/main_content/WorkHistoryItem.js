@@ -58,19 +58,19 @@ export default function WorkHistoryItem(props) {
   });
 
   return (
-    <Box m={2}>
+    <Box mt={2} mb={3}>
       {/* Job Role */}
-      <Typography variant="h6">{props.history.role}</Typography>
+      <Typography variant="h5">{props.history.role}</Typography>
       
       {/* Job Company */}
-      <Typography variant="body1" component="div" style={{ fontStyle: "oblique" }}>
+      <Typography variant="h6" component="div">
         {/* screen link */}
         <Box displayPrint="none">
           {props.history.website
             ? <Link href={props.history.website} target="_blank">
                 {props.history.company}
               </Link>
-            : <Typography component="div">{props.history.company}</Typography> 
+            : <Typography variant="h6" component="div" style={{ fontWeight: 400 }}>{props.history.company}</Typography> 
           }
         </Box>
         {/* print link */}
@@ -104,7 +104,7 @@ export default function WorkHistoryItem(props) {
       <List dense>{highlights}</List>
       
       {/* Main Technologies */}
-      <Typography variant="body1" className={classes.subsection} display="block">{t('workTechnologies')}:</Typography>
+      <Typography variant="body1" className={classes.subsection}>{t('workTechnologies')}:</Typography>
       <Typography variant="body2">{technologies}</Typography>
     </Box>
   );

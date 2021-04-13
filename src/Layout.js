@@ -87,7 +87,7 @@ export default function Layout(props) {
         </Grid>
       </Grid>
 
-      <Paper elevation={5} component="main">
+      <Paper elevation={5} component="main" id="pdf-target">
         {/* Full page grid container */}
         <Grid container ref={componentRef} style={{ paddingTop: "1rem" }}>
           <Grid container item xs={4}>

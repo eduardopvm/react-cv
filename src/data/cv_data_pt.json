@@ -28,7 +28,7 @@
         "Ajudei na configuração inicial do ambiente do Google Cloud e desenvolvi e publiquei as imagens dos containers no Google Container Registry",
         "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts do pipeline CI/CD do GitLab",
         "Implementei a autenticação das APIs Node.js dentro do Google Cloud usando OAuth2 com JWT",
-        "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsch Bank dentro do TeamCity e UrbanCode",
+        "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsche Bank dentro do TeamCity e UrbanCode",
         "Fiz manutenção de uma enorme aplicação Java legada que utilizava Documentum e OpenText para guardar e recuperar dados e documentos do banco italiano UBI Banca"
       ],
       "technologies": ["Java 6 e 11", "Node.js", "Angular 8", "Google Cloud", "Kubernetes", "Firebase", "Terraform", "Shell Script", "Docker", "GitLab", "TeamCity"]
@@ -96,11 +96,10 @@
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Janeiro 2010",
       "job_end": "Setembro 2011",
-      "description": "Site DB, Webservice DB",
+      "description": "A função mais importante que exerci foi dar manutenção e realizar um refactoring completo de uma enorme aplicação web do Deutsche Bank de Nova Iorque que disponibilizava dados diários do mercado de ETFs (exchange-traded fund) de Bolsas de Valores de todo o mundo. O backend era feito em Java com Spring enquanto o frontend usava ExtJS para criar os diversos grids de dados e gráficos. Quando assumi o desenvolvimento da aplicação após a saída de um colega eu recebia muitas reclamações de que o processo de importação diária dos dados era muito lenta e muitas vezes possuía valores errados. Após um longo processo de refactoring da lógica de importação eu consegui não só diminuir em mais da metade o tempo de execução do script como também consertei os bugs com os números.",
       "activities": [
-        "Blabla",
-        "Blublu",
-        "Bleble"
+        "Dei manutenção em um web service massivo de alta disponibilidade que provia dados do mercado financeiro para diversas aplicações do Deutsche Bank. A aplicação era feita em Java com Spring+Hibernate e se comunicava com outras aplicações através de APIs SOAP e Java Message Service.",
+        "Desenvolvi um portal para a intranet do Deutsche Bank que centralizava o acesso à diversas aplicações utilizadas pelos funcionários da empresa. Todo o site foi escrito em Javascript com JQuery e HTML+CSS."
       ],
       "technologies": ["Java 6", "Spring Framework", "Hibernate", "GWT", "Apache Tapestry", "JQuery", "ExtJS", "Apache CXF", "JMS", "JBoss"]
     }

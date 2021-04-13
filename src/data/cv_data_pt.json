@@ -23,7 +23,7 @@
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
-      "description": "O principal projeto em que trabalhei como desenvolvedor foi um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura modelo para projetos futuros. Este aprovisionamento era feito usando Terraform e Shell scripts que rodavam no GitLab em um formato de CI/CD. Os scripts de Terraform criavam todas as máquinas virtuais, clusters, endereços de ip, firewalls, e instâncias de Kubernetes necessárias para o projeto. Dentro deste projeto também foi desenvolvida uma aplicação Node.js/Angular de simulação de uma Cervejaria como exemplo para utilizar esta arquitetura. Esta aplicação permitia que o usuário arrastasse máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras e fermentadores) dentro de um editor e então executar uma simulação e então verificar os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas auto-motivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
+      "description": "O projeto em que trabalhei de que mais me orgulho foi um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura de referência para projetos futuros. Este aprovisionamento era feito usando Terraform e Shell scripts que rodavam no GitLab em um formato de CI/CD. Os scripts de Terraform criavam e configuravam toda a infrastrutura de nuvem (máquinas virtuais, clusters, endereços de ip, firewalls, instâncias de Kubernetes, etc.) necessárias para o projeto. Dentro deste projeto também foi desenvolvida uma aplicação web Node.js/Angular de simulação de uma Cervejaria como exemplo de como utilizar esta arquitetura de referência. Esta aplicação permitia que o usuário arrastasse ícones de máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras e fermentadores) dentro de um editor e então executar uma simulação e então verificar os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas automotivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
       "activities": [
         "Ajudei na configuração inicial do ambiente do Google Cloud e desenvolvi e publiquei as imagens dos containers no Google Container Registry",
         "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts do pipeline CI/CD do GitLab",
@@ -31,7 +31,7 @@
         "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsch Bank dentro do TeamCity e UrbanCode",
         "Fiz manutenção de uma enorme aplicação Java legada que utilizava Documentum e OpenText para guardar e recuperar dados e documentos do banco italiano UBI Banca"
       ],
-      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Kubernetes", "Shell Script", "Terraform", "Docker", "GitLab", "TeamCity"]
+      "technologies": ["Java 6 e 11", "Node.js", "Angular 8", "Google Cloud", "Kubernetes", "Firebase", "Terraform", "Shell Script", "Docker", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",
@@ -54,13 +54,13 @@
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Março 2016",
       "job_end": "Dezembro 2018",
-      "description": "Wazi, Cityhall",
+      "description": "O principal projeto em que trabalhei no FIT foi uma solução de monitoramento em tempo real das linhas de montagem da Hewlett-Packard na Flex. Os dados eram coletados via leitores RFID por aplicações Java instaladas nas estações da fábrica e agregados por uma aplicação central feita em Grails que disponibilizava visualizações configuráveis da produção em tempo real, além de relatórios e ferramentas de BI. Outro projeto importante foi a criação de uma solução de controle de ativos de prédios públicos da Prefeitura de Sorocaba. A forma antiga de controle era feita por placas de metal com o número serial que eram coladas em cada ativo e então lidas visualmente por funcionários que as anotavam em papel. A nova solução envolvia trocar as placas de metal por chips RFID que podiam ser lidos a distância e eram então agregados e enviados à uma aplicação central desenvolvida em Java e Angular que além de possibilitar a visualização rápida e organizada dos dados também permitia aos funcionários da Prefeitura encontrar problemas de ativos desaparecidos ou em locais errados, além de possuir funcionalidade de agendar novas vistorias.",
       "activities": [
         "Blabla",
         "Blublu",
         "Bleble"
       ],
-      "technologies": []
+      "technologies": ["Java 9", "Spring Framework", "Hibernate", "Angular 6", "Grails", "Groovy", "JQuery", "SQL Server", "Oracle", "C#", ".NET Framework 4.6"]
     },
     {
       "role": "Software Engineer",
@@ -69,7 +69,7 @@
       "location": "Los Angeles - CA, EUA (Remoto)",
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",
-      "description": "LedgerSync, Fábrica",
+      "description": "A principal função que exerci foi desenvolver e manter um dos produtos da empresa, o LedgerSync, que era uma solução de coleta e gerenciamento de dados financeiros para contadores e investidores. A aplicação era capaz de entrar em contas de bancos e sites previamente cadastrados pelos clientes usando um Chrome headless controlado pelo backend via API do WebDriver. O backend foi inicialmente desenvolvido em Java com Spring e Hibernate enquanto o frontend era HTML estático manipulado com Jquery. Posteriormente desenvolvi uma nova versão com backend em Node+Express e frontend dinâmico com Backbone.js.",
       "activities": [
         "Blabla",
         "Blublu",

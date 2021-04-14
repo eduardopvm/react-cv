@@ -10,7 +10,7 @@ export default function ProfissionalProfile(props) {
   return (
     <Box>
       <Typography variant="h4">{t('profile')}</Typography>
-      <Divider />
+      <Divider component="div" />
       <Typography variant="body1" component="div">
         <Box m={2}>{props.profileText}</Box>
       </Typography>

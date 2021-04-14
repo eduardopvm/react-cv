@@ -27,7 +27,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">Social</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <SocialList />
       </Box>
 
@@ -35,7 +35,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">{t("education")}</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <Box m={2}>
           <Typography>Bacharelado em Ciência da Computação</Typography>
           <Typography color="textSecondary">
@@ -49,7 +49,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
@@ -57,7 +57,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
@@ -65,7 +65,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">{t("generalSkills")}</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
@@ -73,7 +73,7 @@ export default function Sidebar(props) {
         <Box ml={2}>
           <Typography variant="h4">{t("certificates")}</Typography>
         </Box>
-        <Divider variant="middle" />
+        <Divider variant="middle" component="div" />
         <CertificateList certificates={props.staticData.certificates} />
       </Box>
     </React.Fragment>

@@ -30,6 +30,7 @@ export default function Layout(props) {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
+    documentTitle: "CV - Eduardo P V de Moraes"
   });
 
   const [t, i18n] = useTranslation();

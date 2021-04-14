@@ -1,5 +1,4 @@
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -32,6 +31,10 @@ const useStyles = makeStyles({
     marginTop: "0.5rem",
     fontStyle: "oblique",
     fontWeight: 500
+  },
+  header: {
+    breakInside: "avoid",
+    pageBreakInside: "avoid"
   }
 });
 
@@ -60,7 +63,7 @@ export default function WorkHistoryItem(props) {
 
   return (
     <Box mt={2} mb={3} mx={2}>
-      <Box style={{ breakInside: "avoid" }}>
+      <Box className={classes.header}>
         {/* Job Role */}
         <Typography variant="h5">{props.history.role}</Typography>
         

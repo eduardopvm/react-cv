@@ -29,19 +29,21 @@
 
 - [x] Add my photo to header
 
-- [ ] Refactor components into smaller pieces and organize them in directories
-
 - [ ] Write full PT-BR resume json files
 
 - [ ] Write full EN-US resume json files
+
+- [ ] Create page breaks for printing layout
+
+- [ ] Try to change printed links from JSX logic to CSS
+
+- [ ] Refactor components into smaller pieces and organize them in directories
 
 - [ ] Refactor and remove Layout component
 
 - [ ] Make general spacing and typography adjustments for pleasant look
 
 - [ ] Add stacks section?
-
-- [ ] Create page breaks for printing layout
 
 - [ ] Add button to export page to PDF with full styling (may require a backend sadly)
 

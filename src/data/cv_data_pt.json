@@ -9,7 +9,7 @@
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
-      "technologies": ["Node.js"]
+      "technologies": ["Java 15", "Spring Framework", "React", "MySQL", "Apache Tomcat"]
     },
     {
       "role": "Analista de Sistemas Sênior",
@@ -53,7 +53,7 @@
       "activities": [
         "Trabalhei em dois projetos de pesquisa para a CISCO, ambos feitos em C# com .NET Framework. Um era uma projeto de reconhecimento facial para detectar intrusos na linha de montagem da CISCO usando OpenCV para fazer a análise facial, e o outro tinha o propósito de gravar e armazenar vídeos de todo o processo de empacotamento de produtos CISCO para o departamento de Quality Assurance."
       ],
-      "technologies": ["Java 9", "Spring Framework", "Hibernate", "Angular 6", "Grails", "Groovy", "RabbitMQ", "JQuery", "SQL Server", "Oracle DB", "C#", ".NET Framework 4.6", "Entity Framework", "Unity Container", "RFID", "LLRP"]
+      "technologies": ["Java 9", "Spring Framework", "Hibernate", "Angular 6", "Grails", "Groovy", "RabbitMQ", "JQuery", "Apache Tomcat", "SQL Server", "Oracle DB", "C#", ".NET Framework 4.6", "Entity Framework", "Unity Container", "RFID", "LLRP"]
     },
     {
       "role": "Software Engineer",
@@ -79,7 +79,7 @@
       "description": "Os projetos que desenvolvi nesse período que tiveram maior impacto foram dois: uma biblioteca de comunicação com leitores de RFID e um Middleware RFID. A biblioteca desenvolvida em Java era uma interface genérica para controlar vários modelos de leitores de RFID através da mesma API, abstraindo assim os detalhes de implementação de cada leitor, que iam desde SDKs providos pelo fabricante até a mensagens de texto enviadas por socket. Esta biblioteca foi usada em vários projetos de pesquisa e comerciais desenvolvidos pelo FIT. Posteriormente eu participei da criação de um Middleware RFID feito em Grails (mas usando a biblioteca Java para se conectar aos leitores) que era uma aplicação web capaz de controlar e receber dados de inúmeros leitores RFID via internet, além de controlar outros equipamentos como sinaleiros e portais RFID que só permitiam a passagem de pallets após a leitura e validação total de seu conteúdo via RFID. Este middleware foi utilizado em uma das linhas de montagem da HP na Flex que produzia impressoras e toners.",
       "activities": [
         "Desenvolvi um projeto de pesquisa para a HP que visava criar pontos de venda inteligente de cartuchos de tinta com tecnologia RFID. Os cartuchos ficavam dentro de uma estrutura similar á uma máquina de vendas com antenas RFID dentro do receptáculo e com uma tela touchscreen ao lado onde o cliente podia ver quais cartuchos estavam em estoque. Ao retirar um cartucho o sistema dava baixa no estoque e também era capaz de pedir à central para repor modelos de cartucho que estavam em falta.",
-        "Dei manutenção em um projeto de pesquisa criado por alunos da Universidade Federal do Ceará que fazia a visualização do processo de reciclagem de impressoras, cartuchos e outros produtos da HP. O backend era feito em Ruby on Rails mas possuía um frontend web feito em Adobe Flex e um app iOS feito em Objective-C."
+        "Dei manutenção em um projeto de pesquisa criado por alunos da Universidade Federal do Ceará que fazia a visualização do processo de reciclagem de impressoras, cartuchos e outros produtos da HP na Sinctronics. O backend era feito em Ruby on Rails mas possuía um frontend web feito em Adobe Flex e um app iOS feito em Objective-C."
       ],
       "technologies": ["Java 6", "Groovy", "JQuery", "RabbitMQ", "Ruby on Rails", "Adobe Flex", "Objective-C", "VRaptor 3", "Apache Tomcat", "RFID", "LLRP"]
     },

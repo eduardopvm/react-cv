@@ -47,18 +47,18 @@ export default function Sidebar(props) {
 
       <Box className={classes.section}>
         <Box ml={2}>
-          <Typography variant="h4">{t("technicalSkills")}</Typography>
-        </Box>
-        <Divider variant="middle" />
-        <RatedSkillList skills={props.staticData.technical_skills} />
-      </Box>
-
-      <Box className={classes.section}>
-        <Box ml={2}>
           <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
         <Divider variant="middle" />
         <LanguageSkillList skills={props.staticData.languague_skills} />
+      </Box>
+
+      <Box className={classes.section}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("technicalSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" />
+        <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
       <Box className={classes.section}>

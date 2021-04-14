@@ -11,20 +11,21 @@ import { useTranslation } from "react-i18next";
 
 import { GoLinkExternal } from "react-icons/go";
 
+// TODO: refactor this whole shebang to have a print and screen versions
 export default function CertificateList(props) {
   const [t, i18n] = useTranslation();
   const certList = props.certificates.map((cert) => {
     return (
       <Grid container key={cert.name}>
         <ListItem key={cert.name}>
-          <Grid item xs={9}>
+          <Grid item xs={10}>
             <ListItemText>
               <Box>
                 <Typography>{cert.name}</Typography>
                 <Typography color="textSecondary">{t("issuer")}: {cert.issuer}</Typography>
                 <Box display="none" displayPrint="block">
                   {cert.url != null &&
-                    <Typography color="textSecondary">URL: {cert.url}</Typography>
+                    <Typography color="textSecondary">{`URL: ${cert.url}`}</Typography>
                   }
                 </Box>
               </Box>
@@ -32,7 +33,7 @@ export default function CertificateList(props) {
           </Grid>
 
           {/* List Button */}
-          <Grid item xs={3}>
+          <Grid item xs={2}>
             <ListItemSecondaryAction>
               <Box displayPrint="none">
                 {cert.url

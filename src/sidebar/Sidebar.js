@@ -12,7 +12,7 @@ import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
 
 const useStyles = makeStyles({
-  section: {
+  avoidBreakInside: {
     breakInside: "avoid"
   }
 });
@@ -33,6 +33,16 @@ export default function Sidebar(props) {
 
       <Box>
         <Box ml={2}>
+          <Typography variant="h4">{t('profile')}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <Typography variant="body1" component="div">
+          <Box m={2}>{props.translatedData.profile}</Box>
+        </Typography>
+      </Box>
+
+      <Box className={classes.avoidBreakInside}>
+        <Box ml={2}>
           <Typography variant="h4">{t("education")}</Typography>
         </Box>
         <Divider variant="middle" component="div" />
@@ -45,7 +55,7 @@ export default function Sidebar(props) {
         </Box>
       </Box>
 
-      <Box className={classes.section}>
+      <Box className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
@@ -53,7 +63,7 @@ export default function Sidebar(props) {
         <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
-      <Box className={classes.section}>
+      <Box className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
@@ -61,7 +71,7 @@ export default function Sidebar(props) {
         <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
-      <Box className={classes.section}>
+      <Box className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("generalSkills")}</Typography>
         </Box>
@@ -69,7 +79,7 @@ export default function Sidebar(props) {
         <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
-      <Box className={classes.section}>
+      <Box className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("certificates")}</Typography>
         </Box>

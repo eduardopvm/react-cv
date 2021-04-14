@@ -14,7 +14,7 @@
         "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
         "Vestibulum lacinia facilisis ultricies. "
       ],
-      "technologies": []
+      "technologies": ["Node.js"]
     },
     {
       "role": "Analista de Sistemas Sênior",

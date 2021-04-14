@@ -32,8 +32,8 @@ const useStyles = makeStyles({
     fontStyle: "oblique",
     fontWeight: 500
   },
-  header: {
-    breakInside: "avoid",
+  avoidPageBreak: {
+    breakInside: "avoid-page",
     pageBreakInside: "avoid"
   }
 });
@@ -63,7 +63,7 @@ export default function WorkHistoryItem(props) {
 
   return (
     <Box mt={2} mb={3} mx={2}>
-      <Box className={classes.header}>
+      <Box className={classes.avoidPageBreak}>
         {/* Job Role */}
         <Typography variant="h5">{props.history.role}</Typography>
         
@@ -111,8 +111,10 @@ export default function WorkHistoryItem(props) {
       <List dense>{highlights}</List>
       
       {/* Main Technologies */}
-      <Typography variant="body1" className={classes.subsection}>{t('workTechnologies')}:</Typography>
-      <Typography variant="body2">{technologies}</Typography>
+      <Box className={classes.avoidPageBreak}>
+        <Typography variant="body1" className={classes.subsection}>{t('workTechnologies')}:</Typography>
+        <Typography variant="body2">{technologies}</Typography>
+      </Box>
     </Box>
   );
 }

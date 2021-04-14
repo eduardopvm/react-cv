@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next';
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import CalendarTodayOutlinedIcon from "@material-ui/icons/CalendarTodayOutlined";
+import React from "react";
 
 const useStyles = makeStyles({
   icon: {
@@ -42,7 +43,7 @@ export default function WorkHistoryItem(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
 
-  const highlights = props.history.activities.map((text, index) => {
+  const otherActivities = props.history.activities?.map((text, index) => {
     return (
       <ListItem key={index}>
         <ListItemIcon className={classes.listIcon}>
@@ -105,10 +106,14 @@ export default function WorkHistoryItem(props) {
       {/* Job Highlights */}
       <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
       <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
-      <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
 
       {/* Other Activities */}
-      <List dense>{highlights}</List>
+      {otherActivities != null &&
+        <React.Fragment>
+          <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
+          <List dense>{otherActivities}</List>
+        </React.Fragment>
+      }
       
       {/* Main Technologies */}
       <Box className={classes.avoidPageBreak}>

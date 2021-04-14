@@ -9,11 +9,6 @@
       "job_start": "Setembro 2020",
       "job_end": "Março 2020",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla massa nec placerat consequat. Nulla ultricies, velit nec porttitor posuere, augue nunc condimentum arcu, id mollis leo lectus sit amet libero. Ut finibus nisl a diam sagittis, sed tempor arcu bibendum. Donec tempus nibh a mauris ultrices tristique.",
-      "activities": [
-        "Aliquam consequat, ipsum vel finibus fermentum, odio ante tincidunt sem, ut consectetur erat diam bibendum nulla.",
-        "Etiam erat eros, varius id volutpat vitae, porta consequat tellus.",
-        "Vestibulum lacinia facilisis ultricies. "
-      ],
       "technologies": ["Node.js"]
     },
     {

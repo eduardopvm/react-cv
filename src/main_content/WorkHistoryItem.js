@@ -1,4 +1,5 @@
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -78,22 +79,24 @@ export default function WorkHistoryItem(props) {
           <Typography component="div">{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
         </Box>
       </Typography>
-
-      {/* Job date */}
-      <Typography component="div">
-        <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
-        <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
-          {props.history.job_start} &ndash; {props.history.job_end}
+      
+      <Box>
+        {/* Job date */}
+        <Typography component="span">
+          <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
+          <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
+            {props.history.job_start} &ndash; {props.history.job_end}
+          </Typography>
         </Typography>
-      </Typography>
 
-      {/* Job Location */}
-      <Typography component="div">
-        <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
-        <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
-          {props.history.location}
+        {/* Job Location */}
+        <Typography component="span" style={{ marginLeft: "1rem" }}>
+          <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
+          <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
+            {props.history.location}
+          </Typography>
         </Typography>
-      </Typography>
+      </Box>
 
       {/* Job Highlights */}
       <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>

@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
+import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 
 import RatedSkillList from "./RatedSkillList";
@@ -10,7 +11,14 @@ import CertificateList from "./CertificateList";
 import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
 
+const useStyles = makeStyles({
+  section: {
+    breakInside: "avoid"
+  }
+});
+
 export default function Sidebar(props) {
+  const classes = useStyles();
   const [t, i18n] = useTranslation();
 
   return (
@@ -37,7 +45,7 @@ export default function Sidebar(props) {
         </Box>
       </Box>
 
-      <Box>
+      <Box className={classes.section}>
         <Box ml={2}>
           <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
@@ -45,7 +53,7 @@ export default function Sidebar(props) {
         <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
-      <Box>
+      <Box className={classes.section}>
         <Box ml={2}>
           <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
@@ -53,7 +61,7 @@ export default function Sidebar(props) {
         <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
-      <Box>
+      <Box className={classes.section}>
         <Box ml={2}>
           <Typography variant="h4">{t("generalSkills")}</Typography>
         </Box>
@@ -61,7 +69,7 @@ export default function Sidebar(props) {
         <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
-      <Box>
+      <Box className={classes.section}>
         <Box ml={2}>
           <Typography variant="h4">{t("certificates")}</Typography>
         </Box>

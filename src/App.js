@@ -28,8 +28,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
   const [cvData, setData] = useState(cvDataPT);
-  const printComponent = useRef();
   const [t, i18n] = useTranslation();
+  const printComponent = useRef();
   const classes = useStyles();
 
   function handleDataChange(lang) {

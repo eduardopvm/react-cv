@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Layout(props) {
   const classes = useStyles();
   const componentRef = useRef();
+  const [t, i18n] = useTranslation();
+
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
     documentTitle: "CV - Eduardo P V de Moraes"
   });
-
-  const [t, i18n] = useTranslation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);

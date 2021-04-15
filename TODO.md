@@ -29,6 +29,8 @@
 
 - [x] Add my photo to header
 
+- [x] Refactor and remove Layout component
+
 - [ ] Write full PT-BR resume json files
 
 - [ ] Write full EN-US resume json files
@@ -38,8 +40,6 @@
 - [ ] Try to change printed links from JSX logic to CSS
 
 - [ ] Refactor components into smaller pieces and organize them in directories
-
-- [ ] Refactor and remove Layout component
 
 - [ ] Make general spacing and typography adjustments for pleasant look
 

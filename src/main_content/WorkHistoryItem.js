@@ -103,16 +103,19 @@ export default function WorkHistoryItem(props) {
           </Typography>
         </Box>
       </Box>
+      
       {/* Job Highlights */}
-      <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
-      <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+      <Box>
+        <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
+        <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+      </Box>
 
       {/* Other Activities */}
       {otherActivities != null &&
-        <React.Fragment>
+        <Box>
           <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
           <List dense>{otherActivities}</List>
-        </React.Fragment>
+        </Box>
       }
       
       {/* Main Technologies */}

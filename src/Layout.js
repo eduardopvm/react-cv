@@ -40,6 +40,12 @@ export default function Layout(props) {
     props.handleLanguageChange(lng);
   };
 
+  // TODO: improve this dirty work around (routes maybe?)
+  const url = new URL(window.location.href);
+  const params = new URLSearchParams(url.search);
+  const pdfMode = params.has("pdfMode");
+  console.log("pdfMode: ", pdfMode);
+
   return (
     // TODO: separate this top section into it's own component
     <Container fixed>

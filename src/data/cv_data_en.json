@@ -29,7 +29,7 @@
         "FUBAR",
         "FUBAR"
       ],
-      "technologies": ["Java 10", "Node.js", "Angular 7", "Google Cloud", "Kubernetes", "Shell Script", "Terraform", "Docker", "GitLab", "TeamCity"]
+      "technologies": ["Java 6 and 11", "Node.js", "Angular 8", "Google Cloud", "Kubernetes", "Firebase", "Terraform", "Shell Script", "Docker", "GitLab", "TeamCity"]
     },
     {
       "role": "Desenvolvedor Freelance",
@@ -63,7 +63,7 @@
     {
       "role": "Software Engineer",
       "company": "BP Analytics",
-      "website": "https://www.crunchbase.com/organization/bp-analytics",
+      "website": "https://www.ledgersync.com",
       "location": "Los Angeles - CA, EUA (Remoto)",
       "job_start": "Novembro 2013",
       "job_end": "Outubro 2015",

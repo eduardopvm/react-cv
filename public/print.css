@@ -1,12 +1,9 @@
-hr {
-  filter: invert(100%)
-}
-
 .skillStars > .MuiRating-decimal {
   font-size: 1.25rem;
   color:rgba(0, 0, 0, 0.87);
 }
 
-.print-avatar {
-  filter: invert(100%)
+body {
+  -webkit-print-color-adjust: exact; /*Chrome, Safari */
+  color-adjust: exact; /*Firefox*/
 }

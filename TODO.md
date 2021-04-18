@@ -31,7 +31,7 @@
 
 - [x] Refactor and remove Layout component
 
-- [ ] Write full PT-BR resume json files
+- [x] Write full PT-BR resume json files
 
 - [ ] Write full EN-US resume json files
 

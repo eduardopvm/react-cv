@@ -112,7 +112,7 @@ export default function WorkHistoryItem(props) {
 
       {/* Other Activities */}
       {otherActivities != null &&
-        <Box>
+        <Box className={classes.avoidPageBreak}>
           <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
           <List dense>{otherActivities}</List>
         </Box>

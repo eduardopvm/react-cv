@@ -24,7 +24,7 @@
     { "name": "Google Cloud", "level": 2.5},
     { "name": "Kubernetes", "level": 2},
     { "name": "Terraform", "level": 1.5},
-    { "name": "OAuth2", "level": 2.5},
+    { "name": "Shell Script", "level": 2},
     { "name": "Git", "level": 4},
     { "name": "Windows Server", "level": 1.5},
     { "name": "Linux (Debian)", "level": 3.5}
@@ -37,6 +37,7 @@
   "general_skills": [
     "Continous Integration",
     "Continuous Delivery",
+    "OAuth2",
     "JSON Web Token",
     "Responsive Design",
     "Cloud Computing",

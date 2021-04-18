@@ -17,6 +17,9 @@ const useStyles = makeStyles({
     position: "relative",
     marginRight: "0.25rem",
   },
+  panel: {
+    margin: "1rem"
+  }
 });
 
 export default function HeaderPanel(props) {
@@ -28,7 +31,7 @@ export default function HeaderPanel(props) {
   );
 
   return (
-    <Grid container item xs={12}>
+    <Grid container item xs={12} className={classes.panel}>
       <Grid item xs={6}>
         <Box>
           <EmailOutlinedIcon display="inline" className={classes.icon} />

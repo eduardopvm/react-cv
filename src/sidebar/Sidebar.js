@@ -57,14 +57,6 @@ export default function Sidebar(props) {
 
       <Box className={classes.avoidBreakInside}>
         <Box ml={2}>
-          <Typography variant="h4">{t("languageSkills")}</Typography>
-        </Box>
-        <Divider variant="middle" component="div" />
-        <LanguageSkillList skills={props.staticData.languague_skills} />
-      </Box>
-
-      <Box className={classes.avoidBreakInside}>
-        <Box ml={2}>
           <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
         <Divider variant="middle" component="div" />
@@ -77,6 +69,14 @@ export default function Sidebar(props) {
         </Box>
         <Divider variant="middle" component="div" />
         <GeneralSkillsList skills={props.staticData.general_skills} />
+      </Box>
+
+      <Box className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("languageSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
       <Box className={classes.avoidBreakInside}>

@@ -36,7 +36,7 @@
       "job_end": "Junho 2019",
       "description": "Desenvolvi um sistema de rastreamento e logística para um executivo de uma grande empresa Americana com um contrato freelance através do site Upwork. O sistema consistia em um backend Java + Spring Framework com banco de dados SQL Server e um dashboard SPA desenvolvido em Angular com Angular Material. A aplicação fazia o planejamento de entregas e recebimentos, criava gráficos e relatórios e também realizava o rastreamento em tempo real de caminhões e vans através da API do Google Maps. O sistema foi pago do próprio bolso do cliente e a intenção era apresentar o sistema para a diretoria da empresa e continuar o desenvolvimento caso fosse aceito.",
       "activities": [
-        "automação?"
+        "Automatizei um processo de importação, validação e consolidação de dados de várias fontes como planilhas e bancos de dados usando scripts Python para um cliente via Upwork."
       ],
       "technologies": ["Angular 7", "Angular Material", "Google Maps API", "Java 10", "Spring Framework", "Python 3"]
     },

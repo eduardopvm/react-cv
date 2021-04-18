@@ -1,6 +1,5 @@
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -13,14 +12,11 @@ import WebAssetOutlinedIcon from "@material-ui/icons/WebAssetOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 const useStyles = makeStyles({
-  root: {
+  icon: {
     top: 5,
     position: "relative",
     marginRight: "0.25rem",
   },
-  locationLink: {
-    marginLeft: "0.25rem"
-  }
 });
 
 export default function HeaderPanel(props) {
@@ -34,10 +30,10 @@ export default function HeaderPanel(props) {
   return (
     <Grid container item xs={12}>
       <Grid item xs={6}>
-        <CardContent>
-          <EmailOutlinedIcon display="inline" className={classes.root} />
+        <Box>
+          <EmailOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">Email</Typography>
-          
+
           {/* screen display */}
           <Box displayPrint="none">
             <Link href={`mailto:${props.contact.email}`} display="block">
@@ -49,12 +45,12 @@ export default function HeaderPanel(props) {
           <Box display="none" displayPrint="block">
             <Typography color="textSecondary">{props.contact.email}</Typography>
           </Box>
-        </CardContent>
+        </Box>
       </Grid>
 
       <Grid item xs={6}>
-        <CardContent>
-          <WebAssetOutlinedIcon display="inline" className={classes.root} />
+        <Box>
+          <WebAssetOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">Website</Typography>
 
           {/* screen display */}
@@ -70,20 +66,20 @@ export default function HeaderPanel(props) {
               {props.contact.website}
             </Typography>
           </Box>
-        </CardContent>
+        </Box>
       </Grid>
 
       <Grid item xs={6}>
-        <CardContent>
-          <PhoneAndroidOutlinedIcon display="inline" className={classes.root} />
+        <Box>
+          <PhoneAndroidOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">{t("phone")}</Typography>
           <Typography color="textSecondary">{props.contact.phone}</Typography>
-        </CardContent>
+        </Box>
       </Grid>
 
       <Grid item xs={6}>
-        <CardContent>
-          <LocationOnOutlinedIcon display="inline" className={classes.root} />
+        <Box>
+          <LocationOnOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">{t("location")}</Typography>
 
           {/* screen display */}
@@ -93,19 +89,18 @@ export default function HeaderPanel(props) {
                 "https://www.google.com/maps/search/?api=1&query=" +
                 locationQueryString
               }
-              target="_blank"
-              className={classes.locationLink}>
+              target="_blank">
               {props.contact.location}
             </Link>
           </Box>
-          
+
           {/* print display */}
           <Box display="none" displayPrint="block">
-            <Typography color="textSecondary" className={classes.locationLink}>
+            <Typography color="textSecondary">
               {props.contact.location}
             </Typography>
           </Box>
-        </CardContent>
+        </Box>
       </Grid>
     </Grid>
   );

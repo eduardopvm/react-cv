@@ -7,3 +7,11 @@ body {
   -webkit-print-color-adjust: exact; /*Chrome, Safari */
   color-adjust: exact; /*Firefox*/
 }
+
+.MuiTypography-body1 {
+  font-size: 11pt !important;
+}
+
+.MuiTypography-body2 {
+  font-size: 10pt !important;
+}

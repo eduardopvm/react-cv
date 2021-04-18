@@ -23,6 +23,7 @@ export default function CertificateList(props) {
               <Box>
                 <Typography>{cert.name}</Typography>
                 <Typography color="textSecondary">{t("issuer")}: {cert.issuer}</Typography>
+                <Typography color="textSecondary">{t("workload")}: {cert.workload}</Typography>
                 <Box display="none" displayPrint="block">
                   {cert.url != null &&
                     <Typography color="textSecondary">{`URL: ${cert.url}`}</Typography>

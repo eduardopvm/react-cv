@@ -48,7 +48,7 @@
     "Scrum"
   ],
   "certificates": [
-    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
+    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "workload": "6h", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
   ],
   "source_url": "https://github.com/eduardopvm/react-cv"
 }

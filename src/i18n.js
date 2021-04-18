@@ -22,6 +22,7 @@ const translations = {
       "exportToPDF": "Export to PDF",
       "footerDescription": "Created by Eduardo Palma Vieira de Moraes with React + Material-UI.",
       "footerSource": "The code is open source and can be found on ",
+      "workload": "Workload",
       "en": "English",
       "pt": "Portuguese",
       "es": "Spanish"
@@ -47,6 +48,7 @@ const translations = {
       "exportToPDF": "Salvar como PDF",
       "footerDescription": "Criado por Eduardo Palma Vieira de Moraes com React + Material-UI.",
       "footerSource": "O código fonte é aberto e pode ser encontrado no ",
+      "workload": "Carga Horária",
       "en": "Inglês",
       "pt": "Português",
       "es": "Espanhol"

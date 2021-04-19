@@ -20,6 +20,16 @@ const useStyles = makeStyles({
 export default function Sidebar(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
+  const profileLines = props.translatedData.profile.split('\n');
+  const profileSection = profileLines.map((text, index) => {
+    let sections = [];
+    if (profileLines.length == (index + 1)) { // if last section
+      sections.push(<Box className={classes.avoidBreakInside} key={index}>{text}</Box>);
+    } else {
+      sections.push(<Box mb={1} key={index}>{text}</Box>)
+    }
+    return sections;
+  });
 
   return (
     <React.Fragment>
@@ -37,7 +47,9 @@ export default function Sidebar(props) {
         </Box>
         <Divider variant="middle" component="div" />
         <Typography variant="body1" component="div">
-          <Box m={2}>{props.translatedData.profile}</Box>
+          <Box m={2}>
+            {profileSection}
+          </Box>
         </Typography>
       </Box>
 

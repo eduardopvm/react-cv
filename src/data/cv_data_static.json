@@ -1,6 +1,6 @@
 {
   "contact": {
-    "location": "Itapetinga - SP, Brasil",
+    "location": "Itapetininga - SP, Brasil",
     "address": "Coronel Fernando Prestes, 615",
     "phone": "(15) 99700-3443",
     "email": "eduardo.palma403@gmail.com",
@@ -8,23 +8,23 @@
   },
   "technical_skills": [
     { "name": "Javascript ES6", "level": 4},
-    { "name": "React", "level": 3.5},
-    { "name": "Node.js", "level": 2},
+    { "name": "Python", "level": 2.5},
+    { "name": "Angular", "level": 3.5},
+    { "name": "React", "level": 4},
+    { "name": "Node.js", "level": 3.5},
     { "name": "Express", "level": 1},
     { "name": "MongoDB", "level": 0},
-    { "name": "Angular", "level": 2.5},
-    { "name": "Python", "level": 2.5},
-    { "name": "SQL", "level": 3},
     { "name": "Java", "level": 4.5},
-    { "name": "Spring", "level": 4},
+    { "name": "Spring Framework", "level": 4},
     { "name": "Hibernate", "level": 3.5},
+    { "name": "SQL", "level": 3},
     { "name": "MySQL", "level": 4},
     { "name": "Oracle DB", "level": 3.5},
     { "name": "SQL Server", "level": 3},
     { "name": "Google Cloud", "level": 2.5},
     { "name": "Kubernetes", "level": 2},
-    { "name": "Terraform", "level": 1.5},
-    { "name": "OAuth2", "level": 2.5},
+    { "name": "Terraform", "level": 2},
+    { "name": "Shell Script", "level": 2.5},
     { "name": "Git", "level": 4},
     { "name": "Windows Server", "level": 1.5},
     { "name": "Linux (Debian)", "level": 3.5}
@@ -35,18 +35,20 @@
     { "name": "es", "level": 2}
   ],
   "general_skills": [
+    "OAuth2",
+    "JSON Web Token",
     "Continous Integration",
     "Continuous Delivery",
-    "JSON Web Token",
     "Responsive Design",
     "Cloud Computing",
     "Containers",
+    "Unit & Integration Testing",
     "RESTful API",
-    "SOAP",
+    "SOAP API",
     "Scrum"
   ],
   "certificates": [
-    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
+    { "name": "Functional Programming with Streams in Java 9", "issuer": "Udemy", "workload": "6h", "url": "https://www.udemy.com/certificate/UC-CX0T5AOC/"}
   ],
   "source_url": "https://github.com/eduardopvm/react-cv"
 }

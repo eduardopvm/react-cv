@@ -29,7 +29,7 @@ export default function SocialList(props) {
             </Link>
           </Box>
           <Box display="none" displayPrint="block">
-            <Typography variant="subtitle2">
+            <Typography>
               www.github.com/eduardopvm
             </Typography>
           </Box>
@@ -45,7 +45,7 @@ export default function SocialList(props) {
             </Link>
           </Box>
           <Box display="none" displayPrint="block">
-            <Typography variant="subtitle2">
+            <Typography>
               www.linkedin.com/in/eduardo-pvm
             </Typography>
           </Box>
@@ -61,8 +61,8 @@ export default function SocialList(props) {
             </Link>
           </Box>
           <Box display="none" displayPrint="block">
-            <Typography variant="subtitle2">
-              #
+            <Typography>
+              TODO
             </Typography>
           </Box>
         </ListItemText>

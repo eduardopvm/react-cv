@@ -69,21 +69,21 @@ export default function WorkHistoryItem(props) {
         <Typography variant="h5">{props.history.role}</Typography>
         
         {/* Job Company */}
-        <Typography variant="h6" component="div">
-          {/* screen link */}
-          <Box displayPrint="none">
+        {/* screen link */}
+        <Box displayPrint="none">
+          <Typography variant="h6" component="div">
             {props.history.website
               ? <Link href={props.history.website} target="_blank">
                   {props.history.company}
                 </Link>
               : <Typography variant="h6" component="div" style={{ fontWeight: 400 }}>{props.history.company}</Typography> 
             }
-          </Box>
-          {/* print link */}
-          <Box display="none" displayPrint="block">
-            <Typography component="div">{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
-          </Box>
-        </Typography>
+          </Typography>
+        </Box>
+        {/* print link */}
+        <Box display="none" displayPrint="block">
+          <Typography component="div" variant="h6" style={{ fontWeight: 400 }}>{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
+        </Box>
         
         <Box>
           {/* Job date */}
@@ -103,16 +103,19 @@ export default function WorkHistoryItem(props) {
           </Typography>
         </Box>
       </Box>
+      
       {/* Job Highlights */}
-      <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
-      <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+      <Box>
+        <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
+        <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+      </Box>
 
       {/* Other Activities */}
       {otherActivities != null &&
-        <React.Fragment>
+        <Box className={classes.avoidPageBreak}>
           <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
           <List dense>{otherActivities}</List>
-        </React.Fragment>
+        </Box>
       }
       
       {/* Main Technologies */}

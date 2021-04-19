@@ -23,6 +23,10 @@ import cvDataStatic from "./data/cv_data_static.json";
 const useStyles = makeStyles((theme) => ({
   footer: {
     margin: "1rem"
+  },
+  contentContainer: {
+    paddingTop: "1rem",
+    height: "100%"
   }
 }));
 
@@ -49,7 +53,7 @@ export default function App() {
     <Container>
       <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
       <Paper elevation={5} component="main">
-        <Grid container ref={printComponent} style={{ paddingTop: "1rem" }}>
+        <Grid container ref={printComponent} id="pdf-target" className={classes.contentContainer}>
           <Grid container item xs={4}>
             <CVAvatar />
           </Grid>

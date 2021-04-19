@@ -4,11 +4,10 @@ const puppeteer = require("puppeteer");
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   
-  // await page.setViewport({width: 1200, height: 800, deviceScaleFactor: 2});
-  
   await page.goto("http://localhost:3000", {
     waitUntil: "networkidle2",
   });
+
   await page.emulateMediaType("screen");
 
   const pdfTarget = await page.$("#pdf-target");
@@ -25,10 +24,12 @@ const puppeteer = require("puppeteer");
   `;
   }, pdfTarget);
 
+  console.log("Saving pdf at " + process.cwd() + "/CV - Eduardo P V de Moraes.pdf");
+
   await page.pdf({
-    path: "page_export.pdf",
-    // format: "a4",
-    // printBackground: true,
+    path: "CV - Eduardo P V de Moraes.pdf",
+    printBackground: true,
+    width: "1280px"
   });
 
   await browser.close();

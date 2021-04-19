@@ -24,10 +24,10 @@ const puppeteer = require("puppeteer");
   `;
   }, pdfTarget);
 
-  console.log("Saving pdf at " + process.cwd() + "/CV - Eduardo P V de Moraes.pdf");
+  console.log("Saving pdf as 'CV - Eduardo P V de Moraes.pdf'");
 
   await page.pdf({
-    path: "CV - Eduardo P V de Moraes.pdf",
+    path: "../CV - Eduardo P V de Moraes.pdf",
     printBackground: true,
     width: "1280px"
   });

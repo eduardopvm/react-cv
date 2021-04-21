@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors')
 const puppeteer = require("puppeteer");
 const app = express();
 
@@ -8,8 +9,8 @@ app.listen(5000, () => {
   console.log("Server started on port " + port);
 });
 
-app.get("/pdf", async (req, res) => {
-  console.log('Generating PDF');
+app.get("/pdf", cors(), async (req, res) => {
+  console.log("Generating PDF");
   // const url = req.query.target;
 
   const browser = await puppeteer.launch();
@@ -43,5 +44,6 @@ app.get("/pdf", async (req, res) => {
   await browser.close();
 
   res.contentType("application/pdf");
+  res.set({ "Content-Length": pdfBuffer.length });
   res.send(pdfBuffer);
 });

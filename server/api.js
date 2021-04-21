@@ -4,10 +4,10 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 const port = 5000;
-const targetUrl = "http://localhost:3000";
+const targetUrl = "http://localhost:3000"; // TODO: make this dynamic
 
 app.listen(5000, () => {
-  console.log("Server started on port " + port);
+  console.log("API server started on port " + port);
 });
 
 app.get("/pdf", cors(), async (req, res) => {

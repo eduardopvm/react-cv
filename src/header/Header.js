@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 //TODO: add loading when generating PDF and improve error handling
+//TODO: make API url dynamic
 
 export default function Header(props) {
   const classes = useStyles();

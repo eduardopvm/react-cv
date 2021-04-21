@@ -1,6 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 
@@ -8,13 +11,18 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: "0.5rem",
   },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },
 }));
 
-//TODO: add loading when generating PDF and improve error handling
+//TODO: improve error handling
 //TODO: make API url dynamic
 
 export default function Header(props) {
   const classes = useStyles();
+  const [loading, setLoading] = useState(false);
   const [t, i18n] = useTranslation();
 
   const onPagePrint = () => {
@@ -22,6 +30,7 @@ export default function Header(props) {
   };
 
   const onPdfExport = () => {
+    setLoading(true);
     fetch("http://localhost:5000/pdf", {
       method: "GET",
       mode: "cors",
@@ -44,6 +53,7 @@ export default function Header(props) {
         link.href = window.URL.createObjectURL(blob);
         link.download = `CV - Eduardo P V de Moraes.pdf`;
         link.click();
+        setLoading(false);
       });
   };
 
@@ -54,6 +64,9 @@ export default function Header(props) {
 
   return (
     <Grid container>
+      <Backdrop className={classes.backdrop} open={loading}>
+        <CircularProgress color="inherit" />
+      </Backdrop>
       <Grid item xs={6}>
         <Button
           onClick={onPagePrint}

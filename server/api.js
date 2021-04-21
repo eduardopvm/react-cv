@@ -1,9 +1,20 @@
+const express = require("express");
 const puppeteer = require("puppeteer");
+const app = express();
 
-(async () => {
+const port = 5000;
+
+app.listen(5000, () => {
+  console.log("Server started on port " + port);
+});
+
+app.get("/pdf", async (req, res) => {
+  console.log('Generating PDF');
+  // const url = req.query.target;
+
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  
+
   await page.goto("http://localhost:3000", {
     waitUntil: "networkidle2",
   });
@@ -15,22 +26,22 @@ const puppeteer = require("puppeteer");
     el = el.cloneNode(true);
 
     document.body.innerHTML = `
-    <!DOCTYPE html>
-    <html>
-    <body>
-      ${el.outerHTML}
-    </body>
-    </html>
-  `;
+  <!DOCTYPE html>
+  <html>
+  <body>
+    ${el.outerHTML}
+  </body>
+  </html>
+`;
   }, pdfTarget);
 
-  console.log("Saving pdf as 'CV - Eduardo P V de Moraes.pdf'");
-
-  await page.pdf({
-    path: "../CV - Eduardo P V de Moraes.pdf",
+  const pdfBuffer = await page.pdf({
     printBackground: true,
-    width: "1280px"
+    width: "1280px",
   });
 
   await browser.close();
-})();
+
+  res.contentType("application/pdf");
+  res.send(pdfBuffer);
+});

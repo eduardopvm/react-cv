@@ -4,19 +4,20 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 const port = 5000;
+const targetUrl = "http://localhost:3000";
 
 app.listen(5000, () => {
   console.log("Server started on port " + port);
 });
 
 app.get("/pdf", cors(), async (req, res) => {
-  console.log("Generating PDF");
   // const url = req.query.target;
+  console.log(`Accessing page ${targetUrl} on headless chrome`);
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.goto("http://localhost:3000", {
+  await page.goto(targetUrl, {
     waitUntil: "networkidle2",
   });
 
@@ -35,6 +36,8 @@ app.get("/pdf", cors(), async (req, res) => {
   </html>
 `;
   }, pdfTarget);
+
+  console.log("Generating CV PDF on " + new Date());
 
   const pdfBuffer = await page.pdf({
     printBackground: true,

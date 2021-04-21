@@ -10,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+//TODO: add loading when generating PDF and improve error handling
+
 export default function Header(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
@@ -22,6 +24,7 @@ export default function Header(props) {
     fetch("http://localhost:5000/pdf", {
       method: "GET",
       mode: "cors",
+      cache: "no-store",
       // credentials: "omit",
       headers: {
         // "Content-Type": "application/pdf",
@@ -30,11 +33,17 @@ export default function Header(props) {
     })
       .then((res) => {
         if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
+          console.error("Error downloading PDF", res);
         }
-        return res;
+        return res.blob();
       })
-      .then((res) => console.log("PDF: ", res));
+      .then((blob) => {
+        // TODO: fix this hack somehow?
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = `CV - Eduardo P V de Moraes.pdf`;
+        link.click();
+      });
   };
 
   const onChangeLanguage = (lng) => {

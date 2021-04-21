@@ -19,11 +19,14 @@ const useStyles = makeStyles((theme) => ({
 
 //TODO: improve error handling
 //TODO: make API url dynamic
+//TODO: make PDF use correct language
 
 export default function Header(props) {
   const classes = useStyles();
   const [loading, setLoading] = useState(false);
   const [t, i18n] = useTranslation();
+
+  const pdfUrl = "http://localhost:5000/pdf";
 
   const onPagePrint = () => {
     props.handlePagePrint();
@@ -31,7 +34,7 @@ export default function Header(props) {
 
   const onPdfExport = () => {
     setLoading(true);
-    fetch("http://localhost:5000/pdf", {
+    fetch(`${pdfUrl}?lang=${i18n.language}`, {
       method: "GET",
       mode: "cors",
       cache: "no-store",

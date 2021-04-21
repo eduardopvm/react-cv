@@ -11,13 +11,13 @@ app.listen(5000, () => {
 });
 
 app.get("/pdf", cors(), async (req, res) => {
-  // const url = req.query.target;
+  const lang = req.query.lang || 'pt';
   console.log(`Accessing page ${targetUrl} on headless chrome`);
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.goto(targetUrl, {
+  await page.goto(`${targetUrl}?${lang}`, {
     waitUntil: "networkidle2",
   });
 

@@ -3,8 +3,8 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import { useState, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 
 import Header from "../header/Header";
 import Content from "./Content";
@@ -45,12 +45,21 @@ export default function Page() {
   });
 
   return (
-    <Container>
-      <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
-      <Paper elevation={5} component="main">
-        <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
-      </Paper>
-      <Footer githubUrl={cvDataStatic.source_url} />
-    </Container>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Container>
+            <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
+            <Paper elevation={5} component="main">
+              <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
+            </Paper>
+            <Footer githubUrl={cvDataStatic.source_url} />
+          </Container>
+        </Route>
+        <Route path="/pdf">
+          <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
+        </Route>
+      </Switch>
+    </Router>
   );
 }

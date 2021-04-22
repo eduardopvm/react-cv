@@ -66,7 +66,7 @@ export default function Header(props) {
   };
 
   return (
-    <Grid container>
+    <Grid container component="header">
       <Backdrop className={classes.backdrop} open={loading}>
         <CircularProgress color="inherit" />
       </Backdrop>

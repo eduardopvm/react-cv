@@ -1,8 +1,10 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import Header from "../header/Header";
 import Content from "./Content";
@@ -13,8 +15,21 @@ import cvDataEN from "../data/cv_data_en.json";
 import cvDataStatic from "../data/cv_data_static.json";
 
 export default function Page() {
-  const [cvData, setData] = useState(cvDataPT);
+  const [t, i18n] = useTranslation();
+  const [cvData, setData] = useState(getData());
   const printComponentRef = useRef();
+
+  function getData() {
+    let queryParams = new URLSearchParams(useLocation().search);
+    let lang = queryParams.get("lang");
+    
+    if (lang && lang == "en") {
+      i18n.changeLanguage("en");
+      return cvDataEN;
+    }
+
+    return cvDataPT;
+  }
 
   function handleDataChange(lang) {
     if (lang == "pt") {

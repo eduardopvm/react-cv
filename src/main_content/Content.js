@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 const Content = React.forwardRef((props, ref) => {
   const classes = useStyles();
   return (
-    <Grid container ref={ref} className={classes.contentContainer}>
+    <Grid container ref={ref} id="pdf-target" className={classes.contentContainer}>
       <Grid container item xs={4}>
         <CVAvatar />
       </Grid>

@@ -8,11 +8,11 @@ My previous CV was made using LaTeX using a ready made template with very bad co
 
 ## Development Status
 
-Web version: 75%
+Web version: 80%
 
-Printable version: 60%
+Printable version: 80%
 
-PDF version: 10%
+PDF version: 50%
 
 Mobile version: 20%
 
@@ -27,4 +27,10 @@ Then to execute it:
 
 ```console
 $ npm start
+```
+
+To generate the PDF you need to run a node server inside the server directory like this:
+
+```console
+$ node api.js
 ```

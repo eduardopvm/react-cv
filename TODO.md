@@ -31,6 +31,8 @@
 
 - [x] Refactor and remove Layout component
 
+- [x] Add button to export page to PDF with full styling (may require a backend sadly)
+
 - [x] Write full PT-BR resume json files
 
 - [ ] Write full EN-US resume json files
@@ -44,8 +46,6 @@
 - [ ] Make general spacing and typography adjustments for pleasant look
 
 - [ ] Add stacks section?
-
-- [ ] Add button to export page to PDF with full styling (may require a backend sadly)
 
 - [ ] Add auto language detection to set the default on first load
 

@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -14,11 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Content(props) {
+const Content = React.forwardRef((props, ref) => {
   const classes = useStyles();
-
   return (
-    <Grid container className={classes.contentContainer}>
+    <Grid container ref={ref} className={classes.contentContainer}>
       <Grid container item xs={4}>
         <CVAvatar />
       </Grid>
@@ -26,11 +26,16 @@ export default function Content(props) {
         <CVHeader data={props.staticData.contact} />
       </Grid>
       <Grid item xs={4}>
-        <Sidebar staticData={props.staticData} translatedData={props.translatedData} />
+        <Sidebar
+          staticData={props.staticData}
+          translatedData={props.translatedData}
+        />
       </Grid>
       <Grid item xs={8}>
         <MainContent data={props.translatedData} />
       </Grid>
     </Grid>
   );
-}
+});
+
+export default Content;

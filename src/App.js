@@ -11,6 +11,8 @@ import { useReactToPrint } from "react-to-print";
 import { useTranslation } from "react-i18next";
 
 import Header from "./header/Header";
+import Content from "./main_content/Content";
+import Footer from "./main_content/Footer";
 import CVHeader from "./header/CVHeader";
 import CVAvatar from "./header/CVAvatar";
 import Sidebar from "./sidebar/Sidebar";
@@ -22,18 +24,18 @@ import cvDataStatic from "./data/cv_data_static.json";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    margin: "1rem"
+    margin: "1rem",
   },
   contentContainer: {
     paddingTop: "1rem",
-    height: "100%"
-  }
+    height: "100%",
+  },
 }));
 
 export default function App() {
   const [cvData, setData] = useState(cvDataPT);
   const [t, i18n] = useTranslation();
-  const printComponent = useRef();
+  const printComponentRef = useRef();
   const classes = useStyles();
 
   function handleDataChange(lang) {
@@ -46,43 +48,16 @@ export default function App() {
 
   const handlePagePrint = useReactToPrint({
     documentTitle: "CV - Eduardo P V de Moraes",
-    content: () => printComponent.current
+    content: () => printComponentRef.current,
   });
 
   return (
     <Container>
       <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
       <Paper elevation={5} component="main">
-        <Grid container ref={printComponent} id="pdf-target" className={classes.contentContainer}>
-          <Grid container item xs={4}>
-            <CVAvatar />
-          </Grid>
-          <Grid container item xs={8}>
-            <CVHeader data={cvDataStatic.contact} />
-          </Grid>
-          <Grid item xs={4}>
-            <Sidebar
-              staticData={cvDataStatic}
-              translatedData={cvData}
-            />
-          </Grid>
-          <Grid item xs={8}>
-            <MainContent data={cvData} />
-          </Grid>
-        </Grid>
+        <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
       </Paper>
-      
-      <Grid container justify="center" className={classes.footer} component="footer">
-        <Box>
-          <Typography variant="caption" color="textSecondary" align="center" component="div">
-            {t("footerDescription")}
-          </Typography>
-          <Typography variant="caption" color="textSecondary" align="center" component="div">
-            {t("footerSource")}
-            <Link href={cvDataStatic.source_url} target="_blank">GitHub</Link>
-          </Typography>
-        </Box>
-      </Grid>
+      <Footer githubUrl={cvDataStatic.source_url} />
     </Container>
   );
 }

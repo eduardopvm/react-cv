@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CVHeader from "../header/CVHeader";
 import CVAvatar from "../header/CVAvatar";
 import Sidebar from "../sidebar/Sidebar";
-import MainContent from "./MainContent";
+import WorkHistory from "./WorkHistory";
 
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
@@ -32,7 +32,7 @@ const Content = React.forwardRef((props, ref) => {
         />
       </Grid>
       <Grid item xs={8}>
-        <MainContent data={props.translatedData} />
+        <WorkHistory history={props.translatedData.history} />
       </Grid>
     </Grid>
   );

@@ -8,7 +8,8 @@ import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    margin: "1rem",
+    marginTop: "1rem",
+    marginBottom: "1rem"
   },
 }));
 

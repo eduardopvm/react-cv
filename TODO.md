@@ -37,6 +37,8 @@
 
 - [ ] Write full EN-US resume json files
 
+- [ ] Create mobile version with drawer menu
+
 - [ ] Create page breaks for printing layout
 
 - [ ] Make general spacing and typography adjustments for pleasant look
@@ -52,8 +54,6 @@
 - [ ] Make it SEO friendly
 
 - [ ] Refactor components into smaller pieces and organize them in directories
-
-- [ ] Create mobile version with drawer menu
 
 - [ ] Try to change printed links from JSX logic to CSS
 

@@ -17,8 +17,8 @@ export default function WorkHistory(props) {
   return (
     <Grid item xs={12}>
       <Box>
-        <Typography variant="h4">{t("workHistory")}</Typography>
-        <Divider component="div" />
+        <Typography variant="h4" style={{marginLeft: "1rem"}}>{t("workHistory")}</Typography>
+        <Divider variant="middle" component="div" />
         <Box>{workHistory}</Box>
       </Box>
     </Grid>

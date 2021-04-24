@@ -19,19 +19,19 @@ const Content = React.forwardRef((props, ref) => {
   const classes = useStyles();
   return (
     <Grid container ref={ref} className={classes.contentContainer}>
-      <Grid container item xs={4}>
+      <Grid container item xs={12} sm={4}>
         <CVAvatar />
       </Grid>
-      <Grid container item xs={8}>
+      <Grid container item xs={12} sm={8}>
         <CVHeader data={props.staticData.contact} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} sm={4}>
         <Sidebar
           staticData={props.staticData}
           translatedData={props.translatedData}
         />
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={12} sm={8}>
         <WorkHistory history={props.translatedData.history} />
       </Grid>
     </Grid>

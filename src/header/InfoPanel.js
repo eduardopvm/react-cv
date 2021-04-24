@@ -32,7 +32,7 @@ export default function HeaderPanel(props) {
 
   return (
     <Grid container item xs={12} className={classes.panel}>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Box>
           <EmailOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">Email</Typography>
@@ -51,7 +51,7 @@ export default function HeaderPanel(props) {
         </Box>
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Box>
           <WebAssetOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">Website</Typography>
@@ -72,7 +72,7 @@ export default function HeaderPanel(props) {
         </Box>
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Box>
           <PhoneAndroidOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">{t("phone")}</Typography>
@@ -80,7 +80,7 @@ export default function HeaderPanel(props) {
         </Box>
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Box>
           <LocationOnOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">{t("location")}</Typography>

@@ -46,7 +46,6 @@ export default function Header(props) {
       cache: "no-store",
       // credentials: "omit",
       headers: {
-        ContentType: "application/pdf",
         Accept: "application/pdf",
       },
     })

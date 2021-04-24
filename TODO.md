@@ -39,10 +39,6 @@
 
 - [ ] Create page breaks for printing layout
 
-- [ ] Try to change printed links from JSX logic to CSS
-
-- [ ] Refactor components into smaller pieces and organize them in directories
-
 - [ ] Make general spacing and typography adjustments for pleasant look
 
 - [ ] Add stacks section?
@@ -51,10 +47,15 @@
 
 - [ ] Add QRCode to printable version in place of photo with link to website
 
-- [ ] Create theme to add more color to layout (icons specially)
-
 - [ ] Prepare for production and deployment (and optimize static files and images)
 
 - [ ] Make it SEO friendly
 
+- [ ] Refactor components into smaller pieces and organize them in directories
+
 - [ ] Create mobile version with drawer menu
+
+- [ ] Try to change printed links from JSX logic to CSS
+
+- [ ] Create theme to add more color to layout (icons specially)
+

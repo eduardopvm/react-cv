@@ -3,8 +3,7 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import { useState, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { useTranslation } from "react-i18next";
-import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
 
 import Header from "../header/Header";
 import Content from "./Content";
@@ -14,8 +13,7 @@ import cvDataPT from "../data/cv_data_pt.json";
 import cvDataEN from "../data/cv_data_en.json";
 import cvDataStatic from "../data/cv_data_static.json";
 
-export default function Page() {
-  const [t, i18n] = useTranslation();
+export default function Homepage() {
   const [cvData, setData] = useState(getData());
   const printComponentRef = useRef();
 

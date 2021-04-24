@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
 import { useState, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
@@ -16,6 +18,8 @@ import cvDataStatic from "../data/cv_data_static.json";
 export default function Homepage() {
   const [cvData, setData] = useState(getData());
   const printComponentRef = useRef();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.up('xs'));
 
   function getData() {
     let queryParams = new URLSearchParams(useLocation().search);
@@ -46,7 +50,7 @@ export default function Homepage() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Container>
+          <Container disableGutters={isSmallScreen ? true : false}>
             <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
             <Paper elevation={5} component="main">
               <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />

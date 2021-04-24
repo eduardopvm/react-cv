@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
+//TODO: refactor translation keys
 const translations = {
   en: {
     translation: {
@@ -20,6 +21,7 @@ const translations = {
       "brazil": "Brazil",
       "printCV": "Print CV",
       "exportToPDF": "Export to PDF",
+      "exportToPDFError": "Error exporting to PDF. Please contact the developer.",
       "footerDescription": "Created by Eduardo Palma Vieira de Moraes with React + Material-UI.",
       "footerSource": "The code is open source and can be found on ",
       "workload": "Workload",
@@ -46,6 +48,7 @@ const translations = {
       "brazil": "Brasil",
       "printCV": "Imprimir CV",
       "exportToPDF": "Salvar como PDF",
+      "exportToPDFError": "Erro ao exportar para PDF. Entre em contato com o desenvolvedor.",
       "footerDescription": "Criado por Eduardo Palma Vieira de Moraes com React + Material-UI.",
       "footerSource": "O código fonte é aberto e pode ser encontrado no ",
       "workload": "Carga Horária",

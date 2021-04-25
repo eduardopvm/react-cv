@@ -1,12 +1,15 @@
 import React from "react";
+import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import IconButton from '@material-ui/core/IconButton';
 import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
+import MenuIcon from '@material-ui/icons/Menu';
 import PrintIcon from "@material-ui/icons/Print";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -92,8 +95,8 @@ export default function Header(props) {
   };
 
   return (
-    <AppBar position="static" elevation={5} color="primary">
-      <Grid container>
+    <React.Fragment>
+      <React.Fragment>
         <Backdrop className={classes.backdrop} open={loading}>
           <CircularProgress color="inherit" />
         </Backdrop>
@@ -106,30 +109,44 @@ export default function Header(props) {
             {t("exportToPDFError")}
           </Alert>
         </Snackbar>
+      </React.Fragment>
 
-        <Grid item xs={6}>
-          <Button
-            onClick={onPagePrint}
-            startIcon={<PrintIcon />}
-            variant="contained"
-            color="secondary"
-            className={classes.button}>
-            {t("printCV")}
-          </Button>
-          <Button
-            onClick={onPdfExport}
-            startIcon={<PictureAsPdfIcon />}
-            variant="contained"
-            color="secondary"
-            className={classes.button}>
-            {t("exportToPDF")}
-          </Button>
-        </Grid>
+      <AppBar position="static" elevation={5} color="primary">
+        <Toolbar>
+          <Grid container item xs={12}>
+            <Grid item xs={8}>
+              <Box display={{ xs: 'block', sm: 'none' }}>
+                <IconButton edge="start" color="inherit" aria-label="menu">
+                  <MenuIcon />
+                </IconButton>
+              </Box>
 
-        <Grid container item xs={6} justify="flex-end">
-          <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
-        </Grid>
-      </Grid>
-    </AppBar>
+              <Box display={{ xs: 'none', sm: 'block' }}>
+                <Button
+                  onClick={onPagePrint}
+                  startIcon={<PrintIcon />}
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}>
+                  {t("printCV")}
+                </Button>
+                <Button
+                  onClick={onPdfExport}
+                  startIcon={<PictureAsPdfIcon />}
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}>
+                  {t("exportToPDF")}
+                </Button>
+              </Box>
+            </Grid>
+
+            <Grid container item xs={4} justify="flex-end">
+              <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
+            </Grid>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+    </React.Fragment>
   );
 }

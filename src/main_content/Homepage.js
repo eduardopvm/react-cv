@@ -48,7 +48,7 @@ export default function Homepage() {
         <Route exact path="/">
           <Container disableGutters>
             <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
-            <Paper elevation={5} component="main">
+            <Paper elevation={5} component="main" square>
               <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
             </Paper>
             <Footer githubUrl={cvDataStatic.source_url} />

@@ -7,11 +7,14 @@ import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles';
+import PrintIcon from "@material-ui/icons/Print";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
+
 import LanguageChooser from "./LanguageChooser";
 
 const useStyles = makeStyles((theme) => ({
@@ -40,7 +43,9 @@ export default function Header(props) {
   const [errorHappened, showError] = useState(false);
   const [t, i18n] = useTranslation();
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'), {noSsr: true});
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"), {
+    noSsr: true,
+  });
 
   const onPagePrint = () => {
     props.handlePagePrint();
@@ -87,7 +92,7 @@ export default function Header(props) {
   };
 
   return (
-    <AppBar position="static" elevation={0} color={isSmallScreen ? "primary" : "transparent"}>
+    <AppBar position="static" elevation={5} color="primary">
       <Grid container>
         <Backdrop className={classes.backdrop} open={loading}>
           <CircularProgress color="inherit" />
@@ -103,26 +108,26 @@ export default function Header(props) {
         </Snackbar>
 
         <Grid item xs={6}>
-          {!isSmallScreen &&
-            <Button
-              onClick={onPagePrint}
-              variant="contained"
-              color="primary"
-              className={classes.button}>
-              {t("printCV")}
-            </Button>
-          }
+          <Button
+            onClick={onPagePrint}
+            startIcon={<PrintIcon />}
+            variant="contained"
+            color="secondary"
+            className={classes.button}>
+            {t("printCV")}
+          </Button>
           <Button
             onClick={onPdfExport}
+            startIcon={<PictureAsPdfIcon />}
             variant="contained"
-            color={isSmallScreen ? "default" : "primary"}
+            color="secondary"
             className={classes.button}>
             {t("exportToPDF")}
           </Button>
         </Grid>
 
         <Grid container item xs={6} justify="flex-end">
-          <LanguageChooser handleLanguageChange={props.handleLanguageChange}/>
+          <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
         </Grid>
       </Grid>
     </AppBar>

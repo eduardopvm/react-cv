@@ -7,9 +7,12 @@ import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
+import LanguageChooser from "./LanguageChooser";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -21,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const pdfUrl = "http://localhost:5000/pdf";
+
+//TODO: break this up into multiple components, it's too complex
 //TODO: make API url dynamic
 //TODO: add support email to error message
 
@@ -33,8 +39,8 @@ export default function Header(props) {
   const [loading, setLoading] = useState(false);
   const [errorHappened, showError] = useState(false);
   const [t, i18n] = useTranslation();
-
-  const pdfUrl = "http://localhost:5000/pdf";
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'), {noSsr: true});
 
   const onPagePrint = () => {
     props.handlePagePrint();
@@ -73,11 +79,6 @@ export default function Header(props) {
       });
   };
 
-  const onChangeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    props.handleLanguageChange(lng);
-  };
-
   const hideErrorMessage = (event, reason) => {
     if (reason === "clickaway") {
       return;
@@ -86,11 +87,12 @@ export default function Header(props) {
   };
 
   return (
-    <AppBar position="static" elevation={0} color="transparent">
+    <AppBar position="static" elevation={0} color={isSmallScreen ? "primary" : "transparent"}>
       <Grid container>
         <Backdrop className={classes.backdrop} open={loading}>
           <CircularProgress color="inherit" />
         </Backdrop>
+
         <Snackbar
           open={errorHappened}
           onClose={hideErrorMessage}
@@ -99,55 +101,28 @@ export default function Header(props) {
             {t("exportToPDFError")}
           </Alert>
         </Snackbar>
+
         <Grid item xs={6}>
-          <Button
-            onClick={onPagePrint}
-            variant="contained"
-            color="primary"
-            className={classes.button}>
-            {t("printCV")}
-          </Button>
+          {!isSmallScreen &&
+            <Button
+              onClick={onPagePrint}
+              variant="contained"
+              color="primary"
+              className={classes.button}>
+              {t("printCV")}
+            </Button>
+          }
           <Button
             onClick={onPdfExport}
             variant="contained"
-            color="primary"
+            color={isSmallScreen ? "default" : "primary"}
             className={classes.button}>
             {t("exportToPDF")}
           </Button>
         </Grid>
-        
+
         <Grid container item xs={6} justify="flex-end">
-          {i18n.language == "pt" ? (
-            <React.Fragment>
-              <Button
-                onClick={() => onChangeLanguage("pt")}
-                disabled
-                className={classes.button}>
-                Português
-              </Button>
-              <Button
-                onClick={() => onChangeLanguage("en")}
-                color="primary"
-                className={classes.button}>
-                English
-              </Button>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <Button
-                onClick={() => onChangeLanguage("pt")}
-                color="primary"
-                className={classes.button}>
-                Português
-              </Button>
-              <Button
-                onClick={() => onChangeLanguage("en")}
-                disabled
-                className={classes.button}>
-                English
-              </Button>
-            </React.Fragment>
-          )}
+          <LanguageChooser handleLanguageChange={props.handleLanguageChange}/>
         </Grid>
       </Grid>
     </AppBar>

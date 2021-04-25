@@ -37,13 +37,13 @@
 
 - [ ] Write full EN-US resume json files
 
-- [ ] Create mobile version with drawer menu
+- [ ] Create mobile version with drawer/appbar menu
+
+- [ ] Change sidebar order of sections and maybe add stacks section
 
 - [ ] Create page breaks for printing layout
 
 - [ ] Make general spacing and typography adjustments for pleasant look
-
-- [ ] Add stacks section?
 
 - [ ] Add auto language detection to set the default on first load
 

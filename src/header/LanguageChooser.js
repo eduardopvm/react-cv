@@ -37,6 +37,7 @@ export default function LanguageChooser(props) {
         onClick={handleMenuClick}
         startIcon={<TranslateIcon />}
         endIcon={<ExpandMoreIcon />}
+        style={{ color: "#fff" }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         aria-label="Chosen language">

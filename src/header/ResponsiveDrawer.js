@@ -28,15 +28,51 @@ export default function ResponsiveDrawer(props) {
       </Box>
       <Divider />
       <List>
-        <ListItem><Link to="info" smooth={true} offset={-50} onClick={props.onDrawerToggle}>Informações</Link></ListItem>
-        <ListItem><Link to="social" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Social</Link></ListItem>
-        <ListItem><Link to="profile" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Perfil</Link></ListItem>
-        <ListItem><Link to="education" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Educação</Link></ListItem>
-        <ListItem><Link to="language-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Línguas</Link></ListItem>
-        <ListItem><Link to="tech-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Tecnologias</Link></ListItem>
-        <ListItem><Link to="general-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Conceitos</Link></ListItem>
-        <ListItem><Link to="certificates" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Certificados</Link></ListItem>
-        <ListItem><Link to="work-history" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Experiência Profissional</Link></ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="info" smooth={true} offset={-50} onClick={props.onDrawerToggle}>Informações</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="social" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Social</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="profile" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Perfil</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="education" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Educação</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="language-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Línguas</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="tech-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Tecnologias</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="general-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Conceitos</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="certificates" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Certificados</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText>
+            <Link to="work-history" smooth={true} offset={-60} onClick={props.onDrawerToggle}>Experiência Profissional</Link>
+          </ListItemText>
+        </ListItem>
       </List>
     </div>
   );

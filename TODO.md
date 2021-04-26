@@ -39,6 +39,8 @@
 
 - [ ] Create mobile version with drawer/appbar menu
 
+- [ ] Fix text overflow on sidebar on tablet screens or change it to mobile layout with drawer
+
 - [ ] Change sidebar order of sections and maybe add stacks section
 
 - [ ] Refactor components into smaller pieces and organize them in directories

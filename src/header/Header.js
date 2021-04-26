@@ -16,6 +16,7 @@ import { useTheme } from "@material-ui/core/styles";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import LanguageChooser from "./LanguageChooser";
 import ResponsiveDrawer from "./ResponsiveDrawer";
@@ -113,7 +114,7 @@ export default function Header(props) {
         </Snackbar>
       </React.Fragment>
 
-      <AppBar position="static" elevation={5} color="primary">
+      <AppBar position={useMediaQuery(theme.breakpoints.down("xs")) ? "sticky" : "static"} elevation={5} color="primary">
         <Toolbar>
           <Grid container item xs={12}>
             <Grid item xs={8}>

@@ -1,5 +1,6 @@
 {
   "profile": "FUBAR",
+  "quote": { "text": "FUBAR", "author": "Ralph Waldo Emerson"},
   "history": [
     {
       "role": "Analista de Sistemas",

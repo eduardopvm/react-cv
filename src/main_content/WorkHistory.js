@@ -11,7 +11,7 @@ export default function WorkHistory(props) {
 
   const workHistory = [];
   props.history.map((list, index) => {
-    workHistory.push(<WorkHistoryItem history={list} key={index} />);
+    workHistory.push(<WorkHistoryItem history={list} key={index} index={index} />);
   });
 
   return (

@@ -47,7 +47,7 @@ export default function Homepage() {
       <Switch>
         <Route exact path="/">
           <Container disableGutters>
-            <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} />
+            <Header handleLanguageChange={handleDataChange} handlePagePrint={handlePagePrint} history={cvData.history} />
             <Paper elevation={5} component="main" square>
               <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
             </Paper>

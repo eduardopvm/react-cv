@@ -64,7 +64,7 @@ export default function WorkHistoryItem(props) {
 
   return (
     <Box mt={2} mb={3} mx={2}>
-      <Box className={classes.avoidPageBreak}>
+      <Box id={`work-history-${props.index}`} className={classes.avoidPageBreak}>
         {/* Job Role */}
         <Typography variant="h5">{props.history.role}</Typography>
         

@@ -109,7 +109,7 @@ export default function ResponsiveDrawer(props) {
     <nav>
       <Hidden smUp>
         <Drawer
-          container={document.getElementById("root")}
+          container={document.body}
           variant="temporary"
           anchor="left"
           open={props.drawerOpen}

@@ -44,7 +44,7 @@ export default function LanguageChooser(props) {
       >
         {selectedLanguage}
       </Button>
-      <Menu id="simple-menu" container={document.getElementById("root")} anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+      <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClick} lang="en">
           English
         </MenuItem>

@@ -37,13 +37,17 @@
 
 - [ ] Write full EN-US resume json files
 
-- [ ] Create mobile version with drawer menu
+- [ ] Create mobile version with drawer/appbar menu
+
+- [ ] Fix text overflow on sidebar on tablet screens or change it to mobile layout with drawer
+
+- [ ] Change sidebar order of sections and maybe add stacks section
+
+- [ ] Refactor components into smaller pieces and organize them in directories
 
 - [ ] Create page breaks for printing layout
 
 - [ ] Make general spacing and typography adjustments for pleasant look
-
-- [ ] Add stacks section?
 
 - [ ] Add auto language detection to set the default on first load
 
@@ -52,8 +56,6 @@
 - [ ] Prepare for production and deployment (and optimize static files and images)
 
 - [ ] Make it SEO friendly
-
-- [ ] Refactor components into smaller pieces and organize them in directories
 
 - [ ] Try to change printed links from JSX logic to CSS
 

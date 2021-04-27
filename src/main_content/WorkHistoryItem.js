@@ -1,5 +1,6 @@
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -64,7 +65,7 @@ export default function WorkHistoryItem(props) {
 
   return (
     <Box mt={2} mb={3} mx={2}>
-      <Box className={classes.avoidPageBreak}>
+      <Box id={`work-history-${props.index}`} className={classes.avoidPageBreak}>
         {/* Job Role */}
         <Typography variant="h5">{props.history.role}</Typography>
         
@@ -85,23 +86,27 @@ export default function WorkHistoryItem(props) {
           <Typography component="div" variant="h6" style={{ fontWeight: 400 }}>{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
         </Box>
         
-        <Box>
+        <Grid container>
           {/* Job date */}
-          <Typography component="span">
-            <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
-            <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
-              {props.history.job_start} &ndash; {props.history.job_end}
+          <Grid item xs={12} sm={6}>
+            <Typography component="span">
+              <CalendarTodayOutlinedIcon fontSize="small" className={classes.icon} />
+              <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
+                {props.history.job_start} &ndash; {props.history.job_end}
+              </Typography>
             </Typography>
-          </Typography>
+          </Grid>
 
           {/* Job Location */}
-          <Typography component="span" style={{ marginLeft: "1rem" }}>
-            <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
-            <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
-              {props.history.location}
+          <Grid item xs={12} sm={6}>
+            <Typography component="span">
+              <LocationOnOutlinedIcon fontSize="small" className={classes.icon} />
+              <Typography variant="body2" color="textSecondary" display="inline" className={classes.details}>
+                {props.history.location}
+              </Typography>
             </Typography>
-          </Typography>
-        </Box>
+          </Grid>
+        </Grid>
       </Box>
       
       {/* Job Highlights */}

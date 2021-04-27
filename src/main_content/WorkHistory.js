@@ -11,14 +11,14 @@ export default function WorkHistory(props) {
 
   const workHistory = [];
   props.history.map((list, index) => {
-    workHistory.push(<WorkHistoryItem history={list} key={index} />);
+    workHistory.push(<WorkHistoryItem history={list} key={index} index={index} />);
   });
 
   return (
     <Grid item xs={12}>
-      <Box>
-        <Typography variant="h4">{t("workHistory")}</Typography>
-        <Divider component="div" />
+      <Box id="work-history">
+        <Typography variant="h4" style={{marginLeft: "1rem"}}>{t("workHistory")}</Typography>
+        <Divider variant="middle" component="div" />
         <Box>{workHistory}</Box>
       </Box>
     </Grid>

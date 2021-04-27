@@ -1,13 +1,25 @@
 import React from "react";
+import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
+import IconButton from "@material-ui/core/IconButton";
+import Backdrop from "@material-ui/core/Backdrop";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import MenuIcon from "@material-ui/icons/Menu";
+import PrintIcon from "@material-ui/icons/Print";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import { useTheme } from "@material-ui/core/styles";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
+import LanguageChooser from "./LanguageChooser";
+import ResponsiveDrawer from "./ResponsiveDrawer";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -15,10 +27,13 @@ const useStyles = makeStyles((theme) => ({
   },
   backdrop: {
     zIndex: theme.zIndex.drawer + 1,
-    color: '#fff',
+    color: "#fff",
   },
 }));
 
+const pdfUrl = "http://localhost:5000/pdf";
+
+//TODO: break this up into multiple components, it's too complex
 //TODO: make API url dynamic
 //TODO: add support email to error message
 
@@ -30,9 +45,9 @@ export default function Header(props) {
   const classes = useStyles();
   const [loading, setLoading] = useState(false);
   const [errorHappened, showError] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [t, i18n] = useTranslation();
-
-  const pdfUrl = "http://localhost:5000/pdf";
+  const theme = useTheme();
 
   const onPagePrint = () => {
     props.handlePagePrint();
@@ -71,77 +86,76 @@ export default function Header(props) {
       });
   };
 
-  const onChangeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    props.handleLanguageChange(lng);
-  };
-
   const hideErrorMessage = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
     showError(false);
-  }
+  };
+
+  const handleToggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
+  };
 
   return (
-    <Grid container component="header">
-      <Backdrop className={classes.backdrop} open={loading}>
-        <CircularProgress color="inherit" />
-      </Backdrop>
-      <Snackbar open={errorHappened} onClose={hideErrorMessage} autoHideDuration={7000}>
-        <Alert onClose={hideErrorMessage} severity="error">
-          {t("exportToPDFError")}
-        </Alert>
-      </Snackbar>
-      <Grid item xs={6}>
-        <Button
-          onClick={onPagePrint}
-          variant="contained"
-          color="primary"
-          className={classes.button}>
-          {t("printCV")}
-        </Button>
-        <Button
-          onClick={onPdfExport}
-          variant="contained"
-          color="primary"
-          className={classes.button}>
-          {t("exportToPDF")}
-        </Button>
-      </Grid>
-      <Grid container item xs={6} justify="flex-end">
-        {i18n.language == "pt" ? (
-          <React.Fragment>
-            <Button
-              onClick={() => onChangeLanguage("pt")}
-              disabled
-              className={classes.button}>
-              Português
-            </Button>
-            <Button
-              onClick={() => onChangeLanguage("en")}
-              color="primary"
-              className={classes.button}>
-              English
-            </Button>
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            <Button
-              onClick={() => onChangeLanguage("pt")}
-              color="primary"
-              className={classes.button}>
-              Português
-            </Button>
-            <Button
-              onClick={() => onChangeLanguage("en")}
-              disabled
-              className={classes.button}>
-              English
-            </Button>
-          </React.Fragment>
-        )}
-      </Grid>
-    </Grid>
+    <React.Fragment>
+      <React.Fragment>
+        <Backdrop className={classes.backdrop} open={loading}>
+          <CircularProgress color="inherit" />
+        </Backdrop>
+
+        <Snackbar
+          open={errorHappened}
+          onClose={hideErrorMessage}
+          autoHideDuration={7000}>
+          <Alert onClose={hideErrorMessage} severity="error">
+            {t("exportToPDFError")}
+          </Alert>
+        </Snackbar>
+      </React.Fragment>
+
+      <AppBar position={useMediaQuery(theme.breakpoints.down("xs")) ? "sticky" : "static"} elevation={5} color="primary">
+        <Toolbar>
+          <Grid container item xs={12}>
+            <Grid item xs={8}>
+              <Box display={{ xs: "block", sm: "none" }}>
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  aria-label="open drawer"
+                  onClick={handleToggleDrawer}>
+                  <MenuIcon />
+                </IconButton>
+              </Box>
+
+              <Box display={{ xs: "none", sm: "block" }}>
+                <Button
+                  onClick={onPagePrint}
+                  startIcon={<PrintIcon />}
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}>
+                  {t("printCV")}
+                </Button>
+                <Button
+                  onClick={onPdfExport}
+                  startIcon={<PictureAsPdfIcon />}
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}>
+                  {t("exportToPDF")}
+                </Button>
+              </Box>
+            </Grid>
+
+            <Grid container item xs={4} justify="flex-end">
+              <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
+            </Grid>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+
+      <ResponsiveDrawer onPagePrint={onPagePrint} onPdfExport={onPdfExport} onDrawerToggle={handleToggleDrawer} drawerOpen={drawerOpen} history={props.history} />
+    </React.Fragment>
   );
 }

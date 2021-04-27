@@ -33,7 +33,7 @@ export default function Sidebar(props) {
 
   return (
     <React.Fragment>
-      <Box>
+      <Box id="social">
         <Box ml={2}>
           <Typography variant="h4">Social</Typography>
         </Box>
@@ -41,7 +41,7 @@ export default function Sidebar(props) {
         <SocialList />
       </Box>
 
-      <Box>
+      <Box id="profile" >
         <Box ml={2}>
           <Typography variant="h4">{t('profile')}</Typography>
         </Box>
@@ -53,7 +53,7 @@ export default function Sidebar(props) {
         </Typography>
       </Box>
 
-      <Box className={classes.avoidBreakInside}>
+      <Box id="education" className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("education")}</Typography>
         </Box>
@@ -67,7 +67,7 @@ export default function Sidebar(props) {
         </Box>
       </Box>
 
-      <Box className={classes.avoidBreakInside}>
+      <Box id="language-skills" className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("languageSkills")}</Typography>
         </Box>
@@ -75,7 +75,7 @@ export default function Sidebar(props) {
         <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
-      <Box className={classes.avoidBreakInside}>
+      <Box id="tech-skills" className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("technicalSkills")}</Typography>
         </Box>
@@ -83,7 +83,7 @@ export default function Sidebar(props) {
         <RatedSkillList skills={props.staticData.technical_skills} />
       </Box>
 
-      <Box className={classes.avoidBreakInside}>
+      <Box id="general-skills" className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("generalSkills")}</Typography>
         </Box>
@@ -91,7 +91,7 @@ export default function Sidebar(props) {
         <GeneralSkillsList skills={props.staticData.general_skills} />
       </Box>
 
-      <Box className={classes.avoidBreakInside}>
+      <Box id="certificates" className={classes.avoidBreakInside}>
         <Box ml={2}>
           <Typography variant="h4">{t("certificates")}</Typography>
         </Box>

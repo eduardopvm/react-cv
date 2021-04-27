@@ -1,7 +1,7 @@
 {
   "name": "react-cv",
   "version": "1.0.0",
-  "description": "A printable and reactive CV built with React",
+  "description": "A CV built with React that is responsive, printable and exportable to PDF",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

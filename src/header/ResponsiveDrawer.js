@@ -7,9 +7,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import PrintIcon from "@material-ui/icons/Print";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
-import Typography from "@material-ui/core/Typography";
 import { Link } from "react-scroll";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
@@ -25,25 +23,16 @@ export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
 
-  const onPrintPage = () => {
-    props.onDrawerToggle();
-    props.onPagePrint();
-  }
-
   const onExportPDF = () => {
     props.onDrawerToggle();
     props.onPdfExport();
-  }
+  };
 
   const workHistoryLinks = props.history.map((history, index) => {
     return (
       <ListItem button key={index}>
         <ListItemText>
-          <Link
-            to={`work-history-${index}`}
-            smooth={true}
-            offset={-60}
-            onClick={props.onDrawerToggle}>
+          <Link to={`work-history-${index}`} smooth={true} offset={-60} onClick={props.onDrawerToggle}>
             {history.company} ({history.job_start}-{history.job_end})
           </Link>
         </ListItemText>
@@ -53,13 +42,13 @@ export default function ResponsiveDrawer(props) {
 
   const drawerMenu = (
     <div>
-      <Box className={classes.toolbar}>
-        {/* <Typography variant="h5">Menu</Typography> */}
-      </Box>
+      <Box className={classes.toolbar} />
       <Divider />
       <List>
         <ListItem button onClick={onExportPDF}>
-          <ListItemIcon><PictureAsPdfIcon /></ListItemIcon>
+          <ListItemIcon>
+            <PictureAsPdfIcon />
+          </ListItemIcon>
           <ListItemText primary={t("exportToPDF")} />
         </ListItem>
       </List>
@@ -67,100 +56,64 @@ export default function ResponsiveDrawer(props) {
       <List>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="info"
-              smooth={true}
-              offset={-50}
-              onClick={props.onDrawerToggle}>
-              Informações
+            <Link to="info" smooth={true} offset={-50} onClick={props.onDrawerToggle}>
+              {t("information")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="social"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
+            <Link to="social" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
               Social
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="profile"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Perfil
+            <Link to="profile" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("profile")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="education"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Educação
+            <Link to="education" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("education")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="language-skills"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Línguas
+            <Link to="language-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("languageSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="tech-skills"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Tecnologias
+            <Link to="tech-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("technicalSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="general-skills"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Conceitos
+            <Link to="general-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("generalSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="certificates"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Certificados
+            <Link to="certificates" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("certificates")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link
-              to="work-history"
-              smooth={true}
-              offset={-60}
-              onClick={props.onDrawerToggle}>
-              Experiência Profissional
+            <Link to="work-history" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+              {t("workHistory")}
             </Link>
           </ListItemText>
         </ListItem>
@@ -184,7 +137,8 @@ export default function ResponsiveDrawer(props) {
           }}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
-          }}>
+          }}
+        >
           {drawerMenu}
         </Drawer>
       </Hidden>

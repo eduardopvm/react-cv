@@ -7,6 +7,7 @@ const translations = {
     translation: {
       "phone": "Phone",
       "location": "Location",
+      "information": "Information",
       "profile": "Profile",
       "education": "Education",
       "technicalSkills": "Technical Skills",
@@ -34,6 +35,7 @@ const translations = {
     translation: {
       "phone": "Telefone",
       "location": "Localização",
+      "information": "Informações",
       "profile": "Perfil",
       "education": "Educação",
       "technicalSkills": "Tecnologias",

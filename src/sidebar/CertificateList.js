@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 
 import { GoLinkExternal } from "react-icons/go";
 
-// TODO: refactor this whole shebang to have a print and screen versions
 export default function CertificateList(props) {
   const [t, i18n] = useTranslation();
   const certList = props.certificates.map((cert) => {

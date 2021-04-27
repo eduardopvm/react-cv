@@ -12,9 +12,9 @@ Web version: 80%
 
 Printable version: 80%
 
-PDF version: 50%
+PDF version: 80%
 
-Mobile version: 20%
+Mobile version: 80%
 
 ## Guide
 

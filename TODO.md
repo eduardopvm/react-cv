@@ -37,7 +37,7 @@
 
 - [ ] Write full EN-US resume json files
 
-- [ ] Create mobile version with drawer/appbar menu
+- [x] Create mobile version with drawer/appbar menu
 
 - [ ] Fix text overflow on sidebar on tablet screens or change it to mobile layout with drawer
 

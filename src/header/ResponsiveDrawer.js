@@ -7,9 +7,12 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import PrintIcon from "@material-ui/icons/Print";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-scroll";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -20,6 +23,17 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ResponsiveDrawer(props) {
   const classes = useStyles();
+  const [t, i18n] = useTranslation();
+
+  const onPrintPage = () => {
+    props.onDrawerToggle();
+    props.onPagePrint();
+  }
+
+  const onExportPDF = () => {
+    props.onDrawerToggle();
+    props.onPdfExport();
+  }
 
   const workHistoryLinks = props.history.map((history, index) => {
     return (
@@ -42,6 +56,17 @@ export default function ResponsiveDrawer(props) {
       <Box className={classes.toolbar}>
         {/* <Typography variant="h5">Menu</Typography> */}
       </Box>
+      <Divider />
+      <List>
+        <ListItem button onClick={onPrintPage}>
+          <ListItemIcon><PrintIcon /></ListItemIcon>
+          <ListItemText primary={t("printCV")} />
+        </ListItem>
+        <ListItem button onClick={onExportPDF}>
+          <ListItemIcon><PictureAsPdfIcon /></ListItemIcon>
+          <ListItemText primary={t("exportToPDF")} />
+        </ListItem>
+      </List>
       <Divider />
       <List>
         <ListItem button>

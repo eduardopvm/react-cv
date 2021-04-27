@@ -155,7 +155,7 @@ export default function Header(props) {
         </Toolbar>
       </AppBar>
 
-      <ResponsiveDrawer onDrawerToggle={handleToggleDrawer} drawerOpen={drawerOpen} history={props.history} />
+      <ResponsiveDrawer onPagePrint={onPagePrint} onPdfExport={onPdfExport} onDrawerToggle={handleToggleDrawer} drawerOpen={drawerOpen} history={props.history} />
     </React.Fragment>
   );
 }

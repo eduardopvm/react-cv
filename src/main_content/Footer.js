@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const useStyles = makeStyles((theme) => ({
   footer: {
     marginTop: "1rem",
-    marginBottom: "1rem"
+    marginBottom: "1rem",
   },
 }));
 
@@ -18,24 +18,12 @@ export default function Footer(props) {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      justify="center"
-      className={classes.footer}
-      component="footer">
+    <Grid container justify="center" className={classes.footer} component="footer">
       <Box>
-        <Typography
-          variant="caption"
-          color="textSecondary"
-          align="center"
-          component="div">
+        <Typography variant="caption" color="textSecondary" align="center" component="div">
           {t("footerDescription")}
         </Typography>
-        <Typography
-          variant="caption"
-          color="textSecondary"
-          align="center"
-          component="div">
+        <Typography variant="caption" color="textSecondary" align="center" component="div">
           {t("footerSource")}
           <Link href={props.githubUrl} target="_blank">
             GitHub

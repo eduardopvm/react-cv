@@ -18,17 +18,15 @@ const useStyles = makeStyles({
     marginRight: "0.25rem",
   },
   panel: {
-    margin: "1rem"
-  }
+    margin: "1rem",
+  },
 });
 
 export default function HeaderPanel(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
 
-  const locationQueryString = encodeURI(
-    props.contact.address + " " + props.contact.location
-  );
+  const locationQueryString = encodeURI(props.contact.address + " " + props.contact.location);
 
   return (
     <Grid container item xs={12} className={classes.panel}>
@@ -65,9 +63,7 @@ export default function HeaderPanel(props) {
 
           {/* print display */}
           <Box display="none" displayPrint="block">
-            <Typography color="textSecondary">
-              {props.contact.website}
-            </Typography>
+            <Typography color="textSecondary">{props.contact.website}</Typography>
           </Box>
         </Box>
       </Grid>
@@ -87,21 +83,14 @@ export default function HeaderPanel(props) {
 
           {/* screen display */}
           <Box displayPrint="none">
-            <Link
-              href={
-                "https://www.google.com/maps/search/?api=1&query=" +
-                locationQueryString
-              }
-              target="_blank">
+            <Link href={"https://www.google.com/maps/search/?api=1&query=" + locationQueryString} target="_blank">
               {props.contact.location}
             </Link>
           </Box>
 
           {/* print display */}
           <Box display="none" displayPrint="block">
-            <Typography color="textSecondary">
-              {props.contact.location}
-            </Typography>
+            <Typography color="textSecondary">{props.contact.location}</Typography>
           </Box>
         </Box>
       </Grid>

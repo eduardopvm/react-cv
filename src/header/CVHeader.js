@@ -7,8 +7,8 @@ import InfoPanel from "./InfoPanel";
 
 const useStyles = makeStyles((theme) => ({
   heading: {
-    marginLeft: "1rem"
-  }
+    marginLeft: "1rem",
+  },
 }));
 
 export default function CVHeader(props) {
@@ -17,10 +17,14 @@ export default function CVHeader(props) {
   return (
     <Grid item xs={12}>
       <Box displayPrint="none">
-        <Typography variant="h3" className={classes.heading}>Eduardo Palma Vieira de Moraes</Typography>
+        <Typography variant="h3" className={classes.heading}>
+          Eduardo Palma Vieira de Moraes
+        </Typography>
       </Box>
       <Box display="none" displayPrint="block">
-        <Typography variant="h4" className={classes.heading}>Eduardo Palma Vieira de Moraes</Typography>
+        <Typography variant="h4" className={classes.heading}>
+          Eduardo Palma Vieira de Moraes
+        </Typography>
       </Box>
       <Typography variant="h4" className={classes.heading} color="textSecondary">
         Full Stack Developer

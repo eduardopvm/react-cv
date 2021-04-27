@@ -20,10 +20,7 @@ export default function CVAvatar(props) {
   return (
     <Grid container item justify="center" alignItems="center">
       <Box displayPrint="none">
-        <Avatar
-          alt="Foto de Eduardo P. V. de Moraes"
-          className={classes.avatar}
-          src={process.env.PUBLIC_URL + "/gray_avatar.jpg"}>
+        <Avatar alt="Foto de Eduardo P. V. de Moraes" className={classes.avatar} src={process.env.PUBLIC_URL + "/gray_avatar.jpg"}>
           EPVM
         </Avatar>
       </Box>

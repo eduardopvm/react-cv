@@ -20,7 +20,7 @@ export default function Homepage() {
   function getData() {
     let queryParams = new URLSearchParams(useLocation().search);
     let lang = queryParams.get("lang");
-    
+
     if (lang && lang == "en") {
       i18n.changeLanguage("en");
       return cvDataEN;

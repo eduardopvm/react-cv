@@ -26,10 +26,7 @@ const Content = React.forwardRef((props, ref) => {
         <CVHeader data={props.staticData.contact} />
       </Grid>
       <Grid item xs={12} sm={4}>
-        <Sidebar
-          staticData={props.staticData}
-          translatedData={props.translatedData}
-        />
+        <Sidebar staticData={props.staticData} translatedData={props.translatedData} />
       </Grid>
       <Grid item xs={12} sm={8}>
         <WorkHistory history={props.translatedData.history} />

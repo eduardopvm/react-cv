@@ -7,7 +7,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
@@ -24,20 +24,20 @@ const useStyles = makeStyles({
     minWidth: "1rem !important",
   },
   summary: {
-    marginTop: "0.5rem"
+    marginTop: "0.5rem",
   },
   details: {
-    fontWeight: 500
+    fontWeight: 500,
   },
   subsection: {
     marginTop: "0.5rem",
     fontStyle: "oblique",
-    fontWeight: 500
+    fontWeight: 500,
   },
   avoidPageBreak: {
     breakInside: "avoid-page",
-    pageBreakInside: "avoid"
-  }
+    pageBreakInside: "avoid",
+  },
 });
 
 export default function WorkHistoryItem(props) {
@@ -68,24 +68,29 @@ export default function WorkHistoryItem(props) {
       <Box id={`work-history-${props.index}`} className={classes.avoidPageBreak}>
         {/* Job Role */}
         <Typography variant="h5">{props.history.role}</Typography>
-        
+
         {/* Job Company */}
         {/* screen link */}
         <Box displayPrint="none">
           <Typography variant="h6" component="div">
-            {props.history.website
-              ? <Link href={props.history.website} target="_blank">
-                  {props.history.company}
-                </Link>
-              : <Typography variant="h6" component="div" style={{ fontWeight: 400 }}>{props.history.company}</Typography> 
-            }
+            {props.history.website ? (
+              <Link href={props.history.website} target="_blank">
+                {props.history.company}
+              </Link>
+            ) : (
+              <Typography variant="h6" component="div" style={{ fontWeight: 400 }}>
+                {props.history.company}
+              </Typography>
+            )}
           </Typography>
         </Box>
         {/* print link */}
         <Box display="none" displayPrint="block">
-          <Typography component="div" variant="h6" style={{ fontWeight: 400 }}>{props.history.company} {props.history.website && " (" + props.history.website + ")"}</Typography>
+          <Typography component="div" variant="h6" style={{ fontWeight: 400 }}>
+            {props.history.company} {props.history.website && " (" + props.history.website + ")"}
+          </Typography>
         </Box>
-        
+
         <Grid container>
           {/* Job date */}
           <Grid item xs={12} sm={6}>
@@ -108,24 +113,32 @@ export default function WorkHistoryItem(props) {
           </Grid>
         </Grid>
       </Box>
-      
+
       {/* Job Highlights */}
       <Box>
-        <Typography variant="body1" className={classes.subsection} display="block">{t('workHighlights')}:</Typography>
-        <Typography variant="body1" className={classes.summary}>{props.history.description}</Typography>
+        <Typography variant="body1" className={classes.subsection} display="block">
+          {t("workHighlights")}:
+        </Typography>
+        <Typography variant="body1" className={classes.summary}>
+          {props.history.description}
+        </Typography>
       </Box>
 
       {/* Other Activities */}
-      {otherActivities != null &&
+      {otherActivities != null && (
         <Box className={classes.avoidPageBreak}>
-          <Typography variant="body1" className={classes.subsection} display="block">{t('workSummary')}:</Typography>
+          <Typography variant="body1" className={classes.subsection} display="block">
+            {t("workSummary")}:
+          </Typography>
           <List dense>{otherActivities}</List>
         </Box>
-      }
-      
+      )}
+
       {/* Main Technologies */}
       <Box className={classes.avoidPageBreak}>
-        <Typography variant="body1" className={classes.subsection}>{t('workTechnologies')}:</Typography>
+        <Typography variant="body1" className={classes.subsection}>
+          {t("workTechnologies")}:
+        </Typography>
         <Typography variant="body2">{technologies}</Typography>
       </Box>
     </Box>

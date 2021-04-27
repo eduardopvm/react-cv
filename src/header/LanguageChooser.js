@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function LanguageChooser(props) {
   const [t, i18n] = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
-  const languages = {en: "English", pt: "Português"};
+  const languages = { en: "English", pt: "Português" };
   let selectedLanguage = languages[i18n.language];
 
   const handleMenuClick = (event) => {
@@ -40,18 +40,17 @@ export default function LanguageChooser(props) {
         style={{ color: "#fff" }}
         aria-controls="simple-menu"
         aria-haspopup="true"
-        aria-label="Chosen language">
+        aria-label="Chosen language"
+      >
         {selectedLanguage}
       </Button>
-      <Menu
-        id="simple-menu"
-        container={document.getElementById("root")}
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}>
-        <MenuItem onClick={handleClick} lang="en">English</MenuItem>
-        <MenuItem onClick={handleClick} lang="pt">Português</MenuItem>
+      <Menu id="simple-menu" container={document.getElementById("root")} anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+        <MenuItem onClick={handleClick} lang="en">
+          English
+        </MenuItem>
+        <MenuItem onClick={handleClick} lang="pt">
+          Português
+        </MenuItem>
       </Menu>
     </React.Fragment>
   );

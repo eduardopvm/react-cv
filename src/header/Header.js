@@ -16,7 +16,7 @@ import { useTheme } from "@material-ui/core/styles";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import LanguageChooser from "./LanguageChooser";
 import ResponsiveDrawer from "./ResponsiveDrawer";
@@ -104,10 +104,7 @@ export default function Header(props) {
           <CircularProgress color="inherit" />
         </Backdrop>
 
-        <Snackbar
-          open={errorHappened}
-          onClose={hideErrorMessage}
-          autoHideDuration={7000}>
+        <Snackbar open={errorHappened} onClose={hideErrorMessage} autoHideDuration={7000}>
           <Alert onClose={hideErrorMessage} severity="error">
             {t("exportToPDFError")}
           </Alert>
@@ -119,32 +116,18 @@ export default function Header(props) {
           <Grid container item xs={12}>
             <Grid item xs={8}>
               <Box display={{ xs: "block", sm: "none" }}>
-                <IconButton
-                  edge="start"
-                  color="inherit"
-                  aria-label="open drawer"
-                  onClick={handleToggleDrawer}>
+                <IconButton edge="start" color="inherit" aria-label="open drawer" onClick={handleToggleDrawer}>
                   <MenuIcon />
                 </IconButton>
               </Box>
 
               <Box display={{ xs: "none", md: "inline" }}>
-                <Button
-                  onClick={onPagePrint}
-                  startIcon={<PrintIcon />}
-                  variant="contained"
-                  color="secondary"
-                  className={classes.button}>
+                <Button onClick={onPagePrint} startIcon={<PrintIcon />} variant="contained" color="secondary" className={classes.button}>
                   {t("printCV")}
                 </Button>
               </Box>
               <Box display={{ xs: "none", sm: "inline" }}>
-                <Button
-                  onClick={onPdfExport}
-                  startIcon={<PictureAsPdfIcon />}
-                  variant="contained"
-                  color="secondary"
-                  className={classes.button}>
+                <Button onClick={onPdfExport} startIcon={<PictureAsPdfIcon />} variant="contained" color="secondary" className={classes.button}>
                   {t("exportToPDF")}
                 </Button>
               </Box>

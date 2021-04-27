@@ -32,7 +32,7 @@ export default function ResponsiveDrawer(props) {
     return (
       <ListItem button key={index}>
         <ListItemText>
-          <Link to={`work-history-${index}`} smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+          <Link to={`work-history-${index}`} smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
             {history.company} ({history.job_start}-{history.job_end})
           </Link>
         </ListItemText>
@@ -56,63 +56,63 @@ export default function ResponsiveDrawer(props) {
       <List>
         <ListItem button>
           <ListItemText>
-            <Link to="info" smooth={true} offset={-50} onClick={props.onDrawerToggle}>
+            <Link to="info" smooth={true} offset={-50} delay={50} onClick={props.onDrawerToggle}>
               {t("information")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="social" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="social" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               Social
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="profile" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="profile" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("profile")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="education" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("education")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="language-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("languageSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="tech-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="tech-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("technicalSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="general-skills" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("generalSkills")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="certificates" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="certificates" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("certificates")}
             </Link>
           </ListItemText>
         </ListItem>
         <ListItem button>
           <ListItemText>
-            <Link to="work-history" smooth={true} offset={-60} onClick={props.onDrawerToggle}>
+            <Link to="work-history" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
               {t("workHistory")}
             </Link>
           </ListItemText>

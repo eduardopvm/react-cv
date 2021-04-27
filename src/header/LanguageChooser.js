@@ -45,6 +45,7 @@ export default function LanguageChooser(props) {
       </Button>
       <Menu
         id="simple-menu"
+        container={document.getElementById("root")}
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}

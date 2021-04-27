@@ -30,13 +30,13 @@ export default function ResponsiveDrawer(props) {
 
   const workHistoryLinks = props.history.map((history, index) => {
     return (
-      <ListItem button key={index}>
-        <ListItemText>
-          <Link to={`work-history-${index}`} smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+      <Link to={`work-history-${index}`} smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+        <ListItem button key={index}>
+          <ListItemText>
             {history.company} ({history.job_start}-{history.job_end})
-          </Link>
-        </ListItemText>
-      </ListItem>
+          </ListItemText>
+        </ListItem>
+      </Link>
     );
   });
 
@@ -54,69 +54,69 @@ export default function ResponsiveDrawer(props) {
       </List>
       <Divider />
       <List>
-        <ListItem button>
-          <ListItemText>
-            <Link to="info" smooth={true} offset={-50} delay={50} onClick={props.onDrawerToggle}>
+        <Link to="info" smooth={true} offset={-50} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("information")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="social" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="social" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               Social
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="profile" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="profile" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("profile")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("education")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("languageSkills")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="tech-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="tech-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("technicalSkills")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("generalSkills")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="certificates" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="certificates" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("certificates")}
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>
-            <Link to="work-history" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="work-history" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>
               {t("workHistory")}
-            </Link>
-          </ListItemText>
-        </ListItem>
+            </ListItemText>
+          </ListItem>
+        </Link>
       </List>
       <Divider />
       <List>{workHistoryLinks}</List>
@@ -127,7 +127,7 @@ export default function ResponsiveDrawer(props) {
     <nav>
       <Hidden smUp>
         <Drawer
-          container={document.body}
+          container={document.getElementById("root")}
           variant="temporary"
           anchor="left"
           open={props.drawerOpen}

@@ -58,10 +58,6 @@ export default function ResponsiveDrawer(props) {
       </Box>
       <Divider />
       <List>
-        <ListItem button onClick={onPrintPage}>
-          <ListItemIcon><PrintIcon /></ListItemIcon>
-          <ListItemText primary={t("printCV")} />
-        </ListItem>
         <ListItem button onClick={onExportPDF}>
           <ListItemIcon><PictureAsPdfIcon /></ListItemIcon>
           <ListItemText primary={t("exportToPDF")} />

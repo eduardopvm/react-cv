@@ -128,7 +128,7 @@ export default function Header(props) {
                 </IconButton>
               </Box>
 
-              <Box display={{ xs: "none", sm: "block" }}>
+              <Box display={{ xs: "none", md: "inline" }}>
                 <Button
                   onClick={onPagePrint}
                   startIcon={<PrintIcon />}
@@ -137,6 +137,8 @@ export default function Header(props) {
                   className={classes.button}>
                   {t("printCV")}
                 </Button>
+              </Box>
+              <Box display={{ xs: "none", sm: "inline" }}>
                 <Button
                   onClick={onPdfExport}
                   startIcon={<PictureAsPdfIcon />}

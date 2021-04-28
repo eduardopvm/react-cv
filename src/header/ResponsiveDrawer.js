@@ -30,8 +30,8 @@ export default function ResponsiveDrawer(props) {
 
   const workHistoryLinks = props.history.map((history, index) => {
     return (
-      <Link to={`work-history-${index}`} smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
-        <ListItem button key={index}>
+      <Link to={`work-history-${index}`} smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle} key={`history-${index}`}>
+        <ListItem button>
           <ListItemText>
             {history.company} ({history.job_start}-{history.job_end})
           </ListItemText>

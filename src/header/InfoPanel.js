@@ -72,7 +72,16 @@ export default function HeaderPanel(props) {
         <Box>
           <PhoneAndroidOutlinedIcon display="inline" className={classes.icon} />
           <Typography display="inline">{t("phone")}</Typography>
-          <Typography color="textSecondary">{props.contact.phone}</Typography>
+          
+          {/* screen display */}
+          <Box displayPrint="none">
+            <Link href={`tel:${props.contact.phoneNumber}`}>{props.contact.phoneDisplay}</Link>
+          </Box>
+
+          {/* print display */}
+          <Box display="none" displayPrint="block">
+            <Typography color="textSecondary">{props.contact.phoneDisplay}</Typography>
+          </Box>
         </Box>
       </Grid>
 

@@ -3,18 +3,18 @@ const cors = require('cors')
 const puppeteer = require("puppeteer");
 const app = express();
 
-const port = 5000;
-const pageUrl = "http://localhost:3000/pdf"; // TODO: make this dynamic
+const port = process.env.PORT_API || 5000;
+const pdfExportUrl = process.env.NODE_ENV == "production" ? "https://eduardopvm.com/#pdf" : "http://localhost:3000/#pdf";
 const acceptedLangs = ['pt', 'en'];
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("API server started on port " + port);
 });
 
 app.get("/pdf", cors(), async (req, res) => {
   const langParam = req.query.lang;
   const lang = acceptedLangs.includes(langParam) ? langParam : "pt";
-  const targetUrl = `${pageUrl}?lang=${lang}`;
+  const targetUrl = `${pdfExportUrl}?lang=${lang}`;
   console.log(`Accessing page ${targetUrl} on headless chrome`);
 
   const browser = await puppeteer.launch();

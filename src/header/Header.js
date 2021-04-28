@@ -133,9 +133,9 @@ export default function Header(props) {
               </Box>
             </Grid>
 
-            <Grid container item xs={4} justify="flex-end">
+            {/* <Grid container item xs={4} justify="flex-end">
               <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
-            </Grid>
+            </Grid> */}
           </Grid>
         </Toolbar>
       </AppBar>

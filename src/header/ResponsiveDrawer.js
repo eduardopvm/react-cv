@@ -69,11 +69,6 @@ export default function ResponsiveDrawer(props) {
             <ListItemText>{t("profile")}</ListItemText>
           </ListItem>
         </Link>
-        <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
-          <ListItem button>
-            <ListItemText>{t("education")}</ListItemText>
-          </ListItem>
-        </Link>
         <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
             <ListItemText>{t("languageSkills")}</ListItemText>
@@ -87,6 +82,11 @@ export default function ResponsiveDrawer(props) {
         <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
             <ListItemText>{t("generalSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("education")}</ListItemText>
           </ListItem>
         </Link>
         <Link to="certificates" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>

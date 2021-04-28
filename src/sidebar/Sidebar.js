@@ -13,20 +13,29 @@ import SocialList from "./SocialList";
 
 const useStyles = makeStyles({
   avoidBreakInside: {
-    breakInside: "avoid"
-  }
+    breakInside: "avoid",
+  },
 });
 
 export default function Sidebar(props) {
   const classes = useStyles();
   const [t, i18n] = useTranslation();
-  const profileLines = props.translatedData.profile.split('\n');
+  const profileLines = props.translatedData.profile.split("\n");
   const profileSection = profileLines.map((text, index) => {
     let sections = [];
-    if (profileLines.length == (index + 1)) { // if last section
-      sections.push(<Box className={classes.avoidBreakInside} key={index}>{text}</Box>);
+    if (profileLines.length == index + 1) {
+      // if last section
+      sections.push(
+        <Box className={classes.avoidBreakInside} key={index}>
+          {text}
+        </Box>
+      );
     } else {
-      sections.push(<Box mb={1} key={index}>{text}</Box>)
+      sections.push(
+        <Box mb={1} key={index}>
+          {text}
+        </Box>
+      );
     }
     return sections;
   });
@@ -41,29 +50,22 @@ export default function Sidebar(props) {
         <SocialList />
       </Box>
 
-      <Box id="profile" >
+      <Box id="profile">
         <Box ml={2}>
-          <Typography variant="h4">{t('profile')}</Typography>
+          <Typography variant="h4">{t("profile")}</Typography>
         </Box>
         <Divider variant="middle" component="div" />
         <Typography variant="body1" component="div">
-          <Box m={2}>
-            {profileSection}
-          </Box>
+          <Box m={2}>{profileSection}</Box>
         </Typography>
       </Box>
 
-      <Box id="education" className={classes.avoidBreakInside}>
-        <Box ml={2}>
-          <Typography variant="h4">{t("education")}</Typography>
+      <Box>
+        <Box component="blockquote">
+          <Typography>"{props.translatedData.quote.text}"</Typography>
         </Box>
-        <Divider variant="middle" component="div" />
-        <Box m={2}>
-          <Typography>Bacharelado em Ciência da Computação</Typography>
-          <Typography color="textSecondary">
-            Universidade de Sorocaba - 2005 &ndash; 2009
-          </Typography>
-          <Typography color="textSecondary">Sorocaba, SP - {t("brazil")}</Typography>
+        <Box component="blockquote">
+          <Typography>&mdash; {props.translatedData.quote.author}</Typography>
         </Box>
       </Box>
 
@@ -89,6 +91,18 @@ export default function Sidebar(props) {
         </Box>
         <Divider variant="middle" component="div" />
         <GeneralSkillsList skills={props.staticData.general_skills} />
+      </Box>
+
+      <Box id="education" className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("education")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <Box m={2}>
+          <Typography>Bacharelado em Ciência da Computação</Typography>
+          <Typography color="textSecondary">Universidade de Sorocaba - 2005 &ndash; 2009</Typography>
+          <Typography color="textSecondary">Sorocaba, SP - {t("brazil")}</Typography>
+        </Box>
       </Box>
 
       <Box id="certificates" className={classes.avoidBreakInside}>

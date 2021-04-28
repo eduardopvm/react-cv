@@ -62,10 +62,10 @@ export default function Sidebar(props) {
 
       <Box>
         <Box component="blockquote">
-          <Typography>"{props.translatedData.quote.text}"</Typography>
+          <Typography variant="subtitle1">"{props.translatedData.quote.text}"</Typography>
         </Box>
         <Box component="blockquote">
-          <Typography>&mdash; {props.translatedData.quote.author}</Typography>
+          <Typography variant="subtitle2">&mdash; {props.translatedData.quote.author}</Typography>
         </Box>
       </Box>
 

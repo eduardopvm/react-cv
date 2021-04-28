@@ -4,7 +4,6 @@ import Link from "@material-ui/core/Link";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { GoMarkGithub } from "react-icons/go";
@@ -35,7 +34,7 @@ export default function SocialList(props) {
           </Box>
         </ListItemText>
       </ListItem>
-      {/* <Divider variant="middle" component="li" light /> */}
+      
       <ListItem>
         <FaLinkedin style={{ fontSize: 30 }} className={classes.root} />
         <ListItemText>
@@ -51,7 +50,7 @@ export default function SocialList(props) {
           </Box>
         </ListItemText>
       </ListItem>
-      {/* <Divider variant="middle" component="li" light /> */}
+      
       <ListItem>
         <FaFacebookSquare style={{ fontSize: 30 }} className={classes.root} />
         <ListItemText>
@@ -62,12 +61,11 @@ export default function SocialList(props) {
           </Box>
           <Box display="none" displayPrint="block">
             <Typography>
-              TODO
+              Facebook
             </Typography>
           </Box>
         </ListItemText>
       </ListItem>
-      {/* <Divider variant="middle" component="li" light /> */}
     </List>
   );
 }

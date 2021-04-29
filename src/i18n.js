@@ -28,7 +28,14 @@ const translations = {
       "workload": "Workload",
       "en": "English",
       "pt": "Portuguese",
-      "es": "Spanish"
+      "es": "Spanish",
+      "skill-0": "Unknown",
+      "skill-0.5": "Novice",
+      "skill-1": "Basic",
+      "skill-1.5": "Intermediate",
+      "skill-2": "Proficient",
+      "skill-2.5": "Advanced",
+      "skill-3": "Expert"
     }
   },
   pt: {
@@ -56,7 +63,14 @@ const translations = {
       "workload": "Carga Horária",
       "en": "Inglês",
       "pt": "Português",
-      "es": "Espanhol"
+      "es": "Espanhol",
+      "skill-0": "Desconhecido",
+      "skill-0.5": "Iniciante",
+      "skill-1": "Básico",
+      "skill-1.5": "Intermediário",
+      "skill-2": "Proficiente",
+      "skill-2.5": "Avançado",
+      "skill-3": "Especialista"
     }
   }
 }

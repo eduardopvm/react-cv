@@ -57,7 +57,7 @@ export default function Homepage() {
           </Container>
         </Route>
         <Route path="/pdf">
-          <Content ref={printComponentRef} staticData={cvDataStatic} translatedData={cvData} />
+          <Content staticData={cvDataStatic} translatedData={cvData} />
         </Route>
       </Switch>
     </Router>

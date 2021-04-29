@@ -35,7 +35,10 @@ const translations = {
       "skill-1.5": "Intermediate",
       "skill-2": "Proficient",
       "skill-2.5": "Advanced",
-      "skill-3": "Expert"
+      "skill-3": "Expert",
+      "lang-1": "Basic",
+      "lang-2": "Intermediate",
+      "lang-3": "Fluent",
     }
   },
   pt: {
@@ -70,7 +73,10 @@ const translations = {
       "skill-1.5": "Intermediário",
       "skill-2": "Proficiente",
       "skill-2.5": "Avançado",
-      "skill-3": "Especialista"
+      "skill-3": "Especialista",
+      "lang-skill-1": "Básico",
+      "lang-skill-2": "Intermediário",
+      "lang-skill-3": "Fluente",
     }
   }
 }

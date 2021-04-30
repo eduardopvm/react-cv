@@ -7,28 +7,39 @@
     "email": "eduardo.palma403@gmail.com",
     "website": "https://www.eduardopvm.com"
   },
-  "technical_skills": [
+  "programming_skills": [
     { "name": "Javascript", "level": 3},
     { "name": "Python", "level": 2},
-    { "name": "Angular", "level": 2},
+    { "name": "Java", "level": 3},
+    { "name": "SQL", "level": 2},
+    { "name": "Shell Script", "level": 1}
+  ],
+  "framework_skills": [
     { "name": "React", "level": 2},
+    { "name": "Angular", "level": 2},
     { "name": "Node.js", "level": 2},
     { "name": "Express", "level": 1},
-    { "name": "MongoDB", "level": 1},
-    { "name": "Java", "level": 3},
     { "name": "Spring Framework", "level": 2},
     { "name": "Hibernate", "level": 2},
-    { "name": "SQL", "level": 2},
+    { "name": "Terraform", "level": 1}    
+  ],
+  "database_skills": [
+    { "name": "MongoDB", "level": 1},
     { "name": "MySQL", "level": 2},
     { "name": "Oracle DB", "level": 2},
     { "name": "SQL Server", "level": 1},
+    { "name": "PostgreSQL", "level": 1}
+  ],
+  "environment_skills": [
     { "name": "Google Cloud", "level": 2},
-    { "name": "Kubernetes", "level": 1},
-    { "name": "Terraform", "level": 1},
-    { "name": "Shell Script", "level": 1},
-    { "name": "Git", "level": 2},
+    { "name": "AWS", "level": 0},
     { "name": "Windows Server", "level": 1},
     { "name": "Linux (Debian)", "level": 3}
+  ],
+  "tool_skills": [
+    { "name": "Git", "level": 3},
+    { "name": "Docker", "level": 2},
+    { "name": "Kubernetes", "level": 1}
   ],
   "languague_skills": [
     { "name": "pt", "level": 3},

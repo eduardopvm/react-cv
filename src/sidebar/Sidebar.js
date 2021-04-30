@@ -11,6 +11,8 @@ import CertificateList from "./CertificateList";
 import GeneralSkillsList from "./GeneralSkillsList";
 import SocialList from "./SocialList";
 
+// TODO: refactor and make this dynamic
+
 const useStyles = makeStyles({
   avoidBreakInside: {
     breakInside: "avoid",
@@ -77,12 +79,44 @@ export default function Sidebar(props) {
         <LanguageSkillList skills={props.staticData.languague_skills} />
       </Box>
 
-      <Box id="tech-skills" className={classes.avoidBreakInside}>
+      <Box id="programming-skills" className={classes.avoidBreakInside}>
         <Box ml={2}>
-          <Typography variant="h4">{t("technicalSkills")}</Typography>
+          <Typography variant="h4">{t("programmingSkills")}</Typography>
         </Box>
         <Divider variant="middle" component="div" />
-        <RatedSkillList skills={props.staticData.technical_skills} />
+        <RatedSkillList skills={props.staticData.programming_skills} />
+      </Box>
+
+      <Box id="framework-skills" className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("frameworkSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <RatedSkillList skills={props.staticData.framework_skills} />
+      </Box>
+
+      <Box id="database-skills" className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("databaseSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <RatedSkillList skills={props.staticData.database_skills} />
+      </Box>
+
+      <Box id="environment-skills" className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("environmentSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <RatedSkillList skills={props.staticData.environment_skills} />
+      </Box>
+
+      <Box id="tool-skills" className={classes.avoidBreakInside}>
+        <Box ml={2}>
+          <Typography variant="h4">{t("toolSkills")}</Typography>
+        </Box>
+        <Divider variant="middle" component="div" />
+        <RatedSkillList skills={props.staticData.tool_skills} />
       </Box>
 
       <Box id="general-skills" className={classes.avoidBreakInside}>

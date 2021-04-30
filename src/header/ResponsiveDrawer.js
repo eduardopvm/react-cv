@@ -12,6 +12,9 @@ import { Link } from "react-scroll";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 
+// TODO: refactor and make this dynamic
+// TODO: split drawer into more sections and improve layout
+
 const useStyles = makeStyles((theme) => ({
   drawer: {
     width: "240px",
@@ -74,9 +77,29 @@ export default function ResponsiveDrawer(props) {
             <ListItemText>{t("languageSkills")}</ListItemText>
           </ListItem>
         </Link>
-        <Link to="tech-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+        <Link to="programming-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
-            <ListItemText>{t("technicalSkills")}</ListItemText>
+            <ListItemText>{t("programmingSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="framework-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("frameworkSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="database-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("databaseSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="environment-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("environmentSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="tool-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("toolSkills")}</ListItemText>
           </ListItem>
         </Link>
         <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>

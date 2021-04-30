@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 import StarIcon from "@material-ui/icons/Star";
-import StarHalfIcon from "@material-ui/icons/StarHalf";
 import StarOutlineIcon from "@material-ui/icons/StarOutline";
 
 const useStyles = makeStyles({
@@ -21,8 +20,11 @@ const useStyles = makeStyles({
   },
   starIcon: {
     color: "#ffb400",
-  }
+  },
 });
+
+// TODO: refactor and break this up
+// TODO: try to fix the ref warning
 
 export default function RatedSkillList(props) {
   const [t, i18n] = useTranslation();
@@ -33,9 +35,7 @@ export default function RatedSkillList(props) {
 
   const generateStars = (level) => {
     const stars = [];
-    let integer = Math.trunc(level);
-    let remainder = level % 1;
-  
+
     if (level == 0) {
       return (
         <React.Fragment>
@@ -45,43 +45,55 @@ export default function RatedSkillList(props) {
         </React.Fragment>
       );
     } else {
-      for (let i = 0; i < integer; i++) {
+      for (let i = 0; i < level; i++) {
         stars.push(<StarIcon key={stars.length} className={classes.starIcon} />);
       }
-  
-      if (remainder > 0 && stars.length < 3) {
-        stars.push(<StarHalfIcon key={stars.length} className={classes.starIcon} />);
-      }
     }
-  
+
     if (stars.length < 3) {
       while (stars.length < 3) {
         stars.push(<StarOutlineIcon key={stars.length} className={classes.starIcon} />);
       }
     }
-  
+
     return stars;
+  };
+
+  const generateListItem = (skill) => {
+    return (
+      <ListItem key={skill.name}>
+        <ListItemText>
+          <Typography className={classes.mobileLabel}>{skill.name}: </Typography>
+          <Typography component="span">{t(`skill-${skill.level}`)}</Typography>
+        </ListItemText>
+      </ListItem>
+    );
   };
 
   if (isLargeScreen) {
     skillsList = props.skills.map((skill) => {
       return (
-        <ListItem key={skill.name}>
-          <ListItemText>{skill.name}</ListItemText>
-          <ListItemSecondaryAction>{generateStars(skill.level)}</ListItemSecondaryAction>
-        </ListItem>
+        <React.Fragment key={skill.name}>
+          <Box display="block" displayPrint="none">
+            <ListItem>
+              <ListItemText>{skill.name}</ListItemText>
+              <ListItemSecondaryAction>
+                <Tooltip title={t(`skill-${skill.level}`)} arrow>
+                  <div>{generateStars(skill.level)}</div>
+                </Tooltip>
+              </ListItemSecondaryAction>
+            </ListItem>
+          </Box>
+
+          <Box display="none" displayPrint="block">
+            {generateListItem(skill)}
+          </Box>
+        </React.Fragment>
       );
     });
   } else {
     skillsList = props.skills.map((skill) => {
-      return (
-        <ListItem key={skill.name}>
-          <ListItemText>
-            <Typography className={classes.mobileLabel}>{skill.name}: </Typography>
-            <Typography component="span">{t(`skill-${skill.level}`)}</Typography>
-          </ListItemText>
-        </ListItem>
-      );
+      return generateListItem(skill);
     });
   }
 

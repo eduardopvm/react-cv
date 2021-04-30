@@ -37,9 +37,9 @@ const translations = {
       "skill-1": "Basic",
       "skill-2": "Proficient",
       "skill-3": "Advanced",
-      "lang-1": "Basic",
-      "lang-2": "Intermediate",
-      "lang-3": "Fluent",
+      "lang-skill-1": "Basic",
+      "lang-skill-2": "Intermediate",
+      "lang-skill-3": "Fluent",
     }
   },
   pt: {

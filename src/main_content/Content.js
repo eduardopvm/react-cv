@@ -11,14 +11,17 @@ import WorkHistory from "./WorkHistory";
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
     paddingTop: "1rem",
-    height: "100%",
+  },
+  pdfContainer : {
+    paddingTop: "1rem",
+    backgroundColor: "#fff",
   },
 }));
 
 const Content = React.forwardRef((props, ref) => {
   const classes = useStyles();
   return (
-    <Grid id="info" container ref={ref} className={classes.contentContainer}>
+    <Grid id="info" container ref={ref} className={props.pdf ? classes.pdfContainer : classes.contentContainer} >
       <Grid container item xs={12} sm={4}>
         <CVAvatar />
       </Grid>

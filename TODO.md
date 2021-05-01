@@ -39,25 +39,37 @@
 
 - [x] Create mobile version with drawer/appbar menu
 
-- [ ] Fix text overflow on sidebar on tablet screens or change it to mobile layout with drawer
+- [x] Fix text overflow on sidebar on tablet screens or change it to mobile layout with drawer
 
-- [ ] Change sidebar order of sections and maybe add stacks section
+- [x] Change sidebar order of sections and maybe add stacks section
 
-- [ ] Refactor components into smaller pieces and organize them in directories
-
-- [ ] Create page breaks for printing layout
-
-- [ ] Make general spacing and typography adjustments for pleasant look
+- [x] Create page breaks for printing layout
 
 - [ ] Add auto language detection to set the default on first load
 
 - [ ] Add QRCode to printable version in place of photo with link to website
 
-- [ ] Prepare for production and deployment (and optimize static files and images)
+- [ ] Refactor sidebar and drawer to be more dynamic (and add sections to drawer)
 
-- [ ] Make it SEO friendly
+- [ ] Refactor components into smaller pieces and organize them in directories
+
+- [ ] General layout improvements (typography, theme, icons)
+
+- [ ] Make PDF export functionality work on server somehow (maybe deploy api on Heroku for now)
+
+- [ ] Try to fix most warnings as possible before removing StrictMode
+
+- [ ] Prepare for production and deployment (optimization & env vars)
+
+- [ ] Create frontend deploy script
+
+- [ ] Create backend deploy script
+
+- [ ] Make page SEO friendly
+
+- [ ] Create custom theme
 
 - [ ] Try to change printed links from JSX logic to CSS
 
-- [ ] Create theme to add more color to layout (icons specially)
+- [ ] Start downloading CV data from backend
 

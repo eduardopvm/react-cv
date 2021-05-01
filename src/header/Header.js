@@ -127,15 +127,15 @@ export default function Header(props) {
                 </Button>
               </Box>
               <Box display={{ xs: "none", sm: "inline" }}>
-                <Button onClick={onPdfExport} startIcon={<PictureAsPdfIcon />} variant="contained" color="secondary" className={classes.button}>
+                <Button onClick={onPdfExport} startIcon={<PictureAsPdfIcon />} variant="contained" color="secondary" className={classes.button} disabled>
                   {t("exportToPDF")}
                 </Button>
               </Box>
             </Grid>
 
-            {/* <Grid container item xs={4} justify="flex-end">
+            <Grid container item xs={4} justify="flex-end">
               <LanguageChooser handleLanguageChange={props.handleLanguageChange} />
-            </Grid> */}
+            </Grid>
           </Grid>
         </Toolbar>
       </AppBar>

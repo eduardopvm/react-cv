@@ -41,6 +41,7 @@ export default function LanguageChooser(props) {
         aria-controls="simple-menu"
         aria-haspopup="true"
         aria-label="Chosen language"
+        disabled
       >
         {selectedLanguage}
       </Button>

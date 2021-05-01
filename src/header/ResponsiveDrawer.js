@@ -47,7 +47,7 @@ export default function ResponsiveDrawer(props) {
     <div>
       <Box className={classes.toolbar} />
       <Divider />
-      <List>
+      {/* <List>
         <ListItem button onClick={onExportPDF}>
           <ListItemIcon>
             <PictureAsPdfIcon />
@@ -55,7 +55,7 @@ export default function ResponsiveDrawer(props) {
           <ListItemText primary={t("exportToPDF")} />
         </ListItem>
       </List>
-      <Divider />
+      <Divider /> */}
       <List>
         <Link to="info" smooth={true} offset={-50} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
@@ -70,11 +70,6 @@ export default function ResponsiveDrawer(props) {
         <Link to="profile" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
             <ListItemText>{t("profile")}</ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
-          <ListItem button>
-            <ListItemText>{t("languageSkills")}</ListItemText>
           </ListItem>
         </Link>
         <Link to="programming-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
@@ -105,6 +100,11 @@ export default function ResponsiveDrawer(props) {
         <Link to="general-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
           <ListItem button>
             <ListItemText>{t("generalSkills")}</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="language-skills" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>
+          <ListItem button>
+            <ListItemText>{t("languageSkills")}</ListItemText>
           </ListItem>
         </Link>
         <Link to="education" smooth={true} offset={-60} delay={50} onClick={props.onDrawerToggle}>

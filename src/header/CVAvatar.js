@@ -20,13 +20,10 @@ export default function CVAvatar(props) {
   return (
     <Grid container item justify="center" alignItems="center">
       <Box displayPrint="none">
-        <Avatar alt="Foto de Eduardo P. V. de Moraes" className={classes.avatar} src={process.env.PUBLIC_URL + "/gray_avatar.jpg"}>
-          EPVM
-        </Avatar>
+        <Avatar alt="Foto de Eduardo P. V. de Moraes" className={classes.avatar} src={process.env.PUBLIC_URL + "/gray_avatar.jpg"} />
       </Box>
       <Box display="none" displayPrint="block">
-        {/* TODO: add QRCode instead */}
-        <Avatar className={`print-avatar ` + classes.avatar}>Eduardo</Avatar>
+        <Avatar className={classes.avatar} variant="square" src={process.env.PUBLIC_URL + "/qr-code.png"} />
       </Box>
     </Grid>
   );

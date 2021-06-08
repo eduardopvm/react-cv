@@ -7,7 +7,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { GoMarkGithub } from "react-icons/go";
-import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const useStyles = makeStyles({
   root: {
@@ -46,22 +46,6 @@ export default function SocialList(props) {
           <Box display="none" displayPrint="block">
             <Typography>
               www.linkedin.com/in/eduardo-pvm
-            </Typography>
-          </Box>
-        </ListItemText>
-      </ListItem>
-      
-      <ListItem>
-        <FaFacebookSquare style={{ fontSize: 30 }} className={classes.root} />
-        <ListItemText>
-          <Box displayPrint="none">
-            <Link href="#" target="_blank">
-              Facebook
-            </Link>
-          </Box>
-          <Box display="none" displayPrint="block">
-            <Typography>
-              Facebook
             </Typography>
           </Box>
         </ListItemText>

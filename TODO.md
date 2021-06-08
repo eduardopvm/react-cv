@@ -47,7 +47,7 @@
 
 - [ ] Add auto language detection to set the default on first load
 
-- [ ] Add QRCode to printable version in place of photo with link to website
+- [x] Add QRCode to printable version in place of photo with link to website
 
 - [ ] Refactor sidebar and drawer to be more dynamic (and add sections to drawer)
 

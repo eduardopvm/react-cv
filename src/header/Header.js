@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const pdfUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:5000/#/pdf" : process.env.REACT_APP_BACKEND_URL + '/#/pdf';
+const pdfUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:5000/pdf" : process.env.REACT_APP_BACKEND_URL + '/pdf';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -126,7 +126,7 @@ export default function Header(props) {
                 </Button>
               </Box>
               <Box display={{ xs: "none", sm: "inline" }}>
-                <Button onClick={onPdfExport} startIcon={<PictureAsPdfIcon />} variant="contained" color="secondary" className={classes.button} disabled>
+                <Button onClick={onPdfExport} startIcon={<PictureAsPdfIcon />} variant="contained" color="secondary" className={classes.button}>
                   {t("exportToPDF")}
                 </Button>
               </Box>

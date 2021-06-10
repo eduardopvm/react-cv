@@ -4,6 +4,8 @@ const puppeteer = require("puppeteer");
 const app = express();
 
 const port = process.env.PORT_API || 5000;
+const phoneDisplay = process.env.PHONE_DISPLAY;
+const phoneNumber = process.env.PHONE_NUMBER;
 const pdfExportUrl = process.env.NODE_ENV == "production" ? "https://eduardopvm.com/#pdf" : "http://localhost:3000/#pdf";
 const acceptedLangs = ['pt', 'en'];
 
@@ -36,3 +38,11 @@ app.get("/pdf", cors(), async (req, res) => {
   res.set({ "Content-Length": pdfBuffer.length });
   res.send(pdfBuffer);
 });
+
+app.get("/phone", cors(), async (req, res) => {
+  if (typeof phoneDisplay === 'undefined' || typeof phoneNumber === 'undefined') {
+    console.error("Phone number envinronment variable not set.");
+    return res.json({ error: "phone number variable not set." });
+  }
+  return res.json({ "phoneDisplay": phoneDisplay, "phoneNumber": phoneNumber });
+})

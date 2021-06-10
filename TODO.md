@@ -45,9 +45,11 @@
 
 - [x] Create page breaks for printing layout
 
-- [ ] Add auto language detection to set the default on first load
-
 - [x] Add QRCode to printable version in place of photo with link to website
+
+- [ ] Make phone a dynamic link that hits the backend to avoid web scrapers stealing my number
+
+- [ ] Add auto language detection to set the default on first load
 
 - [ ] Refactor sidebar and drawer to be more dynamic (and add sections to drawer)
 

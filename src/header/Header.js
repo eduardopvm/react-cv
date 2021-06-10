@@ -21,6 +21,9 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import LanguageChooser from "./LanguageChooser";
 import ResponsiveDrawer from "./ResponsiveDrawer";
 
+//TODO: break this up into multiple components, it's too complex
+//TODO: add support email to error message
+
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: "0.5rem",
@@ -31,11 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const pdfUrl = "http://localhost:5000/pdf";
-
-//TODO: break this up into multiple components, it's too complex
-//TODO: make API url dynamic
-//TODO: add support email to error message
+const pdfUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:5000/#/pdf" : process.env.REACT_APP_BACKEND_URL + '/#/pdf';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;

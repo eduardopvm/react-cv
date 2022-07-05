@@ -19,15 +19,12 @@
       "location": "Sorocaba - SP, Brasil",
       "job_start": "Junho 2019",
       "job_end": "Junho 2020",
-      "description": "O projeto em que trabalhei de que mais me orgulho foi um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura de referência para projetos futuros. Este aprovisionamento era feito usando Terraform e scripts de Shell que rodavam no GitLab em um ambiente de CI/CD. Os scripts de Terraform criavam e configuravam toda a infraestrutura de nuvem (máquinas virtuais, clusters, endereços de ip, firewalls, instâncias de Kubernetes, etc.) necessárias para o projeto. Dentro deste projeto também foi desenvolvida uma aplicação web Node.js/Angular de simulação de uma Cervejaria como exemplo de como utilizar esta arquitetura de referência. Esta aplicação permite ao usuário arrastar e conectar ícones de máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras e fermentadores) dentro de um editor e configurar e executar uma simulação que posteriormente mostrava os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas automotivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
+      "description": "O projeto de que mais me orgulho foi o desenvolvimento do backend de um sistema de aprovisionamento dinâmico de infraestrutura de nuvem no Google Cloud como arquitetura de referência para o setor industrial. Este aprovisionamento era feito usando scripts de Terraform e Shell executados no GitLab em um ambiente de CI/CD. Os scripts criavam e configuravam toda a infraestrutura de nuvem necessária (máquinas virtuais, clusters, endereços de ip, firewalls, instâncias de Kubernetes etc.) além de fazer o deploy das aplicações. Dentro deste projeto também foi desenvolvido por outra equipe uma aplicação de frontend para simulação de uma Cervejaria como exemplo de como utilizar esta arquitetura de referência. Esta aplicação permitia ao usuário arrastar e conectar ícones de máquinas industriais específicas de uma cervejaria (Ex.: tanques, caldeiras, fermentadores etc.) dentro de um editor visual e configurar e executar simulações que posteriormente mostravam os resultados e possíveis falhas. O objetivo final do projeto era vender esta arquitetura para empresas automotivas e outras indústrias que poderiam se beneficiar de simulações de máquinas e processos industriais.",
       "activities": [
-        "Ajudei na configuração inicial do ambiente do Google Cloud e desenvolvi e publiquei as imagens dos containers no Google Container Registry",
-        "Trabalhei nos scripts de Terraform para aprovisionamento na nuvem e nos scripts do pipeline CI/CD do GitLab",
-        "Implementei a autenticação das APIs Node.js dentro do Google Cloud usando OAuth2 com JWT",
-        "Também trabalhei em outro projeto onde fiz manutenção do sistema de CI/CD e deploy automático de diversos projetos do Deutsche Bank dentro do TeamCity e UrbanCode",
+        "Desenvolvi scripts de CI/CD e deploy automático de diversos projetos do Deutsche Bank dentro do TeamCity e UrbanCode",
         "Fiz manutenção de uma enorme aplicação Java legada que utilizava Documentum e OpenText para guardar e recuperar dados e documentos do banco italiano UBI Banca"
       ],
-      "technologies": ["Java 6 e 11", "Node.js", "Angular 8", "Google Cloud", "Kubernetes", "Firebase", "Terraform", "Shell Script", "Docker", "GitLab", "TeamCity"]
+      "technologies": ["Java 6 e 11", "Node.js", "Angular 8", "Terraform", "Shell Script", "Google Cloud", "Kubernetes", "Docker", "Firebase", "GitLab", "TeamCity", "Documentum", "OAuth2"]
     },
     {
       "role": "Desenvolvedor Freelance",
